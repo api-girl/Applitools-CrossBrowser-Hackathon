@@ -35,7 +35,7 @@ public class BrowserFactory extends BaseTest {
         System.out.println("Launching a new instance of Edge Chromium...");
         System.setProperty("webdriver.edge.driver", edgeDriverPath);
 
-        driver = new EdgeDriver(getEdgeOptions());
+        driver = new EdgeDriver();
         return driver;
     }
 
@@ -67,12 +67,6 @@ public class BrowserFactory extends BaseTest {
         FirefoxBinary binary = new FirefoxBinary();
         // binary.addCommandLineOptions("--headless");
         options.setBinary(binary);
-        return options;
-    }
-
-    private EdgeOptions getEdgeOptions() {
-        EdgeOptions options = new EdgeOptions();
-        options.setCapability("use-chromium", true);
         return options;
     }
 

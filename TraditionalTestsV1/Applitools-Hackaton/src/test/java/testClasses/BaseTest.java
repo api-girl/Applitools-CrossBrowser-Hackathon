@@ -18,7 +18,6 @@ import java.time.LocalDate;
 import java.util.Arrays;
 
 public class BaseTest {
-    //private static EventFiringWebDriver driver;
     protected WebDriver driver;
     protected SoftAssert soft = new SoftAssert();
     protected static HomePage hp;
@@ -47,12 +46,11 @@ public class BaseTest {
         return new Dimension(width, height);
     }
 
-//    @AfterMethod(alwaysRun = true)
-//    public void tearDown() {
-//        driver.manage().deleteAllCookies();
-//        driver.quit();
-//
-//    }
+    @AfterMethod(alwaysRun = true)
+    public void tearDown() {
+        driver.manage().deleteAllCookies();
+        driver.quit();
+    }
 
     public WindowManager getWindowManager() {
         return new WindowManager(driver);
@@ -79,13 +77,6 @@ public class BaseTest {
             e.printStackTrace();
         }
         return screenshotPath;
-    }
-
-    private ChromeOptions getChromeDriverOptions() {
-        ChromeOptions options = new ChromeOptions();
-        options.setHeadless(true);
-        options.addArguments("--silent");
-        return options;
     }
 
 }
