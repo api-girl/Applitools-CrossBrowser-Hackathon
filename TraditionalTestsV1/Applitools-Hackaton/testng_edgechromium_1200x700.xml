@@ -15,13 +15,10 @@
             <parameter name="browser" value="edge"/>
             <parameter name="screenWidth" value="1216"/>
             <parameter name="screenHeight" value="830"/>
-            <!--        <groups>-->
-    <!--            <run>-->
-    <!--                <include name="regression"/>-->
-    <!--            </run>-->
-    <!--        </groups>-->
             <classes>
-                <class name="testClasses.QuickTest"/>
+                <class name="testClasses.Task1_CrossDeviceElementsTest"/>
+                <class name="testClasses.Task2_ShoppingExperienceTest"/>
+                <class name="testClasses.Task3_ProductDetailsTest"/>
            </classes>
         </test>
 </suite>

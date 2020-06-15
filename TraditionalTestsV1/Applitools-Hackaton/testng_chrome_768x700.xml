@@ -10,18 +10,15 @@
     <parameter name="V2_url" value="https://demo.applitools.com/gridHackathonV2.html"/>
 
 
-        <test name="Chrome V83 Tablet: 768x700">
+        <test name="Chrome V83 Tablet:768x700">
             <parameter name="url" value="https://demo.applitools.com/gridHackathonV1.html"/>
             <parameter name="browser" value="chrome"/>
             <parameter name="screenWidth" value="784"/>
             <parameter name="screenHeight" value="832"/>
-            <!--        <groups>-->
-    <!--            <run>-->
-    <!--                <include name="regression"/>-->
-    <!--            </run>-->
-    <!--        </groups>-->
             <classes>
-                <class name="testClasses.QuickTest"/>
+                <class name="testClasses.Task1_CrossDeviceElementsTest"/>
+                <class name="testClasses.Task2_ShoppingExperienceTest"/>
+                <class name="testClasses.Task3_ProductDetailsTest"/>
            </classes>
         </test>
 </suite>
