@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="blank" verbose="1" parallel="methods" thread-count="1">
+      <listeners>
+        <listener class-name="testUtils.TestListener"/>
+      </listeners>
+
+    <parameter name="V1_url" value="https://demo.applitools.com/gridHackathonV1.html"/>
+    <parameter name="V2_url" value="https://demo.applitools.com/gridHackathonV2.html"/>
+
+
+        <test name="Firefox V77 Tablet: 768x700">
+            <parameter name="url" value="https://demo.applitools.com/gridHackathonV1.html"/>
+            <parameter name="browser" value="firefox"/>
+            <parameter name="screenWidth" value="780"/>
+            <parameter name="screenHeight" value="780"/>
+            <!--        <groups>-->
+    <!--            <run>-->
+    <!--                <include name="regression"/>-->
+    <!--            </run>-->
+    <!--        </groups>-->
+            <classes>
+                <class name="testClasses.QuickTest"/>
+           </classes>
+        </test>
+</suite>

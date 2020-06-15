@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e646b72d-563d-4f71-a299-786045a49d57" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/failedTestScreenshots/2020-06-14/QuickTest/testIsTheWebSiteLoadingTheHomePage_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/failedTestScreenshots/2020-06-14/QuickTest/testIsTheWebSiteLoadingTheHomePage_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/failedTestScreenshots/2020-06-14/Test Report_2020-06-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/failedTestScreenshots/2020-06-14/Test Report_2020-06-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testClasses/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testClasses/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testUtils/BrowserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUtils/BrowserFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testClasses/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testClasses/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testUtils/BrowserFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testUtils/BrowserFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/testUtils/ReportManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/testUtils/ReportManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_chrome_1200x700.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_chrome_1200x700.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_chrome_500x700.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_chrome_500x700.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_chrome_768x700.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_chrome_768x700.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_edgechromium_1200x700.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_edgechromium_1200x700.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_edgechromium_768x700.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_edgechromium_768x700.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_firefox_768x700.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_firefox_768x700.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng_firefox_77_1200x700.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_firefox_77_1200x700.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1bHLmmu8O1uSmIo1AvZdRgVnxGE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ignore.preview.features.used" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.17126437" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nena\IdeaProjects\Applitools_Hackaton" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+      <recent name="pageObjects" />
+      <recent name="utilities" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Users/Nena/IdeaProjects/Applitools_Hackaton/testng_chrome_500x700.xml">
+    <configuration name="C:/Users/Nena/IdeaProjects/Applitools_Hackaton/testng_chrome_1200x700.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CrossBrowserHackaton" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_chrome_1200x700.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Nena/IdeaProjects/Applitools_Hackaton/testng_chrome_500x700.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CrossBrowserHackaton" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_chrome_500x700.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Nena/IdeaProjects/Applitools_Hackaton/testng_chrome_768x700.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CrossBrowserHackaton" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_chrome_768x700.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Nena/IdeaProjects/Applitools_Hackaton/testng_edgechromium_1200x700.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CrossBrowserHackaton" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_edgechromium_1200x700.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Nena/IdeaProjects/Applitools_Hackaton/testng_edgechromium_768x700.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CrossBrowserHackaton" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng_edgechromium_768x700.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/Nena/IdeaProjects/Applitools_Hackaton/testng_chrome_500x700.xml" />
+        <item itemvalue="TestNG.C:/Users/Nena/IdeaProjects/Applitools_Hackaton/testng_chrome_768x700.xml" />
+        <item itemvalue="TestNG.C:/Users/Nena/IdeaProjects/Applitools_Hackaton/testng_chrome_1200x700.xml" />
+        <item itemvalue="TestNG.C:/Users/Nena/IdeaProjects/Applitools_Hackaton/testng_edgechromium_768x700.xml" />
+        <item itemvalue="TestNG.C:/Users/Nena/IdeaProjects/Applitools_Hackaton/testng_edgechromium_1200x700.xml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e646b72d-563d-4f71-a299-786045a49d57" name="Default Changelist" comment="" />
+      <created>1588284233845</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588284233845</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="229" y="0" key="#Project_Structure" timestamp="1592185711681">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="163" y="0" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1592107782237" />
+    <state x="229" y="0" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592185711681" />
+    <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1588291886222">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588291886222" />
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1588301234371">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1588301234371" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592104114359">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592104114359" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1588352534330">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588352534330" />
+    <state width="1877" height="250" key="GridCell.Tab.0.bottom" timestamp="1592192976629">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="388" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592108929122" />
+    <state width="1877" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592192976629" />
+    <state width="1877" height="250" key="GridCell.Tab.0.center" timestamp="1592192976629">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="388" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592108929121" />
+    <state width="1877" height="250" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592192976629" />
+    <state width="1877" height="250" key="GridCell.Tab.0.left" timestamp="1592192976629">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="388" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592108929121" />
+    <state width="1877" height="250" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592192976629" />
+    <state width="1877" height="250" key="GridCell.Tab.0.right" timestamp="1592192976629">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="388" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592108929121" />
+    <state width="1877" height="250" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592192976629" />
+    <state width="1877" height="524" key="GridCell.Tab.1.bottom" timestamp="1592192066280">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="222" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1588301451824" />
+    <state width="1877" height="524" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592192066280" />
+    <state width="1877" height="524" key="GridCell.Tab.1.center" timestamp="1592192066280">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="222" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1588301451824" />
+    <state width="1877" height="524" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592192066280" />
+    <state width="1877" height="524" key="GridCell.Tab.1.left" timestamp="1592192066279">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="222" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1588301451824" />
+    <state width="1877" height="524" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592192066279" />
+    <state width="1877" height="524" key="GridCell.Tab.1.right" timestamp="1592192066280">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1323" height="222" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1588301451824" />
+    <state width="1877" height="524" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592192066280" />
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog" timestamp="1592103697863">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="19" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1592103697863" />
+    <state x="2655" y="120" key="SettingsEditor" timestamp="1592190235498">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592107794321" />
+    <state x="2655" y="120" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592190235498" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testUtils/BrowserFactory.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testUtils/BrowserFactory.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testUtils/BrowserFactory.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testClasses/QuickTest.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
