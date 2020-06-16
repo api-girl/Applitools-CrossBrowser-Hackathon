@@ -3,6 +3,7 @@ package pageObjects;
 import classUtils.LoggerClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -16,11 +17,6 @@ public class Page {
     protected static LoggerClass log = new LoggerClass();
     int fixedWait = 15;
 
-    public Page(WebDriver driver) {
-        Page.driver = driver;
-        Page.wait = new WebDriverWait(driver, fixedWait);
-    }
-
     @FindBy(id = "DIV__mainheader__3")
     protected WebElement header;
 
@@ -30,36 +26,16 @@ public class Page {
     @FindBy(id = "FOOTER____417")
     protected WebElement footer;
 
-    protected WebElement getWebElement(By locator) {
-        WebElement element = null;
-        try {
-            waitForThePresenceOfElementInDom(locator);
-            element = driver.findElement(locator);
-            if (driver instanceof JavascriptExecutor) {
-                ((JavascriptExecutor) driver)
-                        .executeScript("arguments[0].style.border='5px solid orange'", element);
-            }
-        } catch (StaleElementReferenceException e) {
-            log.error("Element cannot be located on the page.");
-            e.printStackTrace();
-        }
-        return element;
-    }
-
-    private String[] parseUrlToStrings() {
-        return driver.getCurrentUrl().split("/");
+    public Page(WebDriver driver) {
+        Page.driver = driver;
+        Page.wait = new WebDriverWait(driver, fixedWait);
+        PageFactory.initElements(driver, this);
     }
 
     protected String getPageTitle() {
         String pt = driver.getTitle();
         log.info("Page title is " + "\"" + pt + "\"");
         return pt;
-    }
-
-    protected void clickOnElement(By locator, Integer... timeoutInSeconds) {
-        waitForElementClickability(locator, timeoutInSeconds);
-        getWebElement(locator).click();
-        log.info("Click on element.");
     }
 
     protected void clickOnElement(WebElement element) {
@@ -76,27 +52,22 @@ public class Page {
         }
     }
 
-    protected void clearField(By locator, String elementName) {
-        waitForElementClickability(locator);
-        getWebElement(locator).clear();
-        log.info("Clear the field " + elementName);
+    protected void clearField(WebElement element) {
+        waitForElementClickability(element);
+        element.clear();
+        log.info("Clear the field.");
     }
 
-    protected void type(By locator, String text, String elementName) {
-        waitForElementVisibility(driver.findElement(locator));
-        getWebElement(locator).sendKeys(text);
-        log.info("Send text " + "\"" + text + "\"" + " to " + elementName);
+    protected void type(WebElement element, String text) {
+        waitForElementVisibility(element);
+        element.sendKeys(text);
+        log.info("Send text " + "\"" + text + "\" to field.");
     }
 
     protected void waitUntil(ExpectedCondition<WebElement> condition, Integer timeoutInSeconds) {
         timeoutInSeconds = timeoutInSeconds != null ? timeoutInSeconds : fixedWait;
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
         wait.until(condition);
-    }
-
-    protected void waitForAllTabsToLoad() {
-        int complete = driver.getWindowHandles().size();
-        wait.until(ExpectedConditions.numberOfWindowsToBe(complete));
     }
 
     protected void waitForElementVisibility(WebElement element, Integer... timeOutInSeconds) {
@@ -108,32 +79,11 @@ public class Page {
         }
     }
 
-    protected void waitForElementClickability(By locator, Integer... timeoutInSeconds) {
-        try {
-            waitUntil(ExpectedConditions.elementToBeClickable(locator), timeoutInSeconds.length > 0 ? timeoutInSeconds[0] : fixedWait);
-        } catch (TimeoutException e) {
-            log.error("Timeout - the wait time expired and the element is still not clickable.");
-            e.getMessage();
-        } catch (ElementClickInterceptedException e) {
-            log.error("Element cannot be clicked at the moment." + Arrays.toString(e.getStackTrace()));
-        }
-    }
-
     protected void waitForElementClickability(WebElement element, Integer... timeoutInSeconds) {
         try {
             waitUntil(ExpectedConditions.elementToBeClickable(element), timeoutInSeconds.length > 0 ? timeoutInSeconds[0] : fixedWait);
         } catch (TimeoutException e) {
             log.error("Timeout - the wait time expired and the element is still not clickable.");
-            e.getMessage();
-        }
-
-    }
-
-    protected void waitForThePresenceOfElementInDom(By locator, Integer... timeoutInSeconds) {
-        try {
-            waitUntil(ExpectedConditions.presenceOfElementLocated(locator), timeoutInSeconds.length > 0 ? timeoutInSeconds[0] : fixedWait);
-        } catch (TimeoutException e) {
-            log.error("Timeout - the wait time expired and the element is still not present in DOM.");
             e.getMessage();
         }
     }
@@ -143,6 +93,15 @@ public class Page {
         log.info("Scrolling to element..." );
         waitForElementVisibility(element);
         ((JavascriptExecutor) driver).executeScript(script, element);
+    }
+
+    protected String getPrice(WebElement element){
+        return trimPrice(element);
+    }
+
+    protected String trimPrice(WebElement element){
+       return element.getText()
+                       .replace("$", "");
     }
 
 

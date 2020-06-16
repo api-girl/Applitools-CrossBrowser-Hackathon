@@ -16,7 +16,7 @@
         <parameter name="screenHeight" value="832"/>
         <classes>
             <!--            <class name="testClasses.Task1_CrossDeviceElementsTest"/>-->
-            <!--            <class name="testClasses.Task2_ShoppingExperienceTest"/>-->
+                        <class name="testClasses.Task2_ShoppingExperienceTest"/>
             <class name="testClasses.Task3_ProductDetailsTest"/>
         </classes>
     </test>

@@ -3,33 +3,48 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import java.util.Arrays;
 import java.util.List;
 
 public class HomePage extends Page {
-private By colourBlack = By.id("LI____103");
-private By filterButton = By.id("filterBtn");
-private By resultGrid = By.id("product_grid");
-private By results = By.cssSelector("#product_grid figure");
-private By filterTable = By.id("filter_col");
-private By funnel = By.id("A__openfilter__206");
+    @FindBy(id = "LI____103")
+    private WebElement colourBlack;
+
+    @FindBy(id = "filterBtn")
+    private WebElement filterButton;
+
+    @FindBy(id = "product_grid")
+    private WebElement resultGrid;
+
+    @FindBy(css = "#product_grid figure")
+    private List<WebElement> results;
+
+    @FindBy(id = "filter_col")
+    private WebElement filterTable;
+
+    @FindBy(id = "A__openfilter__206")
+    private WebElement funnel;
+
+    @FindBy(id = "SPAN__oldprice__221")
+    private WebElement oldPrice;
+
+    @FindBy(id = "SPAN__newprice__220")
+    private WebElement newPrice;
 
     public HomePage(WebDriver driver){
         super(driver);
     }
 
-    public String getTitle(){
-        return getPageTitle();
-    }
-
-
     private List<WebElement> filterBlackShoes() {
-        if(!getWebElement(filterTable).isDisplayed()){
+        if(!filterTable.isDisplayed()){
             clickOnElement(funnel);
         }
         clickOnElement(colourBlack);
         clickOnElement(filterButton);
-        waitForElementVisibility(getWebElement(resultGrid));
-        return driver.findElements(results);
+        waitForElementVisibility(resultGrid);
+        return results;
     }
 
     public int countFilteredResults(){
@@ -37,9 +52,12 @@ private By funnel = By.id("A__openfilter__206");
     }
 
     public ProductPage clickOnAProduct(){
-        var products = driver.findElements(results);
-        clickOnElement(products.get(0));
+        clickOnElement(results.get(0));
         return new ProductPage(driver);
+    }
+
+    public List<String> getPricesFromHomePage(){
+        return Arrays.asList(getPrice(oldPrice), getPrice(newPrice));
     }
 
 

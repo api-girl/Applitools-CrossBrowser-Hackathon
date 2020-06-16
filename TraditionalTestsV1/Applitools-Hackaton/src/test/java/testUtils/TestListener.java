@@ -31,7 +31,7 @@ public class TestListener extends BaseTest implements ITestListener {
 
         @Override
         public void onStart(ITestContext context) {
-            System.out.println("*** Test Suite " + context.getName() + " started ***");
+            System.out.println("*** EXECUTION STARTED:" + context.getName());
 
         }
 
@@ -44,8 +44,7 @@ public class TestListener extends BaseTest implements ITestListener {
 
         @Override
         public void onTestStart(ITestResult result) {
-            System.out.println(("*** Running test method " + result.getMethod().getMethodName() + "..." +
-                    "\nTEST STEPS"));
+            System.out.println(("*** RUNNING TEST METHOD: " + result.getMethod().getMethodName()));
             ExtentTest test = extent.createTest(getTestClassName(result)
                     + " | "
                     + getTestMethodName(result));

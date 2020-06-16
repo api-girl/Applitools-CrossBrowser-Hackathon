@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+import java.util.Arrays;
+
 public class ProductPage extends Page{
 
     public ProductPage(WebDriver driver) {
@@ -24,8 +27,8 @@ public class ProductPage extends Page{
 
     @FindBy(id = "shoe_img")
     private WebElement productImage;
-    public boolean isProductImageDisplayed(){
-        return productImage.isDisplayed();
+    public boolean isProductImageDisplayed() {
+        return productImage.isDisplayed() && productImage.getAttribute("style").contains("img");
     }
 
     @FindBy(id = "DIV__prodinfove__75")
@@ -35,7 +38,7 @@ public class ProductPage extends Page{
         return reviewSection.isDisplayed();
     }
 
-    public boolean isThereMarginBetweenStarsAndSubTitle(){
+    public boolean isThereAMarginBetweenStarsAndSubTitle(){
         var i = driver.findElement(By.id("EM____82"));
         var e = i.getCssValue("margin-left");
         return !e.equals("0px");
@@ -61,23 +64,23 @@ public class ProductPage extends Page{
         return false;
     }
 
-    @FindBy(id = "new_price")
+    @FindBy(className = "new_price")
     private WebElement newPrice;
     public boolean isNewPriceBlue(){
         return false;
     }
 
-    public boolean isNewPriceDisplayedAsDouble(){
-        return false;
+    public boolean doesNewPriceHaveTwoDecimalPlaces(){
+        return trimPrice(oldPrice).substring(2).equals("00");
     }
 
-    @FindBy(id = "old_price")
+    @FindBy(className = "old_price")
     private WebElement oldPrice;
     public boolean isOldPriceGrayAndCrossed(){
         return false;
     }
-    public boolean isOldPriceDisplayedAsDouble(){
-        return false;
+    public boolean doesOldPriceHaveTwoDecimalPlaces(){
+        return trimPrice(oldPrice).substring(2).equals("00");
     }
 
     @FindBy(id = "discount")
@@ -92,4 +95,17 @@ public class ProductPage extends Page{
         return false;
     }
 
+    public boolean verifyThatBothPricesAreDisplayedAsDouble() {
+        if(doesOldPriceHaveTwoDecimalPlaces() && doesNewPriceHaveTwoDecimalPlaces()){
+            return true;
+        }
+        return false;
+    }
+
+
+
+    public List<String> getPricesFromProductPage(){
+        var prices = Arrays.asList(getPrice(oldPrice), getPrice(newPrice));
+        return prices;
+    }
 }

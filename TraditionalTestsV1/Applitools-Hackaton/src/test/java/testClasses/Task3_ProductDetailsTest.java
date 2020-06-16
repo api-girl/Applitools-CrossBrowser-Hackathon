@@ -3,8 +3,7 @@ package testClasses;
 import org.testng.annotations.Test;
 import pageObjects.ProductPage;
 
-import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.*;
 
 public class Task3_ProductDetailsTest extends BaseTest {
     ProductPage pp;
@@ -21,7 +20,7 @@ public class Task3_ProductDetailsTest extends BaseTest {
     public void testReviewSection_isItDisplayedCorrectly_expectTrue(){
         pp = hp.clickOnAProduct();
         soft.assertTrue(pp.isReviewSectionDisplayed());
-        soft.assertFalse(pp.isThereMarginBetweenStarsAndSubTitle());
+        soft.assertFalse(pp.isThereAMarginBetweenStarsAndSubTitle());
 
         soft.assertAll();
     }
@@ -38,6 +37,29 @@ public class Task3_ProductDetailsTest extends BaseTest {
         assertTrue(pp.isProductImageDisplayed());
     }
 
+    @Test(enabled = false)
+    public void testPrices_verifyPriceDataType_expectDouble(){
+        pp = hp.clickOnAProduct();
+        boolean actualNew = pp.doesNewPriceHaveTwoDecimalPlaces();
+        boolean actualOld = pp.doesOldPriceHaveTwoDecimalPlaces();
+
+        soft.assertTrue(actualNew);
+        soft.assertTrue(actualOld);
+    }
+
+    @Test(enabled = false)
+    public void testPrices_verifyBothPricesStyle_expectBlueAndGrayLineThrough(){
+
+    }
+
+    @Test
+    public void testPrices_verifyIfPricesMatchOnHomeAndProductPages_expectMatching(){
+        var hpActualPrices = hp.getPricesFromHomePage();
+        pp = hp.clickOnAProduct();
+        var ppActualPrices = pp.getPricesFromProductPage();
+
+        assertEquals(hpActualPrices, ppActualPrices, "Prices do not match.");
+    }
 
 
 }
