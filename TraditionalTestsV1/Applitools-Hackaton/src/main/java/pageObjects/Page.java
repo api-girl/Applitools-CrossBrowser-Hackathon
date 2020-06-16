@@ -20,7 +20,7 @@ public class Page {
         Page.wait = new WebDriverWait(driver, fixedWait);
     }
 
-    protected WebElement getWebElement(By locator, String elementName) {
+    protected WebElement getWebElement(By locator) {
         WebElement element = null;
         try {
             waitForThePresenceOfElementInDom(locator);
@@ -30,7 +30,7 @@ public class Page {
                         .executeScript("arguments[0].style.border='5px solid orange'", element);
             }
         } catch (StaleElementReferenceException e) {
-            log.error("Element " + elementName + "cannot be located on the page.");
+            log.error("Element cannot be located on the page.");
             e.printStackTrace();
         }
         return element;
@@ -60,7 +60,7 @@ public class Page {
 
     protected String getWebElementText(By locator, String elementName) {
         waitForThePresenceOfElementInDom(locator);
-        String e = getWebElement(locator, elementName).getText();
+        String e = getWebElement(locator).getText();
         log.info("Get text for WebElement " + elementName);
         log.info("Element's text: " + "\"" + e + "\"");
         return e;
@@ -72,10 +72,10 @@ public class Page {
         return pt;
     }
 
-    protected void clickOnElement(By locator, String elementName, Integer... timeoutInSeconds) {
+    protected void clickOnElement(By locator, Integer... timeoutInSeconds) {
         waitForElementClickability(locator, timeoutInSeconds);
-        getWebElement(locator, elementName).click();
-        log.info("Click on " + "\"" + elementName + "\"");
+        getWebElement(locator).click();
+        log.info("Click on element.");
     }
 
     protected void clickOnElement(WebElement element, String elementName) {
@@ -94,18 +94,18 @@ public class Page {
 
     protected void clearField(By locator, String elementName) {
         waitForElementClickability(locator);
-        getWebElement(locator, elementName).clear();
+        getWebElement(locator).clear();
         log.info("Clear the field " + elementName);
     }
 
     protected void type(By locator, String text, String elementName) {
         waitForElementVisibility(driver.findElement(locator));
-        getWebElement(locator, elementName).sendKeys(text);
+        getWebElement(locator).sendKeys(text);
         log.info("Send text " + "\"" + text + "\"" + " to " + elementName);
     }
 
     protected boolean isElementDisplayed(By locator, String elementName, Integer... timeoutInSeconds) {
-        boolean displayed = getWebElement(locator, elementName).isDisplayed();
+        boolean displayed = getWebElement(locator).isDisplayed();
         waitForElementVisibility(driver.findElement(locator), timeoutInSeconds);
         String text = displayed ? " is displayed." : " is not displayed.";
         log.info(elementName + text);

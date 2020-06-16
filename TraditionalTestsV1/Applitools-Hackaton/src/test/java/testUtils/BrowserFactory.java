@@ -13,9 +13,9 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import testClasses.BaseTest;
 
 public class BrowserFactory extends BaseTest {
-    private static final String chromeDriverPath = "resources/chromedriver.exe";
-    private static final String firefoxDriverPath = "resources/geckodriver.exe";
-    private static final String edgeDriverPath = "resources/msedgedriver.exe";
+    private static final String chromeDriverPath = System.getenv("chromedriver");
+    private static final String firefoxDriverPath = System.getenv("firefoxdriver");
+    private static final String edgeDriverPath = System.getenv("edgedriver");
 
 
     public WebDriver getDriver (String browserType){

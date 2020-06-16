@@ -1,8 +1,12 @@
 package testClasses;
 
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import java.util.List;
 
-public class Task2_ShoppingExperienceTest {
+import static org.testng.Assert.assertEquals;
+
+public class Task2_ShoppingExperienceTest extends BaseTest {
     /**
      * Filter for “Black” shoes. Ensure that there are 2 black shoes and everything works and looks good.
      *
@@ -12,7 +16,9 @@ public class Task2_ShoppingExperienceTest {
      */
 
     @Test
-    public void testFilteringProducts(){
+    public void testFilterBlackShoesExpectTwoResults(){
+        var actualResults = hp.filterBlackShoes();
 
+        assertEquals(actualResults, 2, "The number of filtered results does not match expected.");
     }
 }
