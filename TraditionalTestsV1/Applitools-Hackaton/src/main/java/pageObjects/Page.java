@@ -2,6 +2,7 @@ package pageObjects;
 
 import classUtils.LoggerClass;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -19,6 +20,15 @@ public class Page {
         Page.driver = driver;
         Page.wait = new WebDriverWait(driver, fixedWait);
     }
+
+    @FindBy(id = "DIV__mainheader__3")
+    protected WebElement header;
+
+    @FindBy(id = "DIV__mainnavinn__36")
+    protected WebElement navigation;
+
+    @FindBy(id = "FOOTER____417")
+    protected WebElement footer;
 
     protected WebElement getWebElement(By locator) {
         WebElement element = null;
@@ -40,32 +50,6 @@ public class Page {
         return driver.getCurrentUrl().split("/");
     }
 
-    public String getPageFromUrlEndpoint() {
-        int lastIndex = parseUrlToStrings().length - 1;
-        String page = parseUrlToStrings()[lastIndex];
-        if (page.startsWith("?")) {
-            page = parseUrlToStrings()[lastIndex - 1];
-        }
-        return page;
-    }
-
-    public String getQueryStringFromEndpoint() {
-        for (String urlString : parseUrlToStrings()) {
-            if (urlString.contains("?")) {
-                return urlString;
-            }
-        }
-        return null;
-    }
-
-    protected String getWebElementText(By locator, String elementName) {
-        waitForThePresenceOfElementInDom(locator);
-        String e = getWebElement(locator).getText();
-        log.info("Get text for WebElement " + elementName);
-        log.info("Element's text: " + "\"" + e + "\"");
-        return e;
-    }
-
     protected String getPageTitle() {
         String pt = driver.getTitle();
         log.info("Page title is " + "\"" + pt + "\"");
@@ -78,13 +62,13 @@ public class Page {
         log.info("Click on element.");
     }
 
-    protected void clickOnElement(WebElement element, String elementName) {
+    protected void clickOnElement(WebElement element) {
         try {
             waitForElementClickability(element);
             element.click();
-            log.info("Click on " + "\"" + elementName + "\"");
+            log.info("Click on element");
         } catch (StaleElementReferenceException e) {
-            log.error("Element " + elementName + "cannot be located on the page.");
+            log.error("Element cannot be located on the page.");
             element.click();
             e.getMessage();
         } catch (TimeoutException e) {
@@ -103,25 +87,6 @@ public class Page {
         getWebElement(locator).sendKeys(text);
         log.info("Send text " + "\"" + text + "\"" + " to " + elementName);
     }
-
-    protected boolean isElementDisplayed(By locator, String elementName, Integer... timeoutInSeconds) {
-        boolean displayed = getWebElement(locator).isDisplayed();
-        waitForElementVisibility(driver.findElement(locator), timeoutInSeconds);
-        String text = displayed ? " is displayed." : " is not displayed.";
-        log.info(elementName + text);
-        return displayed;
-    }
-
-    protected Select createSelectElement(By locator) {
-        return new Select(driver.findElement(locator));
-    }
-
-    protected void selectByText(By locator, String text, String elementName) {
-        waitForElementClickability(locator);
-        createSelectElement(locator).selectByVisibleText(text);
-        log.info("Select " + text + " from " + elementName + " dropdown");
-    }
-
 
     protected void waitUntil(ExpectedCondition<WebElement> condition, Integer timeoutInSeconds) {
         timeoutInSeconds = timeoutInSeconds != null ? timeoutInSeconds : fixedWait;
@@ -173,7 +138,6 @@ public class Page {
         }
     }
 
-
     protected void scrollUntilElement(WebElement element) {
         String script = "arguments[0].scrollIntoView();";
         log.info("Scrolling to element..." );
@@ -181,8 +145,5 @@ public class Page {
         ((JavascriptExecutor) driver).executeScript(script, element);
     }
 
-    protected String getTabHandle() {
-        return driver.getWindowHandle();
-    }
 
 }

@@ -17,7 +17,7 @@ public class Task2_ShoppingExperienceTest extends BaseTest {
 
     @Test
     public void testFilterBlackShoesExpectTwoResults(){
-        var actualResults = hp.filterBlackShoes();
+        var actualResults = hp.countFilteredResults();
 
         assertEquals(actualResults, 2, "The number of filtered results does not match expected.");
     }
