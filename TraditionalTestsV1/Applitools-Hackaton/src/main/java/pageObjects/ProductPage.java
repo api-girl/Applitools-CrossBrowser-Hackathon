@@ -1,10 +1,12 @@
 package pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
 import java.util.stream.Collectors;
@@ -25,16 +27,13 @@ public class ProductPage extends Page{
     @FindBy(id = "DIV__prodinfove__75")
     private WebElement reviewSection;
 
-    @FindBy(id = "#SELECTselect-one__wide__93 option")
-    private WebElement sizeOptions;
+    @FindBy(css = "span.current")
+    private WebElement defaultSize;
 
-    public List<String> getSizeDropdownOptions(){
-        Select select = new Select(sizeOptions);
-        return select.getOptions().
-                stream().
-                map(WebElement::getText).
-                collect(Collectors.toList());
-    }// TODO not getting text from options
+    public String getDefaultSizeOption() {
+        scrollUntilElement(defaultSize);
+        return defaultSize.getText();
+    }
 
     @FindBy(id = "DIV__row__98")
     private WebElement quantity;

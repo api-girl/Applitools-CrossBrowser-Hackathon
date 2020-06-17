@@ -79,13 +79,13 @@ public class Task3_ProductDetailsTest extends BaseTest {
         assertEquals(hpActualPrices, ppActualPrices, "Prices do not match.");
     }
 
-    @Test(enabled = false)
-    public void testSizeDropdown_verifyOptionsContent_expectSToXl() {
-        var expectedOptions = List.of("Small (S)", "M", "L", "XL");
+    @Test
+    public void testSizeDropdown_verifyFirstOption_expectSmallS() {
+        var expectedOption = "Small (S)";
         pp = hp.clickOnAProduct();
-        var actualOptions = pp.getSizeDropdownOptions();
+        var actualOptions = pp.getDefaultSizeOption();
 
-        assertEquals(actualOptions, expectedOptions, "Some of the dropdown options does not match expected.");
+        assertEquals(actualOptions, expectedOption, "The default option does not match expected.");
     }
 
     @Test

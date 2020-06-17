@@ -41,6 +41,7 @@ public class Page {
     protected void clickOnElement(WebElement element) {
         try {
             waitForElementClickability(element);
+            highlightAnElement(element);
             element.click();
             log.info("Click on element");
         } catch (StaleElementReferenceException e) {
@@ -54,12 +55,14 @@ public class Page {
 
     protected void clearField(WebElement element) {
         waitForElementClickability(element);
+        highlightAnElement(element);
         element.clear();
         log.info("Clear the field.");
     }
 
     protected void type(WebElement element, String text) {
         waitForElementVisibility(element);
+        highlightAnElement(element);
         element.sendKeys(text);
         log.info("Send text " + "\"" + text + "\" to field.");
     }
@@ -92,6 +95,12 @@ public class Page {
         String script = "arguments[0].scrollIntoView();";
         log.info("Scrolling to element..." );
         waitForElementVisibility(element);
+        ((JavascriptExecutor) driver).executeScript(script, element);
+        highlightAnElement(element);
+    }
+
+    private void highlightAnElement(WebElement element){
+        String script = "arguments[0].style.border='5px solid orange'";
         ((JavascriptExecutor) driver).executeScript(script, element);
     }
 
