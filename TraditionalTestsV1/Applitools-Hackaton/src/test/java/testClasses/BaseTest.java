@@ -5,11 +5,9 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import pageObjects.HomePage;
-import classUtils.WindowManager;
 import testUtils.BrowserFactory;
 
 import java.io.File;
@@ -50,10 +48,6 @@ public class BaseTest {
     public void tearDown() {
         driver.manage().deleteAllCookies();
         driver.quit();
-    }
-
-    public WindowManager getWindowManager() {
-        return new WindowManager(driver);
     }
 
     public String getScreenshotPath(String testCaseName, String testClassName, WebDriver driver) {
