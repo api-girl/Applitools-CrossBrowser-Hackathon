@@ -9,17 +9,16 @@
         <parameter name="url" value="https://demo.applitools.com/gridHackathonV1.html"/>
 <!--    <parameter name="url" value="https://demo.applitools.com/gridHackathonV2.html"/>-->
 
-
    <test name="Chrome V83 Laptop:1200x700">
-       <parameter name="browser" value="firefox"/>
-       <parameter name="screenWidth" value="780"/>
-       <parameter name="screenHeight" value="780"/>
+       <parameter name="browser" value="chrome"/>
+       <parameter name="screenWidth" value="516"/>
+       <parameter name="screenHeight" value="832"/>
             <classes>
                 <!--            <class name="testClasses.Task1_CrossDeviceElementsTest"/>-->
                 <!--            <class name="testClasses.Task2_ShoppingExperienceTest"/>-->
                 <class name="testClasses.Task3_ProductDetailsTest">
                     <methods>
-                        <include name=".*testSizeDropdown_verifyFirstOption.*"/>
+                        <include name="testNavigation_.*"/>
                     </methods>
                 </class>
             </classes>

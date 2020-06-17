@@ -23,44 +23,34 @@ public class ProductPage extends Page{
     @FindBy(id = "shoe_img")
     private WebElement productImage;
 
-
     @FindBy(id = "DIV__prodinfove__75")
     private WebElement reviewSection;
 
     @FindBy(css = "span.current")
     private WebElement defaultSize;
 
-    public String getDefaultSizeOption() {
-        scrollUntilElement(defaultSize);
-        return defaultSize.getText();
-    }
-
-    @FindBy(id = "DIV__row__98")
-    private WebElement quantity;
-
     @FindBy(className = "new_price")
     private WebElement newPrice;
-    public boolean isNewPriceBlue(){
-        return false;
-    }
 
     @FindBy(id = "discount")
     private WebElement discount;
+
+    @FindBy(id = "DIV__btnaddtoca__113")
+    private WebElement buttonWrapper;
+
+    @FindBy(className = "old_price")
+    private WebElement oldPrice;
+
+    @FindBy(id = "EM____82")
+    private WebElement reviewSubtitle;
+
     public void isDiscountDisplayed(){
         discount.isDisplayed();
     }
 
-    @FindBy(id = "DIV__colxlcollg__112")
-    private WebElement buttonWrapper;
-    public boolean isThereASpaceBetweenButtonAndQuantityDropdown(){
-        var s = buttonWrapper.getCssValue("margin-top");
-              return  s.equals("10px");
-    }
-
-    @FindBy(className = "old_price")
-    private WebElement oldPrice;
-    public boolean isOldPriceGrayAndCrossed(){
-        return false;
+    public String getDefaultSizeOption() {
+        scrollUntilElement(defaultSize);
+        return defaultSize.getText();
     }
 
     public boolean isProductTitleDisplayed(){
@@ -84,11 +74,20 @@ public class ProductPage extends Page{
         return reviewSection.isDisplayed();
     }
 
-    @FindBy(id = "EM____82")
-    private WebElement reviewSubtitle;
+    public boolean doesElementMarginEqualTo(WebElement element, String marginOrientation, int pixels){
+        return element.getCssValue("margin-" + marginOrientation).equals(String.valueOf(pixels) + "px");
+    }
 
-    public boolean isThereAMarginBetweenStarsAndSubtitle(){
-        return !reviewSubtitle.getCssValue("margin-left").equals("0px");
+    public boolean isThereExpectedSpaceBetweenStarsAndSubtitle(){
+        scrollUntilElement(reviewSubtitle);
+        return doesElementMarginEqualTo(reviewSubtitle, "left", 0);
+    }
+
+    public boolean isThereExpectedSpaceBetweenButtonAndQuantityDropdown(){
+        scrollUntilElement(buttonWrapper);
+        var a = doesElementMarginEqualTo(buttonWrapper, "top", 0);
+        var b = doesElementMarginEqualTo(buttonWrapper, "bottom", 0);
+        return a && b;
     }
 
     public List<String> getPricesFromProductPage(){
@@ -98,5 +97,16 @@ public class ProductPage extends Page{
     public List<String> getPricesStyleFromProductPage(){
         return Arrays.asList(oldPrice.getCssValue("color"), oldPrice.getCssValue("text-decoration"),
                             newPrice.getCssValue("color"), newPrice.getCssValue("text-decoration"));
+    }
+
+    @FindBy(css = "#UL__toptools__46 li")
+    private List<WebElement> icons;
+    public boolean isThereExpectedSpaceBetweenNavIcons() {
+        List<Boolean> results = new ArrayList<Boolean>();
+        for(WebElement icon:icons){
+            results.add(doesElementMarginEqualTo(icon, "left", 20));
+        }
+        return results.containsAll(List.of(true, true, true));
+
     }
 }

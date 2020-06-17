@@ -12,7 +12,7 @@ public class Task3_ProductDetailsTest extends BaseTest {
 
     /**
      * Click on the first Black shoe to navigate to its details page. Check if everything looks good and accurate.
-     * <p>
+     *
      * Notes for Traditional Approach:
      * Report the test result just like you did for Task 1, and append the test results below “Task 1″’s results
      * into the same file.
@@ -22,7 +22,7 @@ public class Task3_ProductDetailsTest extends BaseTest {
     public void testReviewSection_isItDisplayedCorrectly_expectTrue() {
         pp = hp.clickOnAProduct();
         soft.assertTrue(pp.isReviewSectionDisplayed());
-        soft.assertFalse(pp.isThereAMarginBetweenStarsAndSubtitle(), "Unexpected margin noticed next to the number of stars.");
+        soft.assertTrue(pp.isThereExpectedSpaceBetweenStarsAndSubtitle(), "Unexpected margin noticed next to the number of stars.");
 
         soft.assertAll();
     }
@@ -57,8 +57,8 @@ public class Task3_ProductDetailsTest extends BaseTest {
         pp = hp.clickOnAProduct();
         var actualPpStyles = pp.getPricesStyleFromProductPage();
 
-        soft.assertEquals(actualHpStyles, expectedStyles);
-        soft.assertEquals(actualPpStyles, expectedStyles);
+        soft.assertEquals(actualHpStyles, expectedStyles, "Unexpected style detected.");
+        soft.assertEquals(actualPpStyles, expectedStyles,"Unexpected style detected.");
         soft.assertAll();
     }
 
@@ -67,7 +67,7 @@ public class Task3_ProductDetailsTest extends BaseTest {
         var hpPricesStyles = hp.getPricesStyleFromHomePage();
         pp = hp.clickOnAProduct();
         var ppPricesStyles = pp.getPricesStyleFromProductPage();
-        assertEquals(hpPricesStyles, ppPricesStyles);
+        assertEquals(hpPricesStyles, ppPricesStyles, "There is no match between prices style on product and home pages.");
     }
 
     @Test
@@ -85,15 +85,21 @@ public class Task3_ProductDetailsTest extends BaseTest {
         pp = hp.clickOnAProduct();
         var actualOptions = pp.getDefaultSizeOption();
 
-        assertEquals(actualOptions, expectedOption, "The default option does not match expected.");
+        assertEquals(actualOptions, expectedOption, "The default size option does not match expected.");
     }
 
     @Test
     public void testAddToCartButton_isThereSpaceBetweenButtonAndQuantityDropdown_expectTrue() {
         pp = hp.clickOnAProduct();
-        var margin = pp.isThereASpaceBetweenButtonAndQuantityDropdown();
 
-        assertTrue(margin);
+        assertTrue(pp.isThereExpectedSpaceBetweenButtonAndQuantityDropdown(), "Unexpected margin settings detected on \"Add to Cart\" button.");
+    }
+
+    @Test
+    public void testNavigation_isThereExpectedSpaceBetweenNavIcons_expectTrue(){
+        pp = hp.clickOnAProduct();
+
+        assertTrue(pp.isThereExpectedSpaceBetweenNavIcons(), "The actual margin between icons is not 20px.");
     }
 
 
