@@ -33,6 +33,9 @@ public class HomePage extends Page {
     @FindBy(id = "SPAN__newprice__220")
     private WebElement newPrice;
 
+    @FindBy(css = "a h3")
+    private List<WebElement> productTitles;
+
     public HomePage(WebDriver driver){
         super(driver);
     }
@@ -58,6 +61,15 @@ public class HomePage extends Page {
 
     public List<String> getPricesFromHomePage(){
         return Arrays.asList(getPrice(oldPrice), getPrice(newPrice));
+    }
+
+    public List<String> getPricesStyleFromHomePage(){
+        return Arrays.asList(oldPrice.getCssValue("color"), oldPrice.getCssValue("text-decoration"),
+                newPrice.getCssValue("color"), newPrice.getCssValue("text-decoration"));
+    }
+
+    public String getProductTitleFromHomePage(){
+        return productTitles.get(0).getText();
     }
 
 

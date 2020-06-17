@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="blank" verbose="1" parallel="methods" thread-count="1">
+<suite name="TraditionalTest_V1" verbose="1" parallel="methods" thread-count="1">
     <listeners>
         <listener class-name="testUtils.TestListener"/>
     </listeners>
@@ -16,7 +16,7 @@
         <parameter name="screenHeight" value="832"/>
         <classes>
             <!--            <class name="testClasses.Task1_CrossDeviceElementsTest"/>-->
-                        <class name="testClasses.Task2_ShoppingExperienceTest"/>
+<!--                        <class name="testClasses.Task2_ShoppingExperienceTest"/>-->
             <class name="testClasses.Task3_ProductDetailsTest"/>
         </classes>
     </test>

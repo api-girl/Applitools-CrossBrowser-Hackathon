@@ -33,4 +33,10 @@ public class Task1_CrossDeviceElementsTest {
     public void testDetectHiddenElementsInResponsive(){
 
     }
+
+    @Test
+    public void testProductPage_Navigation_areNavIconsProperlyDisplayed(){
+        //bug: tablet res, three nav icons loose space between themselves
+        //li elements 2nd and 3rd, css attribute margin-left: -10px !important is a cause for bug
+    }
 }
