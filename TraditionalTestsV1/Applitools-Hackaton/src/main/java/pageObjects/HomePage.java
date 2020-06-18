@@ -88,6 +88,56 @@ public class HomePage extends Page {
         return productTitles.get(0).getText();
     }
 
+    //only displayed in 1200px
+    @FindBy(id = "UL____21")
+    private WebElement navMenu;
+
+    @FindBy(id = "ASIDE__collg__67")
+    private WebElement filterMenu;
+
+    @FindBy(id = "A__wishlist__52")
+    private WebElement wishlistIcon;
+
+    @FindBy(id = "A____201")
+    private WebElement gridIcon;
+
+    @FindBy(id = "A____203")
+    private WebElement listIcon;
+
+    //visible in 1200px and 768px
+    @FindBy(id = "DIV__customsear__41")
+    private WebElement searchField;
+
+    @FindBy(id = "STRONG____50")
+    private WebElement twoItemsInCart;
+
+    @FindBy(id = "collapse_1")
+    private WebElement footerQuickLinksMenu;
+
+    @FindBy(id = "collapse_3")
+    private WebElement footerContactsMenu;
+
+    @FindBy(id = "collapse_4")
+    private WebElement footerKeepInTouchMenu;
+
+    //visible only in 768px
+    @FindBy(id = "SPAN____208")
+    private WebElement filterButtonTitle;
+
+    //visible in 768px and 500px
+    @FindBy(id = "ti-filter")
+    private WebElement funnelIcon;
+
+    @FindBy(id = "LI____223")
+    private WebElement addToFavouritesIcon;
+
+    @FindBy(id = "LI____227")
+    private WebElement compareIcon;
+
+    @FindBy(id = "LI____231")
+    private WebElement addToCartIcon;
+
+
 
 
 }
