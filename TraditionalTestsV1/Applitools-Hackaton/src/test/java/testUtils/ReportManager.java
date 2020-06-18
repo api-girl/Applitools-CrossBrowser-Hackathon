@@ -28,7 +28,7 @@ public class ReportManager {
             new File(directory).mkdirs();
             String pathToReport = directory + fileName;
             ExtentSparkReporter reporter = new ExtentSparkReporter(pathToReport);
-            reporter.config().setDocumentTitle("Test Report");
+            reporter.config().setDocumentTitle("Test_Report");
             reporter.config().setReportName("Cross-Browser Challenge");
             reporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
             reporter.config().setEncoding("utf-8");
@@ -38,8 +38,8 @@ public class ReportManager {
             extent.attachReporter(reporter);
 
             extent.setAnalysisStrategy(AnalysisStrategy.CLASS);
-            extent.setSystemInfo("Environment", "LAB");
-            extent.setSystemInfo("Browser", "browser");
+            extent.setSystemInfo("Environment", "V1");
+            extent.setSystemInfo("Browsers", "Chrome, Firefox, Edge");
 
             return extent;
         }

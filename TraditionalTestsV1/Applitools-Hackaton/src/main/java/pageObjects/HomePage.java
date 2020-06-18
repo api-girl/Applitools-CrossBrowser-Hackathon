@@ -5,8 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class HomePage extends Page {
     @FindBy(id = "LI____103")
@@ -59,13 +61,27 @@ public class HomePage extends Page {
         return new ProductPage(driver);
     }
 
-    public List<String> getPricesFromHomePage(){
+    public List<String> getPricesValuesFromHomePage(){
         return Arrays.asList(getPrice(oldPrice), getPrice(newPrice));
     }
 
+    public List<String> getPricesColourFromHomePage(){
+        List<String> rgbColours = List.of(oldPrice.getCssValue("color"), newPrice.getCssValue("color"));
+
+        return rgbColours.
+                stream().
+                map(this::convertColourToHex).
+                collect(Collectors.toList());
+    }
+
+    public String getTextDecorationFromPage(){
+        return oldPrice.getCssValue("text-decoration");
+    }
+
     public List<String> getPricesStyleFromHomePage(){
-        return Arrays.asList(oldPrice.getCssValue("color"), oldPrice.getCssValue("text-decoration"),
-                newPrice.getCssValue("color"), newPrice.getCssValue("text-decoration"));
+        List<String> styles = new ArrayList<String>(getPricesColourFromHomePage());
+        styles.add(getTextDecorationFromPage());
+        return styles;
     }
 
     public String getProductTitleFromHomePage(){
