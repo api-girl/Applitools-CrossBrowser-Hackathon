@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
@@ -94,9 +95,23 @@ public class ProductPage extends Page{
         return Arrays.asList(getPrice(oldPrice), getPrice(newPrice));
     }
 
+    public List<String> getPricesColourFromProductPage(){
+        List<String> rgbColours = List.of(oldPrice.getCssValue("color"), newPrice.getCssValue("color"));
+
+        return rgbColours.
+                stream().
+                map(this::convertColourToHex).
+                collect(Collectors.toList());
+    }
+
+    public String getTextDecorationFromPage(){
+        return oldPrice.getCssValue("text-decoration");
+    }
+
     public List<String> getPricesStyleFromProductPage(){
-        return Arrays.asList(oldPrice.getCssValue("color"), oldPrice.getCssValue("text-decoration"),
-                            newPrice.getCssValue("color"), newPrice.getCssValue("text-decoration"));
+        List<String> styles = new ArrayList<String>(getPricesColourFromProductPage());
+        styles.add(getTextDecorationFromPage());
+        return styles;
     }
 
     @FindBy(css = "#UL__toptools__46 li")

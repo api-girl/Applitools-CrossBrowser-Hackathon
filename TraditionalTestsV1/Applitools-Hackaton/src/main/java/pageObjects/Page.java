@@ -2,6 +2,7 @@ package pageObjects;
 
 import classUtils.LoggerClass;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -112,6 +113,12 @@ public class Page {
        return element.getText()
                        .replace("$", "");
     }
+
+    protected String convertColourToHex(String rgbColour){
+        String hexaColour = Color.fromString(rgbColour).asHex();
+        return hexaColour;
+    }
+
 
 
 }

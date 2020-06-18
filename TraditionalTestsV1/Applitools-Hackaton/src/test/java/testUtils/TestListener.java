@@ -55,11 +55,16 @@ public class TestListener extends BaseTest implements ITestListener {
             return result.getMethod().getConstructorOrMethod().getName();
         }
 
+        public static String getTestName(ITestResult result){
+            return result.getTestContext().getCurrentXmlTest().getName();
+        }
+
         @Override
         public void onTestSuccess(ITestResult result) {
             String logText = "PASSED";
             System.out.println(logText + " - " + result.getMethod().getMethodName());
             Markup stylizedStatus = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
+            extentParallel.get().info(getTestName(result));
             extentParallel.get().log(Status.PASS, stylizedStatus);
         }
 
@@ -70,7 +75,7 @@ public class TestListener extends BaseTest implements ITestListener {
             WebDriver driver = ((BaseTest) testClass).getDriver();
             String screenshotPath = getScreenshotPath(getTestMethodNameForScreenShot(result),
                     getTestClassName(result),driver);
-
+            extentParallel.get().info(getTestName(result));
             try {
                 extentParallel.get().fail("Screenshot taken: ",
                         MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
@@ -88,6 +93,7 @@ public class TestListener extends BaseTest implements ITestListener {
             String logText = "SKIPPED";
             System.out.println(logText + " - " + result.getMethod().getMethodName());
             Markup stylizedStatus = MarkupHelper.createLabel(logText, ExtentColor.ORANGE);
+            extentParallel.get().info(getTestName(result));
             extentParallel.get().log(Status.SKIP, stylizedStatus);
         }
 

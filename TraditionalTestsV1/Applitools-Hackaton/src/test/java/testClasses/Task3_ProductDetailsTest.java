@@ -21,10 +21,9 @@ public class Task3_ProductDetailsTest extends BaseTest {
     @Test
     public void testReviewSection_isItDisplayedCorrectly_expectTrue() {
         pp = hp.clickOnAProduct();
-        soft.assertTrue(pp.isReviewSectionDisplayed());
-        soft.assertTrue(pp.isThereExpectedSpaceBetweenStarsAndSubtitle(), "Unexpected margin noticed next to the number of stars.");
 
-        soft.assertAll();
+        assertTrue(pp.isReviewSectionDisplayed(), "The review section is not displayed.");
+        assertTrue(pp.isThereExpectedSpaceBetweenStarsAndSubtitle(), "Unexpected margin noticed next to the number of stars.");
     }
 
     @Test
@@ -50,16 +49,18 @@ public class Task3_ProductDetailsTest extends BaseTest {
 
     @Test
     public void testPrices_verifyBothPricesStyle_expectBlueAndGrayLineThrough() {
-        List<String> expectedStyles = List.of("rgba(153, 153, 153, 1)", "line-through solid rgb(153, 153, 153)",
-                "rgba(0, 77, 218, 1)", "none solid rgb(0, 77, 218)");
+        List<String> expectedStyles = List.of("#999999", "#004dda");
 
-        var actualHpStyles = hp.getPricesStyleFromHomePage();
+        var actualHpColours = hp.getPricesColourFromHomePage();
+        var actualHpTextDecorationOldPrice = hp.getTextDecorationFromPage();
         pp = hp.clickOnAProduct();
-        var actualPpStyles = pp.getPricesStyleFromProductPage();
+        var actualPpColours = pp.getPricesColourFromProductPage();
+        var actualPpTextDecorationOldPrice = pp.getTextDecorationFromPage();
 
-        soft.assertEquals(actualHpStyles, expectedStyles, "Unexpected style detected.");
-        soft.assertEquals(actualPpStyles, expectedStyles,"Unexpected style detected.");
-        soft.assertAll();
+        assertEquals(actualHpColours, expectedStyles, "Unexpected colour detected.");
+        assertEquals(actualPpColours, expectedStyles,"Unexpected colour detected.");
+        assertTrue(actualHpTextDecorationOldPrice.contains("line-through"), "The line's expected style on HP is line-though and it doesn't match the actual.");
+        assertTrue(actualPpTextDecorationOldPrice.contains("line-through"), "The line's expected style on PP is line-though and it doesn't match the actual.");
     }
 
     @Test
@@ -72,7 +73,7 @@ public class Task3_ProductDetailsTest extends BaseTest {
 
     @Test
     public void testPrices_verifyIfPricesMatchOnHomeAndProductPages_expectMatching() {
-        var hpActualPrices = hp.getPricesFromHomePage();
+        var hpActualPrices = hp.getPricesValuesFromHomePage();
         pp = hp.clickOnAProduct();
         var ppActualPrices = pp.getPricesFromProductPage();
 
@@ -101,6 +102,5 @@ public class Task3_ProductDetailsTest extends BaseTest {
 
         assertTrue(pp.isThereExpectedSpaceBetweenNavIcons(), "The actual margin between icons is not 20px.");
     }
-
 
 }
