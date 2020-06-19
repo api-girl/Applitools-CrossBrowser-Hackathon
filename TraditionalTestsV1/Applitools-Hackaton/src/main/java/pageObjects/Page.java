@@ -7,10 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.Arrays;
 
 public class Page {
     protected static WebDriver driver;
@@ -115,10 +113,11 @@ public class Page {
     }
 
     protected String convertColourToHex(String rgbColour){
-        String hexaColour = Color.fromString(rgbColour).asHex();
-        return hexaColour;
+        return Color.fromString(rgbColour).asHex();
     }
 
-
+    public int getScreenWidth(){
+        return driver.manage().window().getSize().getWidth();
+    }
 
 }

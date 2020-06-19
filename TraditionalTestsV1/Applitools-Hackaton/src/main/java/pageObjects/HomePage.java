@@ -1,6 +1,5 @@
 package pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -137,7 +136,27 @@ public class HomePage extends Page {
     @FindBy(id = "LI____231")
     private WebElement addToCartIcon;
 
+    public List<WebElement> create1200pxElementList(){
+        //only visible in 1200px
+        return List.of(navMenu, filterMenu, wishlistIcon, gridIcon, listIcon,
+                searchField, twoItemsInCart, footerQuickLinksMenu, footerContactsMenu, footerKeepInTouchMenu);
+    }
 
+    public List<WebElement> create768ElementList(){
+        return List.of(searchField, twoItemsInCart, footerQuickLinksMenu, footerContactsMenu, footerKeepInTouchMenu,
+                filterButtonTitle, funnelIcon, addToFavouritesIcon, compareIcon, addToCartIcon);
+    }
+
+    public List<WebElement> create500ElementList(){
+        return List.of(funnelIcon, addToFavouritesIcon, compareIcon, addToCartIcon);
+    }
+
+    public List<Boolean> areElementsDisplayed(List<WebElement> elements){
+        return elements
+                .stream()
+                .map(WebElement::isDisplayed)
+                .collect(Collectors.toList());
+    }
 
 
 }

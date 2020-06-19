@@ -10,19 +10,19 @@
     <!--    <parameter name="url" value="https://demo.applitools.com/gridHackathonV2.html"/>-->
 
 
-    <test name="Firefox V77 Tablet: 768x700">
+    <test name="Firefox V77 Laptop: 1200x700">
         <parameter name="browser" value="firefox"/>
-        <parameter name="screenWidth" value="780"/>
+        <parameter name="screenWidth" value="1212"/>
         <parameter name="screenHeight" value="780"/>
         <classes>
-            <!--            <class name="testClasses.Task1_CrossDeviceElementsTest"/>-->
+            <class name="testClasses.Task1_CrossDeviceElementsTest"/>
             <!--            <class name="testClasses.Task2_ShoppingExperienceTest"/>-->
-            <class name="testClasses.Task3_ProductDetailsTest">
-                <methods>
-                    <include name="testPrices_verifyBothPricesStyle_expectBlueAndGrayLineThrough"/>
-                    <include name="testReviewSection_isItDisplayedCorrectly.*"/>
-                </methods>
-            </class>
+<!--            <class name="testClasses.Task3_ProductDetailsTest">-->
+<!--                <methods>-->
+<!--                    <include name="testPrices_verifyBothPricesStyle_expectBlueAndGrayLineThrough"/>-->
+<!--                    <include name="testReviewSection_isItDisplayedCorrectly.*"/>-->
+<!--                </methods>-->
+<!--            </class>-->
         </classes>
     </test>
 
@@ -39,19 +39,19 @@
 <!--            </class>-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="Chrome V83 Laptop:1200x700">
+    <test name="Chrome V83 Mobile:500x700">
         <parameter name="browser" value="chrome"/>
-        <parameter name="screenWidth" value="1216"/>
+        <parameter name="screenWidth" value="516"/>
         <parameter name="screenHeight" value="832"/>
         <classes>
-            <!--            <class name="testClasses.Task1_CrossDeviceElementsTest"/>-->
+            <class name="testClasses.Task1_CrossDeviceElementsTest"/>
 
-            <class name="testClasses.Task3_ProductDetailsTest">
-            <methods>
-                <include name="testPrices_verifyBothPricesStyle_expectBlueAndGrayLineThrough"/>
-                <include name="testReviewSection_isItDisplayedCorrectly.*"/>
-            </methods>
-            </class>
+<!--            <class name="testClasses.Task3_ProductDetailsTest">-->
+<!--            <methods>-->
+<!--                <include name="testPrices_verifyBothPricesStyle_expectBlueAndGrayLineThrough"/>-->
+<!--                <include name="testReviewSection_isItDisplayedCorrectly.*"/>-->
+<!--            </methods>-->
+<!--            </class>-->
         </classes>
     </test>
     <test name="Edge V83 Tablet: 768x700">
@@ -59,14 +59,14 @@
         <parameter name="screenWidth" value="784"/>
         <parameter name="screenHeight" value="830"/>
         <classes>
-            <!--            <class name="testClasses.Task1_CrossDeviceElementsTest"/>-->
+            <class name="testClasses.Task1_CrossDeviceElementsTest"/>
 
-            <class name="testClasses.Task3_ProductDetailsTest">
-                <methods>
-                    <include name="testPrices_verifyBothPricesStyle_expectBlueAndGrayLineThrough"/>
-                    <include name="testReviewSection_isItDisplayedCorrectly.*"/>
-                </methods>
-            </class>
+<!--            <class name="testClasses.Task3_ProductDetailsTest">-->
+<!--                <methods>-->
+<!--                    <include name="testPrices_verifyBothPricesStyle_expectBlueAndGrayLineThrough"/>-->
+<!--                    <include name="testReviewSection_isItDisplayedCorrectly.*"/>-->
+<!--                </methods>-->
+<!--            </class>-->
         </classes>
     </test>
 </suite>

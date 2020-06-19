@@ -1,8 +1,18 @@
 package testClasses;
 
+import org.testng.ITestContext;
+import org.testng.ITestResult;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import pageObjects.Page;
 
-public class Task1_CrossDeviceElementsTest {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
+import static org.testng.Assert.assertEquals;
+
+public class Task1_CrossDeviceElementsTest extends BaseTest{
     /**
      * The “AppliFashion” app is responsive, so when testing on various viewports, the elements of your application change.
      * Some are hidden, some are made visible, some are repositioned to accommodate the space available.
@@ -28,11 +38,30 @@ public class Task1_CrossDeviceElementsTest {
      * “Traditional-V1-TestResults.txt” for V1 of the app.
      * And after you run the tests for V2, make relevant maintenance, and copy the test results into “Traditional-V2-TestResults.txt”.
      */
+//    ITestResult result;
+//    ITestContext context;
 
     @Test
-    public void testDetectHiddenElementsInResponsive(){
+    public void testHomePageElements_areElementsDisplayedIn1200px(){
+//        int viewport = Integer.parseInt(result.getTestContext().getCurrentXmlTest().getParameter("screenWidth"));
+//        if(viewport == 1200){
+        var width = hp.getScreenWidth();
+        if(width == 1200){
+            var actualState = hp.areElementsDisplayed(hp.create1200pxElementList());
+            var expectedState = new ArrayList<Boolean>(Arrays.asList(new Boolean[actualState.size()]));
+            Collections.fill(expectedState, Boolean.TRUE);
 
+            assertEquals(actualState, expectedState, "Some of the elements is not displayed in 1200px.");
+
+        }
     }
 
+    public void testHomePageElements_areElementsDisplayedIn768px(){
+        var actualState = hp.areElementsDisplayed(hp.create768ElementList());
+    }
+
+    public void testHomePageElements_areElementsDisplayedIn500px(){
+        var actualState = hp.areElementsDisplayed(hp.create500ElementList());
+    }
 
 }

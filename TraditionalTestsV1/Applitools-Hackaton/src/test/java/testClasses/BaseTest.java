@@ -35,13 +35,9 @@ public class BaseTest {
         }
 
         driver.get(url);
-        driver.manage().window().setSize(getScreenDimension(screenWidth, screenHeight));
+        driver.manage().window().setSize(new Dimension(screenWidth, screenHeight));
         hp = new HomePage(driver);
         return hp;
-    }
-
-    private Dimension getScreenDimension(int width, int height) {
-        return new Dimension(width, height);
     }
 
     @AfterMethod(alwaysRun = true)
