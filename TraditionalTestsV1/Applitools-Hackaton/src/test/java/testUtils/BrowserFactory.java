@@ -9,8 +9,6 @@ import org.openqa.selenium.edge.*;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import testClasses.BaseTest;
 
 public class BrowserFactory extends BaseTest {
@@ -25,7 +23,7 @@ public class BrowserFactory extends BaseTest {
             case "firefox" -> driver = initFirefoxDriver();
             case "edge" -> driver = initEdgeDriver();
             default -> {
-                System.out.println("browser : " + browserType + " is invalid, Launching Chrome as a browser of choice..");
+                log.info("browser : " + browserType + " is invalid, Launching Chrome as a browser of choice..");
                 driver = initChromeDriver();
             }
         }
@@ -33,7 +31,7 @@ public class BrowserFactory extends BaseTest {
     }
 
     private WebDriver initEdgeDriver() {
-        System.out.println("Launching a new instance of Edge Chromium...");
+        log.info("Launching a new instance of Edge Chromium...");
         System.setProperty("webdriver.edge.driver", edgeDriverPath);
 
         driver = new EdgeDriver();
@@ -41,7 +39,7 @@ public class BrowserFactory extends BaseTest {
     }
 
     private WebDriver initChromeDriver () {
-        System.out.println("Launching a new instance of Google Chrome...");
+        log.info("Launching a new instance of Google Chrome...");
         System.setProperty("webdriver.chrome.driver", chromeDriverPath);
         System.setProperty("webdriver.chrome.silentOutput", "true");
         driver = new ChromeDriver(getChromeDriverOptions());
@@ -49,7 +47,7 @@ public class BrowserFactory extends BaseTest {
     }
 
     private WebDriver initFirefoxDriver () {
-        System.out.println("Launching a new instance of Firefox browser..");
+        log.info("Launching a new instance of Firefox browser..");
         System.setProperty("webdriver.gecko.driver", firefoxDriverPath);
 
         driver = new FirefoxDriver(getFirefoxDriverOptions());

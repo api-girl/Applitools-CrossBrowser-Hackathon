@@ -41,31 +41,36 @@ public class Task1_CrossDeviceElementsTest extends BaseTest{
         int width = hp.getScreenWidth();
 
         if(width >= 1200){
-            System.out.println("IN - I am inside the if block for 1200px.");
+            log.info("IN - I am inside the if block for 1200px.");
             var actualState = hp.areElementsDisplayed(hp.create1200ElementList());
             var expectedState = new ArrayList<Boolean>(Arrays.asList(new Boolean[actualState.size()]));
             Collections.fill(expectedState, Boolean.TRUE);
 
+
+
+            hReporter(1, "Are expected elements visible in 1200px", "col_21");
+
+
             assertEquals(actualState, expectedState, "Some of the elements is not displayed in 1200px.");
-            System.out.println("OUT - Getting outside of if block for 1200px.");
+            log.info("OUT - Getting outside of if block for 1200px.");
         }
         else if(width>=768){
-            System.out.println("IN - Now I am inside the if block for 768px.");
+            log.info("IN - Now I am inside the if block for 768px.");
             var actualState = hp.areElementsDisplayed(hp.create768ElementList());
             var expectedState = new ArrayList<Boolean>(Arrays.asList(new Boolean[actualState.size()]));
             Collections.fill(expectedState, Boolean.TRUE);
 
             assertEquals(actualState, expectedState, "Some of the elements is not displayed in 768px.");
-            System.out.println("OUT - Getting outside of if block for 768px.");
+            log.info("OUT - Getting outside of if block for 768px.");
         }
         else if(width>=500){
-            System.out.println("IN - Now I am inside the if block for 500px.");
+            log.info("IN - Now I am inside the if block for 500px.");
             var actualState = hp.areElementsDisplayed(hp.create500ElementList());
             var expectedState = new ArrayList<Boolean>(Arrays.asList(new Boolean[actualState.size()]));
             Collections.fill(expectedState, Boolean.TRUE);
 
             assertEquals(actualState, expectedState, "Some of the elements is not displayed in 500px.");
-            System.out.println("OUT - Getting outside of if block for 500px.");
+            log.info("OUT - Getting outside of if block for 500px.");
         }
         else{
             System.out.println("The viewport was not expected for this test case.");
@@ -76,31 +81,31 @@ public class Task1_CrossDeviceElementsTest extends BaseTest{
     public void testHomePageElements_areElementsDisplayedInThreeDifferentViewports_expectFalse(){
         int width = hp.getScreenWidth();
         if(width >= 1200){
-            System.out.println("IN - I am inside the if block for 1200px.");
+            log.info("IN - I am inside the if block for 1200px.");
             var actualState = hp.areElementsDisplayed(hp.notDisplayedIn1200ElementList());
             var expectedState = new ArrayList<Boolean>(Arrays.asList(new Boolean[actualState.size()]));
             Collections.fill(expectedState, Boolean.FALSE);
 
             assertEquals(actualState, expectedState, "Some of the elements are displayed in 1200px.");
-            System.out.println("OUT - Getting outside of if block for 1200px.");
+            log.info("OUT - Getting outside of if block for 1200px.");
         }
         else if(width>=768){
-            System.out.println("IN - Now I am inside the if block for 768px.");
+            log.info("IN - Now I am inside the if block for 768px.");
             var actualState = hp.areElementsDisplayed(hp.notDisplayedIn768ElementList());
             var expectedState = new ArrayList<Boolean>(Arrays.asList(new Boolean[actualState.size()]));
             Collections.fill(expectedState, Boolean.FALSE);
 
             assertEquals(actualState, expectedState, "Some of the elements are displayed in 768px.");
-            System.out.println("OUT - Getting outside of if block for 768px.");
+            log.info("OUT - Getting outside of if block for 768px.");
         }
         else if(width>=500){
-            System.out.println("IN - Now I am inside the if block for 500px.");
+            log.info("IN - Now I am inside the if block for 500px.");
             var actualState = hp.areElementsDisplayed(hp.notDisplayedIn500ElementList());
             var expectedState = new ArrayList<Boolean>(Arrays.asList(new Boolean[actualState.size()]));
             Collections.fill(expectedState, Boolean.FALSE);
 
             assertEquals(actualState, expectedState, "Some of the elements are displayed in 500px.");
-            System.out.println("OUT - Getting outside of if block for 500px.");
+            log.info("OUT - Getting outside of if block for 500px.");
         }
         else{
             System.out.println("The viewport was not expected for this test case.");

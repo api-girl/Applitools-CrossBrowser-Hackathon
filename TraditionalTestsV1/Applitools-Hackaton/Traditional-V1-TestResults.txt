@@ -1,0 +1,1 @@
+Task: 1, Test Name: Are expected elements visible in 1200px, DOM Id: col_21, Browser: chrome, Viewport: 500 x 700, Device: mobile

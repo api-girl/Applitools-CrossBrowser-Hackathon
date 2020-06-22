@@ -8,14 +8,11 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import testClasses.BaseTest;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
 
 public class TestListener extends BaseTest implements ITestListener {
@@ -43,7 +40,7 @@ public class TestListener extends BaseTest implements ITestListener {
 
     @Override
     public void onStart(ITestContext context) {
-        System.out.println("*** EXECUTION STARTED:" + context.getName());
+        System.out.println("*** EXECUTION STARTED: " + context.getName());
 
     }
 
@@ -56,17 +53,18 @@ public class TestListener extends BaseTest implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        System.out.println(("*** RUNNING TEST METHOD: " + result.getMethod().getMethodName()));
+        log.info(("*** RUNNING TEST METHOD: " + result.getMethod().getMethodName()));
         ExtentTest test = extent.createTest(getTestClassName(result)
                 + " | "
                 + getTestMethodName(result));
         extentParallel.set(test);
+
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
         String logText = "PASSED";
-        System.out.println(logText + " - " + result.getMethod().getMethodName());
+        log.info(logText);
         Markup stylizedStatus = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
         
         extentParallel.get().info(getTestName(result));
@@ -88,7 +86,7 @@ public class TestListener extends BaseTest implements ITestListener {
             extentParallel.get().fail("Cannot attach screenshot.");
         }
         extentParallel.get().error(result.getThrowable());
-        System.out.println("FAILED - " + result.getMethod().getMethodName());
+        log.info("FAILED");
         Markup stylizedStatus = MarkupHelper.createLabel("FAILED", ExtentColor.RED);
         extentParallel.get().log(Status.FAIL, stylizedStatus);
     }
@@ -96,7 +94,7 @@ public class TestListener extends BaseTest implements ITestListener {
     @Override
     public void onTestSkipped(ITestResult result) {
         String logText = "SKIPPED";
-        System.out.println(logText + " - " + result.getMethod().getMethodName());
+        log.info(logText);
         Markup stylizedStatus = MarkupHelper.createLabel(logText, ExtentColor.ORANGE);
         extentParallel.get().info(getTestName(result));
         extentParallel.get().log(Status.SKIP, stylizedStatus);

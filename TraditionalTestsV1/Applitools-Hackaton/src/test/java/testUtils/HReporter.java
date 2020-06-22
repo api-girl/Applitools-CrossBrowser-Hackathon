@@ -9,18 +9,18 @@ import java.io.FileWriter;
 
 public class HReporter {
 
-    public boolean hackathonReporter(ITestResult result, ITestContext context, WebElement element){
-        try (var writer = new BufferedWriter(new FileWriter("Traditional-V1-TestResults.txt", true))) {
-            writer.write("Task: " + getTaskNumber(result) + ", Test Name: " + getTestMethodName(result) + ", DOM Id: " + getDomId(element) + ", Browser: " + getBrowser(context)
-                    + ", Viewport: " + getViewport(context) + ", Device: " + getDevice(context) + ", Status: " + (getTestStatus(result) ? "Pass" : "Fail"));
-            writer.newLine();
-        } catch (Exception e) {
-            System.out.println("Error writing to report file");
-            e.printStackTrace();
-        }
-        //returns the result so that it can be used for further Assertions in the test code.
-        return status;
-    }
+//    public boolean hackathonReporter(ITestResult result, ITestContext context, WebElement element){
+//        try (var writer = new BufferedWriter(new FileWriter("Traditional-V1-TestResults.txt", true))) {
+//            writer.write("Task: " + getTaskNumber(result) + ", Test Name: " + getTestMethodName(result) + ", DOM Id: " + getDomId(element) + ", Browser: " + getBrowser(context)
+//                    + ", Viewport: " + getViewport(context) + ", Device: " + getDevice(context) + ", Status: " + (getTestStatus(result) ? "Pass" : "Fail"));
+//            writer.newLine();
+//        } catch (Exception e) {
+//            System.out.println("Error writing to report file");
+//            e.printStackTrace();
+//        }
+//        //returns the result so that it can be used for further Assertions in the test code.
+//        return status;
+//    }
 
     public int getTaskNumber(ITestResult result){
         String className = result.getTestClass().getRealClass().getSimpleName();

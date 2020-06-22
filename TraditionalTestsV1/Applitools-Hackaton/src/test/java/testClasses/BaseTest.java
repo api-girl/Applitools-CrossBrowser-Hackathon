@@ -2,14 +2,17 @@ package testClasses;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
-import org.testng.ITestContext;
-import org.testng.ITestResult;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.*;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import pageObjects.HomePage;
 import testUtils.BrowserFactory;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Arrays;
@@ -18,6 +21,7 @@ public class BaseTest {
     protected WebDriver driver;
     protected SoftAssert soft = new SoftAssert();
     protected static HomePage hp;
+    protected Logger log = LoggerFactory.getLogger("");
 
     public WebDriver getDriver() {
         return driver;
@@ -66,6 +70,23 @@ public class BaseTest {
             e.printStackTrace();
         }
         return screenshotPath;
+    }
+
+    public void hReporter(int taskNo, String testName, String domId){
+        try (var writer = new BufferedWriter(new FileWriter("Traditional-V1-TestResults.txt", true))) {
+            writer.write("Task: " + taskNo +
+                    ", Test Name: " + testName +
+                    ", DOM Id: " + domId +
+                    ", Browser: " + "chrome"
+                    + ", Viewport: " + "500 x 700" +
+                    ", Device: " + "mobile"
+                    //+ ", " + "Status: " + (getTestStatus(result) ? "Pass" : "Fail")
+                    );
+            writer.newLine();
+        } catch (Exception e) {
+            System.out.println("Error writing to report file");
+            e.printStackTrace();
+        }
     }
 
 
