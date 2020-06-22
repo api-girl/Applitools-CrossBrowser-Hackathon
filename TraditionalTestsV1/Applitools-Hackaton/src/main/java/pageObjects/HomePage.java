@@ -91,9 +91,6 @@ public class HomePage extends Page {
     @FindBy(id = "UL____21")
     private WebElement navMenu;
 
-    @FindBy(id = "ASIDE__collg__67")
-    private WebElement filterMenu;
-
     @FindBy(id = "A__wishlist__52")
     private WebElement wishlistIcon;
 
@@ -136,9 +133,9 @@ public class HomePage extends Page {
     @FindBy(id = "LI____231")
     private WebElement addToCartIcon;
 
-    public List<WebElement> create1200pxElementList(){
-        //only visible in 1200px
-        return List.of(navMenu, filterMenu, wishlistIcon, gridIcon, listIcon,
+    public List<WebElement> create1200ElementList(){
+        //visible in 1200px, some of them visible in 768
+        return List.of(navMenu, wishlistIcon, gridIcon, listIcon,
                 searchField, twoItemsInCart, footerQuickLinksMenu, footerContactsMenu, footerKeepInTouchMenu);
     }
 
@@ -151,7 +148,21 @@ public class HomePage extends Page {
         return List.of(funnelIcon, addToFavouritesIcon, compareIcon, addToCartIcon);
     }
 
+    public List<WebElement> notDisplayedIn1200ElementList(){
+        return List.of(filterButtonTitle, funnelIcon, addToFavouritesIcon, compareIcon, addToCartIcon);
+    }
+
+    public List<WebElement> notDisplayedIn768ElementList(){
+        return List.of(navMenu, wishlistIcon, gridIcon, listIcon);
+    }
+
+    public List<WebElement> notDisplayedIn500ElementList(){
+        return List.of(navMenu, wishlistIcon, gridIcon, listIcon,
+                searchField, twoItemsInCart, footerQuickLinksMenu, footerContactsMenu, footerKeepInTouchMenu, filterButtonTitle);
+    }
+
     public List<Boolean> areElementsDisplayed(List<WebElement> elements){
+
         return elements
                 .stream()
                 .map(WebElement::isDisplayed)

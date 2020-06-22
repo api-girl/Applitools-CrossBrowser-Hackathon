@@ -1,10 +1,9 @@
 package testClasses;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
+import org.testng.ITestContext;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import pageObjects.HomePage;
@@ -68,5 +67,6 @@ public class BaseTest {
         }
         return screenshotPath;
     }
+
 
 }

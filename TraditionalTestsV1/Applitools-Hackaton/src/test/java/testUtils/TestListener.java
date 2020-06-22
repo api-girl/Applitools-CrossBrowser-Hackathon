@@ -8,16 +8,20 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import testClasses.BaseTest;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class TestListener extends BaseTest implements ITestListener {
     private static ExtentReports extent = ReportManager.createInstance();
     public static ThreadLocal<ExtentTest> extentParallel = new ThreadLocal<ExtentTest>();
+    public static boolean hReporter;
 
 
     private static String getTestMethodNameForScreenShot(ITestResult iTestResult) {
@@ -64,6 +68,7 @@ public class TestListener extends BaseTest implements ITestListener {
         String logText = "PASSED";
         System.out.println(logText + " - " + result.getMethod().getMethodName());
         Markup stylizedStatus = MarkupHelper.createLabel(logText, ExtentColor.GREEN);
+        
         extentParallel.get().info(getTestName(result));
         extentParallel.get().log(Status.PASS, stylizedStatus);
     }
@@ -101,4 +106,6 @@ public class TestListener extends BaseTest implements ITestListener {
     public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
 
     }
+
+
 }
