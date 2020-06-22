@@ -1,5 +1,6 @@
 package testClasses;
 
+import org.testng.ITestContext;
 import org.testng.annotations.Test;
 import pageObjects.ProductPage;
 
@@ -19,11 +20,17 @@ public class Task3_ProductDetailsTest extends BaseTest {
      */
 
     @Test
-    public void testReviewSection_isItDisplayedCorrectly_expectTrue() {
+    public void testReviewSection_isItDisplayedCorrectly_expectTrue(ITestContext context) {
         pp = hp.clickOnAProduct();
+        context.setAttribute("domId", pp.getReviewSectionDomId());
+        context.setAttribute("description", "Review Section is displayed correctly");
+        assertTrue(hReporter(3, context, pp.isReviewSectionDisplayed()),
+                "The review section is not displayed.");
 
-        assertTrue(pp.isReviewSectionDisplayed(), "The review section is not displayed.");
-        assertTrue(pp.isThereExpectedSpaceBetweenStarsAndSubtitle(), "Unexpected margin noticed next to the number of stars.");
+        context.setAttribute("domId", pp.getReviewSubtitleDomId());
+        context.setAttribute("description", "The number of reviews does not overlap with stars.");
+        assertTrue(hReporter(3, context, pp.isThereExpectedSpaceBetweenStarsAndSubtitle()),
+                "Unexpected margin noticed next to the number of stars.");
     }
 
     @Test

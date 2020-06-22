@@ -1,10 +1,10 @@
 package testClasses;
 
-import org.openqa.selenium.WebElement;
+import org.testng.ITestContext;
 import org.testng.annotations.Test;
-import java.util.List;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class Task2_ShoppingExperienceTest extends BaseTest {
     /**
@@ -16,9 +16,12 @@ public class Task2_ShoppingExperienceTest extends BaseTest {
      */
 
     @Test
-    public void testFilterBlackShoesExpectTwoResults(){
-        var actualResults = hp.countFilteredResults();
+    public void testFilterBlackShoesExpectTwoResults(ITestContext context){
+        var elements = hp.getFilteredResultsDomId();
+        context.setAttribute("domId", elements);
+        context.setAttribute("description", "Filter black shoes and verify 2 displayed results");
 
-        assertEquals(actualResults, 2, "The number of filtered results does not match expected.");
+        assertTrue(hReporter(2, context, hp.countFilteredResults(elements.size())),
+                "The number of filtered results does not match expected.");
     }
 }

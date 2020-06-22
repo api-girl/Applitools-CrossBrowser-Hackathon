@@ -120,4 +120,7 @@ public class Page {
         return driver.manage().window().getSize().getWidth();
     }
 
+    public String getDomId(WebElement element){
+        return element.getAttribute("id");
+    }
 }

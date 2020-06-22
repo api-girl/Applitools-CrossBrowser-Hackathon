@@ -19,7 +19,6 @@ import java.util.Arrays;
 
 public class BaseTest {
     protected WebDriver driver;
-    protected SoftAssert soft = new SoftAssert();
     protected static HomePage hp;
     protected Logger log = LoggerFactory.getLogger("");
 
@@ -72,22 +71,39 @@ public class BaseTest {
         return screenshotPath;
     }
 
-    public void hReporter(int taskNo, String testName, String domId){
+    public boolean hReporter(int taskNo, ITestContext context, boolean comparisonResult){
         try (var writer = new BufferedWriter(new FileWriter("Traditional-V1-TestResults.txt", true))) {
-            writer.write("Task: " + taskNo +
-                    ", Test Name: " + testName +
-                    ", DOM Id: " + domId +
-                    ", Browser: " + "chrome"
-                    + ", Viewport: " + "500 x 700" +
-                    ", Device: " + "mobile"
-                    //+ ", " + "Status: " + (getTestStatus(result) ? "Pass" : "Fail")
+            writer.write(
+                    "Task: " +  taskNo +
+                    "\nTest Name: " + context.getAttribute("description") +
+                    "\nDOM Id: " + context.getAttribute("domId") +
+                     "\nBrowser: " + context.getCurrentXmlTest().getParameter("browser") +
+                     "\nViewport: " + getViewport(context) +
+                     "\nDevice: " + context.getCurrentXmlTest().getParameter("device") +
+                     "\nStatus: " + (comparisonResult ? "Pass\n" : "Fail\n")
                     );
             writer.newLine();
         } catch (Exception e) {
             System.out.println("Error writing to report file");
             e.printStackTrace();
         }
+        return comparisonResult;
     }
 
+    public String getViewport(ITestContext context){
+        var w = Integer.parseInt(context.getCurrentXmlTest().getParameter("screenWidth"));
+        var h = Integer.parseInt(context.getCurrentXmlTest().getParameter("screenHeight"));
+        if(w>1200){
+            w=1200;
+        }else if(w>768){
+            w=768;
+        }else if(w>500){
+            w=500;
+        }
 
+        if(h>700){
+            h=700;
+        }
+        return String.format("%s x %s", w, h);
+    }
 }

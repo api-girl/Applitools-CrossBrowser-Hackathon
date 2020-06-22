@@ -1,11 +1,9 @@
 package pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Select;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +24,9 @@ public class ProductPage extends Page{
 
     @FindBy(id = "DIV__prodinfove__75")
     private WebElement reviewSection;
+    public String getReviewSectionDomId(){
+        return getDomId(reviewSection);
+    }
 
     @FindBy(css = "span.current")
     private WebElement defaultSize;
@@ -44,6 +45,9 @@ public class ProductPage extends Page{
 
     @FindBy(id = "EM____82")
     private WebElement reviewSubtitle;
+    public String getReviewSubtitleDomId(){
+        return getDomId(reviewSubtitle);
+    }
 
     public void isDiscountDisplayed(){
         discount.isDisplayed();

@@ -40,7 +40,7 @@ public class TestListener extends BaseTest implements ITestListener {
 
     @Override
     public void onStart(ITestContext context) {
-        System.out.println("*** EXECUTION STARTED: " + context.getName());
+        log.info("*** EXECUTION STARTED: " + context.getName());
 
     }
 
@@ -58,7 +58,6 @@ public class TestListener extends BaseTest implements ITestListener {
                 + " | "
                 + getTestMethodName(result));
         extentParallel.set(test);
-
     }
 
     @Override

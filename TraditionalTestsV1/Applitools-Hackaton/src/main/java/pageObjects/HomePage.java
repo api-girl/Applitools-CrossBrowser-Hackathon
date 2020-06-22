@@ -25,9 +25,6 @@ public class HomePage extends Page {
     @FindBy(id = "filter_col")
     private WebElement filterTable;
 
-    @FindBy(id = "A__openfilter__206")
-    private WebElement funnel;
-
     @FindBy(id = "SPAN__oldprice__221")
     private WebElement oldPrice;
 
@@ -43,7 +40,7 @@ public class HomePage extends Page {
 
     private List<WebElement> filterBlackShoes() {
         if(!filterTable.isDisplayed()){
-            clickOnElement(funnel);
+            clickOnElement(funnelIcon);
         }
         clickOnElement(colourBlack);
         clickOnElement(filterButton);
@@ -51,8 +48,15 @@ public class HomePage extends Page {
         return results;
     }
 
-    public int countFilteredResults(){
-        return filterBlackShoes().size();
+    public List<String> getFilteredResultsDomId(){
+        return filterBlackShoes()
+                .stream()
+                .map(a->a.getAttribute("id"))
+                .collect(Collectors.toList());
+    }
+
+    public boolean countFilteredResults(int size){
+        return size == 2;
     }
 
     public ProductPage clickOnAProduct(){
@@ -90,48 +94,94 @@ public class HomePage extends Page {
     //only displayed in 1200px
     @FindBy(id = "UL____21")
     private WebElement navMenu;
+    public boolean isNavMenuDisplayed(){
+        return navMenu.isDisplayed();
+    }
+
+    public String getNavMenuDomId(){
+        return navMenu.getAttribute("id");
+    }
 
     @FindBy(id = "A__wishlist__52")
     private WebElement wishlistIcon;
+    public boolean isWishlistIconDisplayed(){
+        return wishlistIcon.isDisplayed();
+    }
 
     @FindBy(id = "A____201")
     private WebElement gridIcon;
+    public boolean isGridIconDisplayed(){
+        return gridIcon.isDisplayed();
+    }
 
     @FindBy(id = "A____203")
     private WebElement listIcon;
+    public boolean isListIconDisplayed(){
+        return listIcon.isDisplayed();
+    }
 
     //visible in 1200px and 768px
     @FindBy(id = "DIV__customsear__41")
     private WebElement searchField;
+    public boolean isSearchFieldDisplayed(){
+        return searchField.isDisplayed();
+    }
 
     @FindBy(id = "STRONG____50")
     private WebElement twoItemsInCart;
+    public boolean isTwoItemsInCartDisplayed(){
+        return twoItemsInCart.isDisplayed();
+    }
 
     @FindBy(id = "collapse_1")
     private WebElement footerQuickLinksMenu;
+    public boolean isFooterQuickLinksMenuDisplayed(){
+        return footerQuickLinksMenu.isDisplayed();
+    }
 
     @FindBy(id = "collapse_3")
     private WebElement footerContactsMenu;
+    public boolean isFooterContactsMenuDisplayed(){
+        return footerContactsMenu.isDisplayed();
+    }
 
     @FindBy(id = "collapse_4")
     private WebElement footerKeepInTouchMenu;
+    public boolean isFooterKeepInTouchMenuDisplayed(){
+        return footerKeepInTouchMenu.isDisplayed();
+    }
 
     //visible only in 768px
     @FindBy(id = "SPAN____208")
     private WebElement filterButtonTitle;
+    public boolean isFilterButtonTitleDisplayed(){
+        return filterButtonTitle.isDisplayed();
+    }
 
     //visible in 768px and 500px
     @FindBy(id = "ti-filter")
     private WebElement funnelIcon;
+    public boolean isFunnelIconDisplayed(){
+        return funnelIcon.isDisplayed();
+    }
 
     @FindBy(id = "LI____223")
     private WebElement addToFavouritesIcon;
+    public boolean isAddToFavouritesIconDisplayed(){
+        return addToFavouritesIcon.isDisplayed();
+    }
 
     @FindBy(id = "LI____227")
     private WebElement compareIcon;
+    public boolean isCompareIconDisplayed(){
+        return compareIcon.isDisplayed();
+    }
 
     @FindBy(id = "LI____231")
     private WebElement addToCartIcon;
+    public boolean isAddToCartIconDisplayed(){
+        return addToCartIcon.isDisplayed();
+    }
 
     public List<WebElement> create1200ElementList(){
         //visible in 1200px, some of them visible in 768
