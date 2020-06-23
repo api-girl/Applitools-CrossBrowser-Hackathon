@@ -2,9 +2,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="TraditionalTest_V1" verbose="1" parallel="methods" thread-count="1">
-    <listeners>
-        <listener class-name="testUtils.TestListener"/>
-    </listeners>
 
         <parameter name="url" value="https://demo.applitools.com/gridHackathonV1.html"/>
 <!--    <parameter name="url" value="https://demo.applitools.com/gridHackathonV2.html"/>-->
@@ -16,7 +13,7 @@
         <parameter name="screenHeight" value="832"/>
         <parameter name="device" value="phone"/>
         <classes>
-<!--            <class name="testClasses.Task1_CrossDeviceElementsTest"/>-->
+            <class name="testClasses.Task1_CrossDeviceElementsTest"/>
             <class name="testClasses.Task2_ShoppingExperienceTest"/>
             <class name="testClasses.Task3_ProductDetailsTest"/>
         </classes>
@@ -28,7 +25,7 @@
         <parameter name="screenHeight" value="832"/>
         <parameter name="device" value="tablet"/>
         <classes>
-<!--            <class name="testClasses.Task1_CrossDeviceElementsTest"/>-->
+            <class name="testClasses.Task1_CrossDeviceElementsTest"/>
             <class name="testClasses.Task2_ShoppingExperienceTest"/>
             <class name="testClasses.Task3_ProductDetailsTest"/>
         </classes>
@@ -40,7 +37,7 @@
         <parameter name="screenHeight" value="832"/>
         <parameter name="device" value="laptop"/>
         <classes>
-<!--            <class name="testClasses.Task1_CrossDeviceElementsTest"/>-->
+            <class name="testClasses.Task1_CrossDeviceElementsTest"/>
             <class name="testClasses.Task2_ShoppingExperienceTest"/>
             <class name="testClasses.Task3_ProductDetailsTest"/>
         </classes>
@@ -51,7 +48,7 @@
         <parameter name="screenHeight" value="830"/>
         <parameter name="device" value="tablet"/>
         <classes>
-<!--            <class name="testClasses.Task1_CrossDeviceElementsTest"/>-->
+            <class name="testClasses.Task1_CrossDeviceElementsTest"/>
             <class name="testClasses.Task2_ShoppingExperienceTest"/>
             <class name="testClasses.Task3_ProductDetailsTest"/>
         </classes>
@@ -63,7 +60,7 @@
         <parameter name="screenHeight" value="830"/>
         <parameter name="device" value="laptop"/>
         <classes>
-<!--            <class name="testClasses.Task1_CrossDeviceElementsTest"/>-->
+            <class name="testClasses.Task1_CrossDeviceElementsTest"/>
             <class name="testClasses.Task2_ShoppingExperienceTest"/>
             <class name="testClasses.Task3_ProductDetailsTest"/>
         </classes>
@@ -74,7 +71,7 @@
         <parameter name="screenWidth" value="780"/>
         <parameter name="screenHeight" value="780"/>
         <classes>
-<!--            <class name="testClasses.Task1_CrossDeviceElementsTest"/>-->
+            <class name="testClasses.Task1_CrossDeviceElementsTest"/>
             <class name="testClasses.Task2_ShoppingExperienceTest"/>
             <class name="testClasses.Task3_ProductDetailsTest"/>
         </classes>

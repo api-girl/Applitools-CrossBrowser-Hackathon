@@ -1,6 +1,5 @@
 package pageObjects;
 
-import classUtils.LoggerClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.PageFactory;
@@ -8,11 +7,9 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
 public class Page {
     protected static WebDriver driver;
     protected static WebDriverWait wait;
-    protected static LoggerClass log = new LoggerClass();
     int fixedWait = 15;
 
     public Page(WebDriver driver) {
@@ -26,9 +23,7 @@ public class Page {
             waitForElementClickability(element);
             highlightAnElement(element);
             element.click();
-            log.info("Click on element");
         } catch (StaleElementReferenceException e) {
-            log.error("Element cannot be located on the page.");
             element.click();
             e.getMessage();
         } catch (TimeoutException e) {
@@ -47,7 +42,7 @@ public class Page {
             var timeout = timeOutInSeconds.length > 0 ? timeOutInSeconds[0] : fixedWait;
             waitUntil(ExpectedConditions.visibilityOf(element), timeout);
         } catch (TimeoutException e) {
-            log.error("Timeout - the wait time expired and the element is still not visible.");
+           System.out.println("Timeout - the wait time expired and the element is still not visible.");
         }
     }
 
@@ -55,14 +50,14 @@ public class Page {
         try {
             waitUntil(ExpectedConditions.elementToBeClickable(element), timeoutInSeconds.length > 0 ? timeoutInSeconds[0] : fixedWait);
         } catch (TimeoutException e) {
-            log.error("Timeout - the wait time expired and the element is still not clickable.");
+            System.out.println("Timeout - the wait time expired and the element is still not clickable.");
             e.getMessage();
         }
     }
 
     protected void scrollUntilElement(WebElement element) {
         String script = "arguments[0].scrollIntoView();";
-        log.info("Scrolling to element..." );
+        System.out.println("Scrolling to element..." );
         waitForElementVisibility(element);
         ((JavascriptExecutor) driver).executeScript(script, element);
         highlightAnElement(element);

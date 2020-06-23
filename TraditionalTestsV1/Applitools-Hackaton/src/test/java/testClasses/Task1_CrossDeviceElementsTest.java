@@ -126,13 +126,13 @@ public class Task1_CrossDeviceElementsTest extends BaseTest{
         context.setAttribute("domId", hp.getFooterContactsMenuDomId());
 
         if (width >= 1200) {
-            context.setAttribute("description", "Footer: Contacts Menu is displayed in laptop viewport");
+            context.setAttribute("description", "Footer - Contacts Menu is displayed in laptop viewport");
             assertTrue(hReporter(1, context, hp.isFooterContactsMenuDisplayed()), "Footer: Contacts Menu is not displayed in 1200px.");
         } else if (width >= 768) {
-            context.setAttribute("description", "Footer: Contacts Menu is displayed in tablet viewport");
+            context.setAttribute("description", "Footer - Contacts Menu is displayed in tablet viewport");
             assertTrue(hReporter(1, context, hp.isFooterContactsMenuDisplayed()), "Footer: Contacts Menu is not displayed in 768px.");
         } else if (width >= 500) {
-            context.setAttribute("description", "Footer: Contacts Menu is hidden in phone viewport");
+            context.setAttribute("description", "Footer - Contacts Menu is hidden in phone viewport");
             assertTrue(hReporter(1, context, !hp.isFooterContactsMenuDisplayed()), "Footer: Contacts Menu is displayed in 500px.");
         } else {
             log.info("Unexpected viewport.");
@@ -144,13 +144,13 @@ public class Task1_CrossDeviceElementsTest extends BaseTest{
         int width = hp.getScreenWidth();
         context.setAttribute("domId", hp.getFooterQuickLinksMenuDomId());
         if (width >= 1200) {
-            context.setAttribute("description", "Footer: Quick Links Menu is displayed in laptop viewport");
+            context.setAttribute("description", "Footer - Quick Links Menu is displayed in laptop viewport");
             assertTrue(hReporter(1, context, hp.isFooterQuickLinksMenuDisplayed()), "Footer: Quick Links Menu is not displayed in 1200px.");
         } else if (width >= 768) {
-            context.setAttribute("description", "Footer: Quick Links Menu is displayed in tablet viewport");
+            context.setAttribute("description", "Footer - Quick Links Menu is displayed in tablet viewport");
             assertTrue(hReporter(1, context, hp.isFooterQuickLinksMenuDisplayed()), "Footer: Quick Links Menu is not displayed in 768px.");
         } else if (width >= 500) {
-            context.setAttribute("description", "Footer: Quick Links Menu is hidden in phone viewport");
+            context.setAttribute("description", "Footer - Quick Links Menu is hidden in phone viewport");
             assertTrue(hReporter(1, context, !hp.isFooterQuickLinksMenuDisplayed()), "Footer: Quick Links Menu is displayed in 500px.");
         } else {
             log.info("Unexpected viewport.");
@@ -163,13 +163,13 @@ public class Task1_CrossDeviceElementsTest extends BaseTest{
         context.setAttribute("domId", hp.getFooterKeepInTouchDomId());
 
         if (width >= 1200) {
-            context.setAttribute("description", "Footer: Keep In Touch Menu is displayed in laptop viewport");
+            context.setAttribute("description", "Footer - Keep In Touch Menu is displayed in laptop viewport");
             assertTrue(hReporter(1, context, hp.isFooterKeepInTouchMenuDisplayed()), "Footer: Keep In Touch Menu is not displayed in 1200px");
         } else if (width >= 768) {
-            context.setAttribute("description", "Footer: Keep In Touch Menu is displayed in tablet viewport");
+            context.setAttribute("description", "Footer - Keep In Touch Menu is displayed in tablet viewport");
             assertTrue(hReporter(1, context, hp.isFooterKeepInTouchMenuDisplayed()), "Footer: Keep In Touch Menu is not displayed in 768px");
         } else if (width >= 500) {
-            context.setAttribute("description", "Footer: Keep In Touch Menu is hidden in phone viewport");
+            context.setAttribute("description", "Footer - Keep In Touch Menu is hidden in phone viewport");
             assertTrue(hReporter(1, context, !hp.isFooterKeepInTouchMenuDisplayed()), "Footer: Keep In Touch Menu is displayed in 500px.");
         } else {
             log.info("Unexpected viewport.");
