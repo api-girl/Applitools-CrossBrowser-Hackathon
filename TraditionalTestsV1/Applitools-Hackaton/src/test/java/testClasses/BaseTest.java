@@ -22,10 +22,6 @@ public class BaseTest {
     protected static HomePage hp;
     protected Logger log = LoggerFactory.getLogger("");
 
-    public WebDriver getDriver() {
-        return driver;
-    }
-
     @Parameters({"url", "browser", "screenWidth", "screenHeight"})
     @BeforeMethod(alwaysRun = true)
     public HomePage initDriverAndGoToHomePage(String url, String browser, int screenWidth, int screenHeight) {

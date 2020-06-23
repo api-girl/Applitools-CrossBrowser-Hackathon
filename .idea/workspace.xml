@@ -4,14 +4,16 @@
     <list default="true" id="5945fdd1-cec0-4391-9dcc-fb3640ea3cd1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/Traditional-V1-TestResults.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/Traditional-V1-TestResults.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/main/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/main/java/pageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/main/java/classUtils/LoggerClass.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/main/java/pageObjects/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/main/java/pageObjects/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/test/java/testClasses/Task1_CrossDeviceElementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/test/java/testClasses/Task1_CrossDeviceElementsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/classes/pageObjects/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/classes/pageObjects/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/classes/pageObjects/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/classes/pageObjects/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/test/java/testClasses/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/test/java/testClasses/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/test/java/testUtils/ReportManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/test/java/testUtils/TestListener.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/test-classes/testClasses/Task1_CrossDeviceElementsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/test-classes/testClasses/Task1_CrossDeviceElementsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/test-classes/testUtils/ReportManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/test-classes/testUtils/TestListener.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/testng_suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/testng_suite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/testng_suite_trial.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/testng_suite_trial.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/testng_suite_trial.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +60,7 @@
       <recent name="C:\Users\Nena\repos\CrossBrowserApplitoolsChallenge\TraditionalTestsV2" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV1/Applitools-Hackaton/testng_suite_trial.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV1/Applitools-Hackaton/testng_suite.xml">
     <configuration name="C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV1/Applitools-Hackaton/testng_suite_trial.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TraditionalTestV1" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/testng_suite_trial.xml" />
@@ -134,8 +136,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV1/Applitools-Hackaton/testng_suite_trial.xml" />
         <item itemvalue="TestNG.C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV1/Applitools-Hackaton/testng_suite.xml" />
+        <item itemvalue="TestNG.C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV1/Applitools-Hackaton/testng_suite_trial.xml" />
         <item itemvalue="TestNG.Task1_CrossDeviceElementsTest.testHomePageElements_areElementsDisplayedIn1200px" />
         <item itemvalue="TestNG.Task3_ProductDetailsTest.testAddToCartButton_isThereSpaceBetweenButtonAndQuantityDropdown_expectTrue" />
         <item itemvalue="TestNG.Task3_ProductDetailsTest" />
@@ -178,38 +180,39 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2610" y="389" width="539" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592522786003" />
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592282481905">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="580" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592883387462">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592282481905" />
+    <state x="580" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592883387462" />
     <state x="1920" y="73" key="FileDocumentManager.FileCacheConflict" timestamp="1592881210472">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="1920" y="73" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592881210470" />
-    <state width="1877" height="451" key="GridCell.Tab.0.bottom" timestamp="1592882543534">
+    <state width="1877" height="544" key="GridCell.Tab.0.bottom" timestamp="1592883613497">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592848936887" />
     <state width="1877" height="607" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
-    <state width="1877" height="451" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592882543534" />
-    <state width="1877" height="451" key="GridCell.Tab.0.center" timestamp="1592882543534">
+    <state width="1877" height="544" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592883613497" />
+    <state width="1877" height="544" key="GridCell.Tab.0.center" timestamp="1592883613496">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="172" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592848936887" />
     <state width="1877" height="607" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
-    <state width="1877" height="451" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592882543534" />
-    <state width="1877" height="451" key="GridCell.Tab.0.left" timestamp="1592882543534">
+    <state width="1877" height="544" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592883613496" />
+    <state width="1877" height="544" key="GridCell.Tab.0.left" timestamp="1592883613496">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="172" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592848936887" />
     <state width="1877" height="607" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
-    <state width="1877" height="451" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592882543534" />
-    <state width="1877" height="451" key="GridCell.Tab.0.right" timestamp="1592882543534">
+    <state width="1877" height="544" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592883613496" />
+    <state width="1877" height="544" key="GridCell.Tab.0.right" timestamp="1592883613496">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="172" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592848936887" />
     <state width="1877" height="607" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
-    <state width="1877" height="451" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592882543534" />
+    <state width="1877" height="544" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592883613496" />
     <state width="1877" height="319" key="GridCell.Tab.1.bottom" timestamp="1592879192186">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
