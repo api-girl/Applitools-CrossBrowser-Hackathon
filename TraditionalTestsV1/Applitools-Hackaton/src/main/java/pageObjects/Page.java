@@ -3,14 +3,11 @@ package pageObjects;
 import classUtils.LoggerClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.Color;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.Arrays;
 
 public class Page {
     protected static WebDriver driver;
@@ -18,25 +15,10 @@ public class Page {
     protected static LoggerClass log = new LoggerClass();
     int fixedWait = 15;
 
-    @FindBy(id = "DIV__mainheader__3")
-    protected WebElement header;
-
-    @FindBy(id = "DIV__mainnavinn__36")
-    protected WebElement navigation;
-
-    @FindBy(id = "FOOTER____417")
-    protected WebElement footer;
-
     public Page(WebDriver driver) {
         Page.driver = driver;
         Page.wait = new WebDriverWait(driver, fixedWait);
         PageFactory.initElements(driver, this);
-    }
-
-    protected String getPageTitle() {
-        String pt = driver.getTitle();
-        log.info("Page title is " + "\"" + pt + "\"");
-        return pt;
     }
 
     protected void clickOnElement(WebElement element) {
@@ -52,20 +34,6 @@ public class Page {
         } catch (TimeoutException e) {
             element.click();
         }
-    }
-
-    protected void clearField(WebElement element) {
-        waitForElementClickability(element);
-        highlightAnElement(element);
-        element.clear();
-        log.info("Clear the field.");
-    }
-
-    protected void type(WebElement element, String text) {
-        waitForElementVisibility(element);
-        highlightAnElement(element);
-        element.sendKeys(text);
-        log.info("Send text " + "\"" + text + "\" to field.");
     }
 
     protected void waitUntil(ExpectedCondition<WebElement> condition, Integer timeoutInSeconds) {
@@ -115,10 +83,14 @@ public class Page {
     }
 
     protected String convertColourToHex(String rgbColour){
-        String hexaColour = Color.fromString(rgbColour).asHex();
-        return hexaColour;
+        return Color.fromString(rgbColour).asHex();
     }
 
+    public int getScreenWidth(){
+        return driver.manage().window().getSize().getWidth();
+    }
 
-
+    public String getDomId(WebElement element){
+        return element.getAttribute("id");
+    }
 }

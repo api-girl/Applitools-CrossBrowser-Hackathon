@@ -1,24 +1,26 @@
 package testClasses;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.testng.*;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import pageObjects.HomePage;
 import testUtils.BrowserFactory;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.Arrays;
 
 public class BaseTest {
     protected WebDriver driver;
-    protected SoftAssert soft = new SoftAssert();
     protected static HomePage hp;
+    protected Logger log = LoggerFactory.getLogger("");
 
     public WebDriver getDriver() {
         return driver;
@@ -35,13 +37,9 @@ public class BaseTest {
         }
 
         driver.get(url);
-        driver.manage().window().setSize(getScreenDimension(screenWidth, screenHeight));
+        driver.manage().window().setSize(new Dimension(screenWidth, screenHeight));
         hp = new HomePage(driver);
         return hp;
-    }
-
-    private Dimension getScreenDimension(int width, int height) {
-        return new Dimension(width, height);
     }
 
     @AfterMethod(alwaysRun = true)
@@ -73,4 +71,39 @@ public class BaseTest {
         return screenshotPath;
     }
 
+    public boolean hReporter(int taskNo, ITestContext context, boolean comparisonResult){
+        try (var writer = new BufferedWriter(new FileWriter("Traditional-V1-TestResults.txt", true))) {
+            writer.write(
+                    "Task: " +  taskNo +
+                    ", Test Name: " + context.getAttribute("description") +
+                    ", DOM Id: " + context.getAttribute("domId") +
+                     ", Browser: " + context.getCurrentXmlTest().getParameter("browser") +
+                     ", Viewport: " + getViewport(context) +
+                     ", Device: " + context.getCurrentXmlTest().getParameter("device") +
+                     ", Status: " + (comparisonResult ? "Pass" : "Fail")
+                    );
+            writer.newLine();
+        } catch (Exception e) {
+            System.out.println("Error writing to report file");
+            e.printStackTrace();
+        }
+        return comparisonResult;
+    }
+
+    public String getViewport(ITestContext context){
+        var w = Integer.parseInt(context.getCurrentXmlTest().getParameter("screenWidth"));
+        var h = Integer.parseInt(context.getCurrentXmlTest().getParameter("screenHeight"));
+        if(w>1200){
+            w=1200;
+        }else if(w>768){
+            w=768;
+        }else if(w>500){
+            w=500;
+        }
+
+        if(h>700){
+            h=700;
+        }
+        return String.format("%s x %s", w, h);
+    }
 }
