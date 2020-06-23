@@ -18,9 +18,15 @@ public class ProductPage extends Page{
 
     @FindBy(tagName = "h1")
     private WebElement productTitle;
+    public String getProductTitleDomId(){
+        return getDomId(productTitle);
+    }
 
     @FindBy(id = "shoe_img")
     private WebElement productImage;
+    public String getProductImageDomId(){
+        return getDomId(productImage);
+    }
 
     @FindBy(id = "DIV__prodinfove__75")
     private WebElement reviewSection;
@@ -28,20 +34,29 @@ public class ProductPage extends Page{
         return getDomId(reviewSection);
     }
 
-    @FindBy(css = "span.current")
+    @FindBy(id = "DIV__customsele__92")
     private WebElement defaultSize;
+    public String getDefaultSizeDomId(){
+        return getDomId(defaultSize);
+    }
 
     @FindBy(className = "new_price")
     private WebElement newPrice;
-
-    @FindBy(id = "discount")
-    private WebElement discount;
+    public String getNewPriceDomId(){
+        return getDomId(newPrice);
+    }
 
     @FindBy(id = "DIV__btnaddtoca__113")
     private WebElement buttonWrapper;
+    public String getButtonWrapperDomId(){
+        return getDomId(buttonWrapper);
+    }
 
     @FindBy(className = "old_price")
     private WebElement oldPrice;
+    public String getOldPriceDomId(){
+        return getDomId(oldPrice);
+    }
 
     @FindBy(id = "EM____82")
     private WebElement reviewSubtitle;
@@ -49,8 +64,12 @@ public class ProductPage extends Page{
         return getDomId(reviewSubtitle);
     }
 
-    public void isDiscountDisplayed(){
-        discount.isDisplayed();
+    @FindBy(css = "#UL__toptools__46 li")
+    private List<WebElement> icons;
+    public List<String> getIconsDomId(){
+        return icons.stream()
+                .map(a->a.getAttribute("id"))
+                .collect(Collectors.toList());
     }
 
     public String getDefaultSizeOption() {
@@ -99,7 +118,7 @@ public class ProductPage extends Page{
         return Arrays.asList(getPrice(oldPrice), getPrice(newPrice));
     }
 
-    public List<String> getPricesColourFromProductPage(){
+    public List<String> getPricesColoursFromProductPage(){
         List<String> rgbColours = List.of(oldPrice.getCssValue("color"), newPrice.getCssValue("color"));
 
         return rgbColours.
@@ -108,18 +127,24 @@ public class ProductPage extends Page{
                 collect(Collectors.toList());
     }
 
+    public boolean doBothPricesColoursMatchExpectedOnProductPage(List<String> expected){
+        return expected.equals(getPricesColoursFromProductPage());
+    }
+
+    public boolean doPricesStyleMatchOnBothPages(List<String> actualHP){
+        return actualHP.equals(getPricesStyleFromProductPage());
+    }
+
     public String getTextDecorationFromPage(){
         return oldPrice.getCssValue("text-decoration");
     }
 
     public List<String> getPricesStyleFromProductPage(){
-        List<String> styles = new ArrayList<String>(getPricesColourFromProductPage());
+        List<String> styles = new ArrayList<String>(getPricesColoursFromProductPage());
         styles.add(getTextDecorationFromPage());
         return styles;
     }
 
-    @FindBy(css = "#UL__toptools__46 li")
-    private List<WebElement> icons;
     public boolean isThereExpectedSpaceBetweenNavIcons() {
         List<Boolean> results = new ArrayList<Boolean>();
         for(WebElement icon:icons){
@@ -127,5 +152,13 @@ public class ProductPage extends Page{
         }
         return results.containsAll(List.of(true, true, true));
 
+    }
+
+    public boolean doProductTitlesMatch(String homePageTitle) {
+        return homePageTitle.equals(getProductTitleFromProductPage());
+    }
+
+    public boolean areTheSamePricesDisplayedOnBothPages(List<String> actualHp) {
+        return actualHp.equals(getPricesFromProductPage());
     }
 }

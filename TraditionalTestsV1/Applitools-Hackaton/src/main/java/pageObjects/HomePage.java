@@ -33,6 +33,9 @@ public class HomePage extends Page {
 
     @FindBy(css = "a h3")
     private List<WebElement> productTitles;
+    public String getProductTitleHpDomId() {
+        return getDomId(productTitles.get(0));
+    }
 
     public HomePage(WebDriver driver){
         super(driver);
@@ -68,7 +71,7 @@ public class HomePage extends Page {
         return Arrays.asList(getPrice(oldPrice), getPrice(newPrice));
     }
 
-    public List<String> getPricesColourFromHomePage(){
+    public List<String> getPricesColoursFromHomePage(){
         List<String> rgbColours = List.of(oldPrice.getCssValue("color"), newPrice.getCssValue("color"));
 
         return rgbColours.
@@ -77,12 +80,16 @@ public class HomePage extends Page {
                 collect(Collectors.toList());
     }
 
+    public boolean doBothPricesColoursMatchExpectedOnHomePage(List<String> expected){
+        return expected.equals(getPricesColoursFromHomePage());
+    }
+
     public String getTextDecorationFromPage(){
         return oldPrice.getCssValue("text-decoration");
     }
 
     public List<String> getPricesStyleFromHomePage(){
-        List<String> styles = new ArrayList<String>(getPricesColourFromHomePage());
+        List<String> styles = new ArrayList<String>(getPricesColoursFromHomePage());
         styles.add(getTextDecorationFromPage());
         return styles;
     }
@@ -212,12 +219,17 @@ public class HomePage extends Page {
     }
 
     public List<Boolean> areElementsDisplayed(List<WebElement> elements){
-
         return elements
                 .stream()
                 .map(WebElement::isDisplayed)
                 .collect(Collectors.toList());
     }
 
+    public String getOldPriceDomId() {
+        return getDomId(oldPrice);
+    }
 
+    public String getNewPriceDomId() {
+        return getDomId(newPrice);
+    }
 }

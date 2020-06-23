@@ -19,9 +19,9 @@ public class BrowserFactory extends BaseTest {
 
     public WebDriver getDriver (String browserType){
         switch (browserType) {
-            case "chrome" -> driver = initChromeDriver();
-            case "firefox" -> driver = initFirefoxDriver();
-            case "edge" -> driver = initEdgeDriver();
+            case "Chrome" -> driver = initChromeDriver();
+            case "Firefox" -> driver = initFirefoxDriver();
+            case "Edge" -> driver = initEdgeDriver();
             default -> {
                 log.info("browser : " + browserType + " is invalid, Launching Chrome as a browser of choice..");
                 driver = initChromeDriver();

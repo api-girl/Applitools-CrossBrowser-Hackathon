@@ -1,0 +1,105 @@
+Task: 2, Test Name: Filter black shoes and verify 2 displayed results, DOM Id: [FIGURE____213, FIGURE____237], Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: There is a space between button and quantity dropdown, DOM Id: DIV__btnaddtoca__113, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: There is a space between each of the navigation icons, DOM Id: [LI____47, LI____51, LI____54, LI____58], Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: On Home Page, old price is gray and new price is blue, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220], Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: On Product Page, old price is gray and new price is blue, DOM Id: [old_price, new_price], Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: Old and new prices displayed on the Home and Product pages are the same, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220, old_price, new_price], Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: On Home Page, old price is always crossed, DOM Id: SPAN__oldprice__221, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: On Product Page, old price is always crossed, DOM Id: old_price, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: Prices styles are the same on Home and Product page, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220, old_price, new_price], Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: Product Image is displayed, DOM Id: shoe_img, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: Product Title is displayed correctly, DOM Id: shoe_name, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: Product Titles displayed on Home and Product page must match., DOM Id: [H3____218, shoe_name], Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM____82, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 2, Test Name: Filter black shoes and verify 2 displayed results, DOM Id: [FIGURE____213, FIGURE____237], Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: There is a space between button and quantity dropdown, DOM Id: DIV__btnaddtoca__113, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: There is a space between each of the navigation icons, DOM Id: [LI____47, LI____51, LI____54, LI____58], Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: On Home Page, old price is gray and new price is blue, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220], Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: On Product Page, old price is gray and new price is blue, DOM Id: [old_price, new_price], Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Old and new prices displayed on the Home and Product pages are the same, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220, old_price, new_price], Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: On Home Page, old price is always crossed, DOM Id: SPAN__oldprice__221, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: On Product Page, old price is always crossed, DOM Id: old_price, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Prices styles are the same on Home and Product page, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220, old_price, new_price], Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Product Image is displayed, DOM Id: shoe_img, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Product Title is displayed correctly, DOM Id: shoe_name, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Product Titles displayed on Home and Product page must match., DOM Id: [H3____218, shoe_name], Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM____82, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 2, Test Name: Filter black shoes and verify 2 displayed results, DOM Id: [FIGURE____213, FIGURE____237], Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: There is a space between button and quantity dropdown, DOM Id: DIV__btnaddtoca__113, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: There is a space between each of the navigation icons, DOM Id: [LI____47, LI____51, LI____54, LI____58], Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: On Home Page, old price is gray and new price is blue, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220], Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: On Product Page, old price is gray and new price is blue, DOM Id: [old_price, new_price], Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old and new prices displayed on the Home and Product pages are the same, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220, old_price, new_price], Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: On Home Page, old price is always crossed, DOM Id: SPAN__oldprice__221, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: On Product Page, old price is always crossed, DOM Id: old_price, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Prices styles are the same on Home and Product page, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220, old_price, new_price], Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Image is displayed, DOM Id: shoe_img, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Title is displayed correctly, DOM Id: shoe_name, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Titles displayed on Home and Product page must match., DOM Id: [H3____218, shoe_name], Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM____82, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 2, Test Name: Filter black shoes and verify 2 displayed results, DOM Id: [FIGURE____213, FIGURE____237], Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: There is a space between button and quantity dropdown, DOM Id: DIV__btnaddtoca__113, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: There is a space between each of the navigation icons, DOM Id: [LI____47, LI____51, LI____54, LI____58], Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: On Home Page, old price is gray and new price is blue, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220], Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: On Product Page, old price is gray and new price is blue, DOM Id: [old_price, new_price], Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Old and new prices displayed on the Home and Product pages are the same, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220, old_price, new_price], Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: On Home Page, old price is always crossed, DOM Id: SPAN__oldprice__221, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: On Product Page, old price is always crossed, DOM Id: old_price, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Prices styles are the same on Home and Product page, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220, old_price, new_price], Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Product Image is displayed, DOM Id: shoe_img, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Product Title is displayed correctly, DOM Id: shoe_name, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Product Titles displayed on Home and Product page must match., DOM Id: [H3____218, shoe_name], Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM____82, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 2, Test Name: Filter black shoes and verify 2 displayed results, DOM Id: [FIGURE____213, FIGURE____237], Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: There is a space between button and quantity dropdown, DOM Id: DIV__btnaddtoca__113, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: There is a space between each of the navigation icons, DOM Id: [LI____47, LI____51, LI____54, LI____58], Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: On Home Page, old price is gray and new price is blue, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220], Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: On Product Page, old price is gray and new price is blue, DOM Id: [old_price, new_price], Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old and new prices displayed on the Home and Product pages are the same, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220, old_price, new_price], Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: On Home Page, old price is always crossed, DOM Id: SPAN__oldprice__221, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: On Product Page, old price is always crossed, DOM Id: old_price, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Prices styles are the same on Home and Product page, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220, old_price, new_price], Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Image is displayed, DOM Id: shoe_img, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Title is displayed correctly, DOM Id: shoe_name, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Titles displayed on Home and Product page must match., DOM Id: [H3____218, shoe_name], Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM____82, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 2, Test Name: Filter black shoes and verify 2 displayed results, DOM Id: [FIGURE____213, FIGURE____237], Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: There is a space between button and quantity dropdown, DOM Id: DIV__btnaddtoca__113, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: There is a space between each of the navigation icons, DOM Id: [LI____47, LI____51, LI____54, LI____58], Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: On Home Page, old price is gray and new price is blue, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220], Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: On Product Page, old price is gray and new price is blue, DOM Id: [old_price, new_price], Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: Old and new prices displayed on the Home and Product pages are the same, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220, old_price, new_price], Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: On Home Page, old price is always crossed, DOM Id: SPAN__oldprice__221, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: On Product Page, old price is always crossed, DOM Id: old_price, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: Prices styles are the same on Home and Product page, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220, old_price, new_price], Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: Product Image is displayed, DOM Id: shoe_img, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: Product Title is displayed correctly, DOM Id: shoe_name, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: Product Titles displayed on Home and Product page must match., DOM Id: [H3____218, shoe_name], Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM____82, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 2, Test Name: Filter black shoes and verify 2 displayed results, DOM Id: [FIGURE____213, FIGURE____237], Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: There is a space between button and quantity dropdown, DOM Id: DIV__btnaddtoca__113, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: There is a space between each of the navigation icons, DOM Id: [LI____47, LI____51, LI____54, LI____58], Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: On Home Page, old price is gray and new price is blue, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220], Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: On Product Page, old price is gray and new price is blue, DOM Id: [old_price, new_price], Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old and new prices displayed on the Home and Product pages are the same, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220, old_price, new_price], Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: On Home Page, old price is always crossed, DOM Id: SPAN__oldprice__221, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: On Product Page, old price is always crossed, DOM Id: old_price, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Prices styles are the same on Home and Product page, DOM Id: [SPAN__oldprice__221, SPAN__newprice__220, old_price, new_price], Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Image is displayed, DOM Id: shoe_img, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Title is displayed correctly, DOM Id: shoe_name, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Titles displayed on Home and Product page must match., DOM Id: [H3____218, shoe_name], Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM____82, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass

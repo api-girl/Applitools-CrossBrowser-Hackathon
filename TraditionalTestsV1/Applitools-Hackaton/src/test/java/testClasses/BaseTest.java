@@ -75,12 +75,12 @@ public class BaseTest {
         try (var writer = new BufferedWriter(new FileWriter("Traditional-V1-TestResults.txt", true))) {
             writer.write(
                     "Task: " +  taskNo +
-                    "\nTest Name: " + context.getAttribute("description") +
-                    "\nDOM Id: " + context.getAttribute("domId") +
-                     "\nBrowser: " + context.getCurrentXmlTest().getParameter("browser") +
-                     "\nViewport: " + getViewport(context) +
-                     "\nDevice: " + context.getCurrentXmlTest().getParameter("device") +
-                     "\nStatus: " + (comparisonResult ? "Pass\n" : "Fail\n")
+                    ", Test Name: " + context.getAttribute("description") +
+                    ", DOM Id: " + context.getAttribute("domId") +
+                     ", Browser: " + context.getCurrentXmlTest().getParameter("browser") +
+                     ", Viewport: " + getViewport(context) +
+                     ", Device: " + context.getCurrentXmlTest().getParameter("device") +
+                     ", Status: " + (comparisonResult ? "Pass" : "Fail")
                     );
             writer.newLine();
         } catch (Exception e) {
