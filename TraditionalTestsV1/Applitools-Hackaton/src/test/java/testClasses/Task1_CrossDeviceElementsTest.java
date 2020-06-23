@@ -1,14 +1,7 @@
 package testClasses;
 
 import org.testng.ITestContext;
-import org.testng.ITestResult;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-
 import static org.testng.Assert.*;
 
 public class Task1_CrossDeviceElementsTest extends BaseTest{
@@ -37,65 +30,241 @@ public class Task1_CrossDeviceElementsTest extends BaseTest{
      * “Traditional-V1-TestResults.txt” for V1 of the app.
      * And after you run the tests for V2, make relevant maintenance, and copy the test results into “Traditional-V2-TestResults.txt”.
      */
-
-
     @Test
-    public void testHomePageElements_isNavMenuDisplayed(ITestContext context){
+    public void testHomePageElements_isNavMenuDisplayedAcrossThreeViewports(ITestContext context) {
         int width = hp.getScreenWidth();
         context.setAttribute("domId", hp.getNavMenuDomId());
-        context.setAttribute("description", "Is Navigation Menu displayed in all three viewports");
-
-        if(width >= 1200){
-            var actualState = hp.isNavMenuDisplayed();
-            assertTrue(hReporter(1, context, actualState), "Navigation Menu is not displayed in 1200px.");
-        }
-        else if(width>=768){
-            var actualState = hp.isNavMenuDisplayed();
-            assertFalse(hReporter(1, context,actualState), "Navigation Menu is not displayed in 768px.");
-        }
-        else if(width>=500){
-            var actualState = hp.isNavMenuDisplayed();
-            assertFalse(hReporter(1, context, actualState), "Some of the elements is not displayed in 500px.");
-        }
-        else{
-            log.error("The viewport was not expected for this test case.");
+        if (width >= 1200) {
+            context.setAttribute("description", "Navigation menu is displayed only in laptop viewport");
+            assertTrue(hReporter(1, context, hp.isNavMenuDisplayed()), "Navigation Menu is not displayed in 1200px.");
+        } else if (width >= 768) {
+            context.setAttribute("description", "Navigation menu is hidden in tablet viewport");
+            assertTrue(hReporter(1, context, !hp.isNavMenuDisplayed()), "Navigation Menu is displayed in 768px.");
+        } else if (width >= 500) {
+            context.setAttribute("description", "Navigation menu is hidden in phone viewport");
+            assertTrue(hReporter(1, context, !hp.isNavMenuDisplayed()), "Navigation Menu is displayed in 500px.");
+        } else {
+            log.info("Unexpected viewport.");
         }
     }
 
-    @Test(enabled = false)
-    public void testHomePageElements_areElementsDisplayedInThreeDifferentViewports_expectFalse(){
+    @Test
+    public void testHomePageElements_isWishlistIconDisplayedAcrossThreeViewports(ITestContext context) {
         int width = hp.getScreenWidth();
-        if(width >= 1200){
-            log.info("IN - I am inside the if block for 1200px.");
-            var actualState = hp.areElementsDisplayed(hp.notDisplayedIn1200ElementList());
-            var expectedState = new ArrayList<Boolean>(Arrays.asList(new Boolean[actualState.size()]));
-            Collections.fill(expectedState, Boolean.FALSE);
-
-            assertEquals(actualState, expectedState, "Some of the elements are displayed in 1200px.");
-            log.info("OUT - Getting outside of if block for 1200px.");
-        }
-        else if(width>=768){
-            log.info("IN - Now I am inside the if block for 768px.");
-            var actualState = hp.areElementsDisplayed(hp.notDisplayedIn768ElementList());
-            var expectedState = new ArrayList<Boolean>(Arrays.asList(new Boolean[actualState.size()]));
-            Collections.fill(expectedState, Boolean.FALSE);
-
-            assertEquals(actualState, expectedState, "Some of the elements are displayed in 768px.");
-            log.info("OUT - Getting outside of if block for 768px.");
-        }
-        else if(width>=500){
-            log.info("IN - Now I am inside the if block for 500px.");
-            var actualState = hp.areElementsDisplayed(hp.notDisplayedIn500ElementList());
-            var expectedState = new ArrayList<Boolean>(Arrays.asList(new Boolean[actualState.size()]));
-            Collections.fill(expectedState, Boolean.FALSE);
-
-            assertEquals(actualState, expectedState, "Some of the elements are displayed in 500px.");
-            log.info("OUT - Getting outside of if block for 500px.");
-        }
-        else{
-            System.out.println("The viewport was not expected for this test case.");
+        context.setAttribute("domId", hp.getWishlistIconDomId());
+        if (width >= 1200) {
+            context.setAttribute("description", "Wishlist Icon is displayed only in laptop viewport");
+            assertTrue(hReporter(1, context, hp.isWishlistIconDisplayed()), "Wishlist Icon is not displayed in 1200px.");
+        }else if (width >= 768) {
+            context.setAttribute("description", "Wishlist Icon is hidden in tablet viewport");
+            assertTrue(hReporter(1, context, !hp.isWishlistIconDisplayed()), "Wishlist Icon is displayed in 768px.");
+        }else if (width >= 500) {
+            context.setAttribute("description", "Wishlist Icon is hidden in phone viewport");
+            assertTrue(hReporter(1, context, !hp.isWishlistIconDisplayed()), "Wishlist Icon is displayed in 500px.");
+        }else {
+            log.info("Unexpected viewport.");
         }
     }
 
+    @Test
+    public void testHomePageElements_isGridIconDisplayedAcrossThreeViewports(ITestContext context) {
+        int width = hp.getScreenWidth();
+        context.setAttribute("domId", hp.getGridIconDomId());
+        if (width >= 1200) {
+            context.setAttribute("description", "Grid Icon is displayed only in laptop viewport");
+            assertTrue(hReporter(1, context, hp.isGridIconDisplayed()), "Grid Icon is not displayed in 1200px.");
+        } else if (width >= 768) {
+            context.setAttribute("description", "Grid Icon is hidden in tablet viewport");
+            assertTrue(hReporter(1, context, !hp.isGridIconDisplayed()), "Grid Icon is displayed in 768px.");
+        } else if (width >= 500) {
+            context.setAttribute("description", "Grid Icon is hidden in phone viewport");
+            assertTrue(hReporter(1, context, !hp.isGridIconDisplayed()), "Grid Icon is displayed in 500px.");
+        } else {
+            log.info("Unexpected viewport.");
+        }
+    }
 
+    @Test
+    public void testHomePageElements_isListIconDisplayedAcrossThreeViewports(ITestContext context) {
+        int width = hp.getScreenWidth();
+        context.setAttribute("domId", hp.getListIconDomId());
+        if (width >= 1200) {
+            context.setAttribute("description", "List Icon is only displayed in laptop viewport");
+            assertTrue(hReporter(1, context, hp.isListIconDisplayed()), "List Icon is not displayed in 1200px.");
+        } else if (width >= 768) {
+            context.setAttribute("description", "List Icon is hidden in tablet viewport");
+            assertTrue(hReporter(1, context, !hp.isListIconDisplayed()), "List Icon is displayed in 768px.");
+        } else if (width >= 500) {
+            context.setAttribute("description", "List Icon is hidden in phone viewport");
+            assertTrue(hReporter(1, context, !hp.isListIconDisplayed()), "List Icon is displayed in 500px.");
+        } else {
+            log.info("Unexpected viewport.");
+        }
+    }
+
+    @Test
+    public void testHomePageElements_areTwoItemsInCartDisplayedAcrossThreeViewports(ITestContext context) {
+        int width = hp.getScreenWidth();
+        context.setAttribute("domId", hp.getTwoItemsDomId());
+        if (width >= 1200) {
+            context.setAttribute("description", "Two Items In Cart Icon is displayed in laptop viewport");
+            assertTrue(hReporter(1, context, hp.isTwoItemsInCartDisplayed()), "Two Items In Cart Icon is not displayed in 1200px.");
+        } else if (width >= 768) {
+            context.setAttribute("description", "Two Items In Cart Icon is displayed in tablet viewport");
+            assertTrue(hReporter(1, context, hp.isTwoItemsInCartDisplayed()), "Two Items In Cart Icon is not displayed in 768px.");
+        } else if (width >= 500) {
+            context.setAttribute("description", "Two Items In Cart Icon is hidden in phone viewport");
+            assertTrue(hReporter(1, context, !hp.isTwoItemsInCartDisplayed()), "Two Items In Cart Icon is displayed in 500px.");
+        } else {
+            log.info("Unexpected viewport.");
+        }
+    }
+
+    @Test
+    public void testHomePageElements_isFooterContactsDisplayedAcrossThreeViewports(ITestContext context) {
+        int width = hp.getScreenWidth();
+        context.setAttribute("domId", hp.getFooterContactsMenuDomId());
+
+        if (width >= 1200) {
+            context.setAttribute("description", "Footer: Contacts Menu is displayed in laptop viewport");
+            assertTrue(hReporter(1, context, hp.isFooterContactsMenuDisplayed()), "Footer: Contacts Menu is not displayed in 1200px.");
+        } else if (width >= 768) {
+            context.setAttribute("description", "Footer: Contacts Menu is displayed in tablet viewport");
+            assertTrue(hReporter(1, context, hp.isFooterContactsMenuDisplayed()), "Footer: Contacts Menu is not displayed in 768px.");
+        } else if (width >= 500) {
+            context.setAttribute("description", "Footer: Contacts Menu is hidden in phone viewport");
+            assertTrue(hReporter(1, context, !hp.isFooterContactsMenuDisplayed()), "Footer: Contacts Menu is displayed in 500px.");
+        } else {
+            log.info("Unexpected viewport.");
+        }
+    }
+
+    @Test
+    public void testHomePageElements_isFooterQuickLinksDisplayedAcrossThreeViewports(ITestContext context) {
+        int width = hp.getScreenWidth();
+        context.setAttribute("domId", hp.getFooterQuickLinksMenuDomId());
+        if (width >= 1200) {
+            context.setAttribute("description", "Footer: Quick Links Menu is displayed in laptop viewport");
+            assertTrue(hReporter(1, context, hp.isFooterQuickLinksMenuDisplayed()), "Footer: Quick Links Menu is not displayed in 1200px.");
+        } else if (width >= 768) {
+            context.setAttribute("description", "Footer: Quick Links Menu is displayed in tablet viewport");
+            assertTrue(hReporter(1, context, hp.isFooterQuickLinksMenuDisplayed()), "Footer: Quick Links Menu is not displayed in 768px.");
+        } else if (width >= 500) {
+            context.setAttribute("description", "Footer: Quick Links Menu is hidden in phone viewport");
+            assertTrue(hReporter(1, context, !hp.isFooterQuickLinksMenuDisplayed()), "Footer: Quick Links Menu is displayed in 500px.");
+        } else {
+            log.info("Unexpected viewport.");
+        }
+    }
+
+    @Test
+    public void testHomePageElements_isFooterKeepInTouchDisplayedAcrossThreeViewports(ITestContext context) {
+        int width = hp.getScreenWidth();
+        context.setAttribute("domId", hp.getFooterKeepInTouchDomId());
+
+        if (width >= 1200) {
+            context.setAttribute("description", "Footer: Keep In Touch Menu is displayed in laptop viewport");
+            assertTrue(hReporter(1, context, hp.isFooterKeepInTouchMenuDisplayed()), "Footer: Keep In Touch Menu is not displayed in 1200px");
+        } else if (width >= 768) {
+            context.setAttribute("description", "Footer: Keep In Touch Menu is displayed in tablet viewport");
+            assertTrue(hReporter(1, context, hp.isFooterKeepInTouchMenuDisplayed()), "Footer: Keep In Touch Menu is not displayed in 768px");
+        } else if (width >= 500) {
+            context.setAttribute("description", "Footer: Keep In Touch Menu is hidden in phone viewport");
+            assertTrue(hReporter(1, context, !hp.isFooterKeepInTouchMenuDisplayed()), "Footer: Keep In Touch Menu is displayed in 500px.");
+        } else {
+            log.info("Unexpected viewport.");
+        }
+    }
+
+    @Test
+    public void testHomePageElements_isFilterButtonTitleDisplayedAcrossThreeViewports(ITestContext context) {
+        int width = hp.getScreenWidth();
+        context.setAttribute("domId", hp.getFooterKeepInTouchDomId());
+        if (width >= 1200) {
+            context.setAttribute("description", "Filter Button Title is hidden in laptop viewport");
+            assertTrue(hReporter(1, context, !hp.isFilterButtonTitleDisplayed()), "Filter Button Title is displayed in 1200px.");
+        } else if (width >= 768) {
+            context.setAttribute("description", "Filter Button Title is displayed only in laptop viewport");
+            assertTrue(hReporter(1, context, hp.isFilterButtonTitleDisplayed()), "Filter Button Title is not displayed in 768px.");
+        } else if (width >= 500) {
+            context.setAttribute("description", "Filter Button Title is hidden in phone viewport");
+            assertTrue(hReporter(1, context, !hp.isFilterButtonTitleDisplayed()), "Filter Button Title is displayed in 500px.");
+        } else {
+            log.info("Unexpected viewport.");
+        }
+    }
+
+    @Test
+    public void testHomePageElements_isFunnelIconDisplayedAcrossThreeViewports(ITestContext context) {
+        int width = hp.getScreenWidth();
+        context.setAttribute("domId", hp.getFooterKeepInTouchDomId());
+        if (width >= 1200) {
+            context.setAttribute("description", "Funnel Icon is hidden in laptop viewport");
+            assertTrue(hReporter(1, context, !hp.isFunnelIconDisplayed()), "Funnel Icon is displayed in 1200px.");
+        } else if (width >= 768) {
+            context.setAttribute("description", "Funnel Icon is displayed in tablet viewport");
+            assertTrue(hReporter(1, context, hp.isFunnelIconDisplayed()), "Funnel Icon is not displayed in 768px.");
+        } else if (width >= 500) {
+            context.setAttribute("description", "Funnel Icon is displayed in phone viewport");
+            assertTrue(hReporter(1, context, hp.isFunnelIconDisplayed()), "Funnel Icon is not displayed in 500px.");
+        } else {
+            log.info("Unexpected viewport.");
+        }
+    }
+
+    @Test
+    public void testHomePageElements_isFavouritesIconDisplayedAcrossThreeViewports(ITestContext context) {
+        int width = hp.getScreenWidth();
+        context.setAttribute("domId", hp.getAddToFavouritesIconDomId());
+        if (width >= 1200) {
+            context.setAttribute("description", "Add To Favourites Icon is hidden in laptop viewport");
+            assertTrue(hReporter(1, context, !hp.isAddToFavouritesIconDisplayed()), "Add To Favourites Icon is displayed in 1200px.");
+        } else if (width >= 768) {
+            context.setAttribute("description", "Add To Favourites Icon is displayed in tablet viewport");
+            assertTrue(hReporter(1, context, hp.isAddToFavouritesIconDisplayed()), "Add To Favourites Icon is not displayed in 768px.");
+        } else if (width >= 500) {
+            context.setAttribute("description", "Add To Favourites Icon is displayed in phone viewport");
+            assertTrue(hReporter(1, context, hp.isAddToFavouritesIconDisplayed()), "Add To Favourites Icon is not displayed in 500px.");
+        } else {
+            log.info("Unexpected viewport.");
+        }
+    }
+
+    @Test
+    public void testHomePageElements_isCartIconDisplayedAcrossThreeViewports(ITestContext context) {
+        int width = hp.getScreenWidth();
+        context.setAttribute("domId", hp.getAddToCartIconDomId());
+
+        if (width >= 1200) {
+            context.setAttribute("description", "Add To Cart Icon is hidden in 1200 viewport");
+            assertTrue(hReporter(1, context, !hp.isAddToCartIconDisplayed()), "Add To Cart Icon is displayed in 1200px.");
+        } else if (width >= 768) {
+            context.setAttribute("description", "Add To Cart Icon is displayed in tablet viewport");
+            assertTrue(hReporter(1, context, hp.isAddToCartIconDisplayed()), "Add To Cart Icon is not displayed in 768px.");
+        } else if (width >= 500) {
+            context.setAttribute("description", "Add To Cart Icon is displayed in phone viewport");
+            assertTrue(hReporter(1, context, hp.isAddToCartIconDisplayed()), "Add To Cart Icon is not displayed in 500px.");
+        } else {
+            log.info("Unexpected viewport.");
+        }
+    }
+
+    @Test
+    public void testHomePageElements_isCompareIconDisplayedAcrossThreeViewports(ITestContext context) {
+        int width = hp.getScreenWidth();
+        context.setAttribute("domId", hp.getCompareIconDomId());
+
+        if (width >= 1200) {
+            context.setAttribute("description", "Compare Icon is hidden in laptop viewport");
+            assertTrue(hReporter(1, context, !hp.isCompareIconDisplayed()), "Compare Icon is displayed in 1200px.");
+        } else if (width >= 768) {
+            context.setAttribute("description", "Compare Icon is displayed in tablet viewport");
+            assertTrue(hReporter(1, context, hp.isCompareIconDisplayed()), "Compare Icon is not displayed in 768px");
+        } else if (width >= 500) {
+            context.setAttribute("description", "Compare Icon is displayed in phone viewport");
+            assertTrue(hReporter(1, context, hp.isCompareIconDisplayed()), "Compare Icon is not displayed in500px.");
+        } else {
+            log.info("Unexpected viewport.");
+        }
+    }
 }

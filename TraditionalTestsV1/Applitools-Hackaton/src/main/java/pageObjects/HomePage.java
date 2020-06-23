@@ -115,17 +115,23 @@ public class HomePage extends Page {
         return wishlistIcon.isDisplayed();
     }
 
+    public String getWishlistIconDomId(){return getDomId(wishlistIcon);}
+
     @FindBy(id = "A____201")
     private WebElement gridIcon;
     public boolean isGridIconDisplayed(){
         return gridIcon.isDisplayed();
     }
 
+    public String getGridIconDomId() {return getDomId(gridIcon);}
+
     @FindBy(id = "A____203")
     private WebElement listIcon;
     public boolean isListIconDisplayed(){
         return listIcon.isDisplayed();
     }
+
+    public String getListIconDomId() {return getDomId(listIcon);}
 
     //visible in 1200px and 768px
     @FindBy(id = "DIV__customsear__41")
@@ -134,10 +140,18 @@ public class HomePage extends Page {
         return searchField.isDisplayed();
     }
 
+    public String getSearchFieldDomId(){
+        return getDomId(searchField);
+    }
+
     @FindBy(id = "STRONG____50")
     private WebElement twoItemsInCart;
     public boolean isTwoItemsInCartDisplayed(){
         return twoItemsInCart.isDisplayed();
+    }
+
+    public String getTwoItemsDomId(){
+        return getDomId(twoItemsInCart);
     }
 
     @FindBy(id = "collapse_1")
@@ -146,16 +160,28 @@ public class HomePage extends Page {
         return footerQuickLinksMenu.isDisplayed();
     }
 
+    public String getFooterQuickLinksMenuDomId(){
+        return getDomId(footerQuickLinksMenu);
+    }
+
     @FindBy(id = "collapse_3")
     private WebElement footerContactsMenu;
     public boolean isFooterContactsMenuDisplayed(){
         return footerContactsMenu.isDisplayed();
     }
 
+    public String getFooterContactsMenuDomId(){
+        return getDomId(footerContactsMenu);
+    }
+
     @FindBy(id = "collapse_4")
     private WebElement footerKeepInTouchMenu;
     public boolean isFooterKeepInTouchMenuDisplayed(){
         return footerKeepInTouchMenu.isDisplayed();
+    }
+
+    public String getFooterKeepInTouchDomId(){
+        return getDomId(footerKeepInTouchMenu);
     }
 
     //visible only in 768px
@@ -165,11 +191,19 @@ public class HomePage extends Page {
         return filterButtonTitle.isDisplayed();
     }
 
+    public String getFilterButtonTitleDomId(){
+        return getDomId(filterButtonTitle);
+    }
+
     //visible in 768px and 500px
     @FindBy(id = "ti-filter")
     private WebElement funnelIcon;
     public boolean isFunnelIconDisplayed(){
         return funnelIcon.isDisplayed();
+    }
+
+    public String getFunnelIconDomId(){
+        return getDomId(funnelIcon);
     }
 
     @FindBy(id = "LI____223")
@@ -178,10 +212,18 @@ public class HomePage extends Page {
         return addToFavouritesIcon.isDisplayed();
     }
 
+    public String getAddToFavouritesIconDomId(){
+        return getDomId(addToFavouritesIcon);
+    }
+
     @FindBy(id = "LI____227")
     private WebElement compareIcon;
     public boolean isCompareIconDisplayed(){
         return compareIcon.isDisplayed();
+    }
+
+    public String getCompareIconDomId(){
+        return getDomId(compareIcon);
     }
 
     @FindBy(id = "LI____231")
@@ -190,39 +232,8 @@ public class HomePage extends Page {
         return addToCartIcon.isDisplayed();
     }
 
-    public List<WebElement> create1200ElementList(){
-        //visible in 1200px, some of them visible in 768
-        return List.of(navMenu, wishlistIcon, gridIcon, listIcon,
-                searchField, twoItemsInCart, footerQuickLinksMenu, footerContactsMenu, footerKeepInTouchMenu);
-    }
-
-    public List<WebElement> create768ElementList(){
-        return List.of(searchField, twoItemsInCart, footerQuickLinksMenu, footerContactsMenu, footerKeepInTouchMenu,
-                filterButtonTitle, funnelIcon, addToFavouritesIcon, compareIcon, addToCartIcon);
-    }
-
-    public List<WebElement> create500ElementList(){
-        return List.of(funnelIcon, addToFavouritesIcon, compareIcon, addToCartIcon);
-    }
-
-    public List<WebElement> notDisplayedIn1200ElementList(){
-        return List.of(filterButtonTitle, funnelIcon, addToFavouritesIcon, compareIcon, addToCartIcon);
-    }
-
-    public List<WebElement> notDisplayedIn768ElementList(){
-        return List.of(navMenu, wishlistIcon, gridIcon, listIcon);
-    }
-
-    public List<WebElement> notDisplayedIn500ElementList(){
-        return List.of(navMenu, wishlistIcon, gridIcon, listIcon,
-                searchField, twoItemsInCart, footerQuickLinksMenu, footerContactsMenu, footerKeepInTouchMenu, filterButtonTitle);
-    }
-
-    public List<Boolean> areElementsDisplayed(List<WebElement> elements){
-        return elements
-                .stream()
-                .map(WebElement::isDisplayed)
-                .collect(Collectors.toList());
+    public String getAddToCartIconDomId(){
+        return getDomId(addToCartIcon);
     }
 
     public String getOldPriceDomId() {
