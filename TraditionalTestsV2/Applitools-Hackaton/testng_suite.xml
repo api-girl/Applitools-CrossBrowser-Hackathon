@@ -3,7 +3,7 @@
 
 <suite name="TraditionalTest_V1" verbose="1" parallel="methods" thread-count="1">
 
-        <parameter name="url" value="https://demo.applitools.com/gridHackathonV1.html"/>
+    <parameter name="url" value="https://demo.applitools.com/gridHackathonV2.html"/>
 
     <test name="Chrome V83 Mobile:500x700">
         <parameter name="browser" value="Chrome"/>
