@@ -32,7 +32,7 @@ public class Task3_ProductDetailsTest extends BaseTest {
         context.setAttribute("domId", pp.getReviewSubtitleDomId());
         context.setAttribute("description", "The number of reviews does not overlap with stars.");
         assertTrue(hReporter(3, context, pp.isThereExpectedSpaceBetweenStarsAndSubtitle()),
-                "Unexpected margin noticed next to the number of stars.");
+                "The number of reviews is located on the right side of the stars.");
     }
 
     @Test
@@ -63,7 +63,7 @@ public class Task3_ProductDetailsTest extends BaseTest {
         pp = hp.clickOnAProduct();
         context.setAttribute("domId", pp.getProductImageDomId());
         context.setAttribute("description", "Product Image is displayed");
-        assertTrue(hReporter(3, context, pp.isProductImageDisplayed()), "Product image is not displayed");
+        assertTrue(hReporter(3, context, pp.isProductImageDisplayed()), "Product image is displayed");
     }
 
     @Test
@@ -82,7 +82,7 @@ public class Task3_ProductDetailsTest extends BaseTest {
         context.setAttribute("description", "On Product Page, old price is gray and new price is blue");
         context.setAttribute("domId", pricesDomIdsPp);
         assertTrue(hReporter(3, context, pp.doBothPricesColoursMatchExpectedOnProductPage(expectedStyles)),
-                "Unexpected colour detected.");
+                "On Product Page, old price is gray and new price is blue.");
     }
 
     @Test
@@ -101,7 +101,7 @@ public class Task3_ProductDetailsTest extends BaseTest {
         context.setAttribute("description", "On Product Page, old price is always crossed");
         context.setAttribute("domId", priceDomIdsPp);
         assertTrue(hReporter(3, context, actualPpTextDecorationOldPrice.contains("line-through")),
-                "The line's expected style on PP is line-though and it doesn't match the actual.");
+                "The old price is always crossed if there is a discount.");
     }
 
     @Test
@@ -114,7 +114,7 @@ public class Task3_ProductDetailsTest extends BaseTest {
         context.setAttribute("description", "Prices styles are the same on Home and Product page");
         context.setAttribute("domId", pricesDomIds);
         assertTrue(hReporter(3, context, pp.doPricesStyleMatchOnBothPages(hpPricesStyles)),
-                "There is no match between prices style on product and home pages.");
+                "Prices colours match on Product and Home Page.");
     }
 
     @Test
@@ -126,19 +126,19 @@ public class Task3_ProductDetailsTest extends BaseTest {
 
         context.setAttribute("description", "Old and new prices displayed on the Home and Product pages are the same");
         context.setAttribute("domId", pricesDomIds);
-        assertTrue(hReporter(3, context, pp.areTheSamePricesDisplayedOnBothPages(hpActualPrices)), "Prices do not match.");
+        assertTrue(hReporter(3, context, pp.areTheSamePricesDisplayedOnBothPages(hpActualPrices)), "Prices and number of decimals match.");
     }
 
     @Test
     public void testSizeDropdown_verifyFirstOption_expectSmallS(ITestContext context) {
         var expectedOption = "Small (S)";
         pp = hp.clickOnAProduct();
-        var actualOptions = pp.getDefaultSizeOption();
-        var optionsDomId = pp.getDefaultSizeDomId();
+        var actualOption = pp.getDefaultSizeOption();
+        var optionDomId = pp.getDefaultSizeDomId();
 
         context.setAttribute("description", "Size dropdown's default value is Small(S)");
-        context.setAttribute("domId", optionsDomId);
-        assertTrue(hReporter(3, context, actualOptions.equals(expectedOption)), "The default size option does not match expected.");
+        context.setAttribute("domId", optionDomId);
+        assertTrue(hReporter(3, context, actualOption.equals(expectedOption)), "The expected default size option is \"Small(S)\".\nActual: " + actualOption);
     }
 
     @Test
@@ -149,7 +149,7 @@ public class Task3_ProductDetailsTest extends BaseTest {
         context.setAttribute("description", "There is a space between button and quantity dropdown");
         context.setAttribute("domId", buttonDomId);
         assertTrue(hReporter(3, context, pp.isThereExpectedSpaceBetweenButtonAndQuantityDropdown()),
-                "Unexpected margin settings detected on \"Add to Cart\" button.");
+                "\"Add to Cart\" button is below Quantity dropdown. There is expected space between two elements.");
     }
 
     @Test
@@ -159,7 +159,7 @@ public class Task3_ProductDetailsTest extends BaseTest {
 
         context.setAttribute("description", "There is a space between each of the navigation icons");
         context.setAttribute("domId", iconsDomId);
-        assertTrue(hReporter(3, context, pp.isThereExpectedSpaceBetweenNavIcons()), "The actual margin between icons is not 20px.");
+        assertTrue(hReporter(3, context, pp.isThereExpectedSpaceBetweenNavIcons()), "The actual margin between Navigation Icons is 20px.");
     }
 
 }

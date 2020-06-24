@@ -1,7 +1,5 @@
 package testUtils;
 
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -33,7 +31,6 @@ public class BrowserFactory extends BaseTest {
     private WebDriver initEdgeDriver() {
         log.info("Launching a new instance of Edge Chromium...");
         System.setProperty("webdriver.edge.driver", edgeDriverPath);
-
         driver = new EdgeDriver();
         return driver;
     }
@@ -49,7 +46,6 @@ public class BrowserFactory extends BaseTest {
     private WebDriver initFirefoxDriver () {
         log.info("Launching a new instance of Firefox browser..");
         System.setProperty("webdriver.gecko.driver", firefoxDriverPath);
-
         driver = new FirefoxDriver(getFirefoxDriverOptions());
         return driver;
     }
@@ -57,7 +53,6 @@ public class BrowserFactory extends BaseTest {
     private static ChromeOptions getChromeDriverOptions() {
         ChromeOptions options = new ChromeOptions();
         options.setHeadless(true);
-//        options.setPageLoadStrategy(PageLoadStrategy.EAGER);
         return options;
     }
 
@@ -69,10 +64,5 @@ public class BrowserFactory extends BaseTest {
         return options;
     }
 
-//    public EdgeOptions getEdgeOptions(){
-//        EdgeOptions options = new EdgeOptions();
-//        options.merge()
-//        return options;
-//    }
 
 }

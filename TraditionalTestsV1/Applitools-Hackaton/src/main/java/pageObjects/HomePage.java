@@ -236,6 +236,21 @@ public class HomePage extends Page {
         return getDomId(addToCartIcon);
     }
 
+    //visible only in 500px
+    @FindBy(id = "LI____58")
+    private WebElement magnifyingGlass;
+    public boolean isMagnifyingGlassDisplayed(){
+        return magnifyingGlass.isDisplayed();
+    }
+
+    public String getMagnifyingGlassDomId(){
+        return getDomId(magnifyingGlass);
+    }
+
+    public boolean isMagnifyingGlassLocatedLeft() {
+        return magnifyingGlass.getRect().getX() <= 15;
+    }
+
     public String getOldPriceDomId() {
         return getDomId(oldPrice);
     }

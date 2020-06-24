@@ -26,7 +26,6 @@ public class BaseTest {
         } catch (Exception e) {
             System.out.println("Error....." + Arrays.toString(e.getStackTrace()));
         }
-
         driver.get(url);
         driver.manage().window().setSize(new Dimension(screenWidth, screenHeight));
         hp = new HomePage(driver);
@@ -40,7 +39,7 @@ public class BaseTest {
     }
 
     public boolean hReporter(int taskNo, ITestContext context, boolean comparisonResult){
-        try (var writer = new BufferedWriter(new FileWriter("Traditional-V1-TestResults.txt", true))) {
+        try (var writer = new BufferedWriter(new FileWriter("Traditional-V2-TestResults.txt", true))) {
             writer.write(
                     "Task: " +  taskNo +
                     ", Test Name: " + context.getAttribute("description") +
