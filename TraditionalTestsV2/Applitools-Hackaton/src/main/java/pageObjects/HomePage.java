@@ -25,10 +25,10 @@ public class HomePage extends Page {
     @FindBy(id = "filter_col")
     private WebElement filterTable;
 
-    @FindBy(id = "SPAN__oldprice__221")
+    @FindBy(id = "SPAN__oldprice__222")
     private WebElement oldPrice;
 
-    @FindBy(id = "SPAN__newprice__220")
+    @FindBy(id = "SPAN__newprice__221")
     private WebElement newPrice;
 
     @FindBy(css = "a h3")
@@ -117,7 +117,7 @@ public class HomePage extends Page {
 
     public String getWishlistIconDomId(){return getDomId(wishlistIcon);}
 
-    @FindBy(id = "A____201")
+    @FindBy(id = "A____202")
     private WebElement gridIcon;
     public boolean isGridIconDisplayed(){
         return gridIcon.isDisplayed();
@@ -125,7 +125,7 @@ public class HomePage extends Page {
 
     public String getGridIconDomId() {return getDomId(gridIcon);}
 
-    @FindBy(id = "A____203")
+    @FindBy(id = "A____204")
     private WebElement listIcon;
     public boolean isListIconDisplayed(){
         return listIcon.isDisplayed();
@@ -185,7 +185,7 @@ public class HomePage extends Page {
     }
 
     //visible only in 768px
-    @FindBy(id = "SPAN____208")
+    @FindBy(id = "SPAN____209")
     private WebElement filterButtonTitle;
     public boolean isFilterButtonTitleDisplayed(){
         return filterButtonTitle.isDisplayed();
@@ -206,7 +206,7 @@ public class HomePage extends Page {
         return getDomId(funnelIcon);
     }
 
-    @FindBy(id = "LI____223")
+    @FindBy(id = "LI____224")
     private WebElement addToFavouritesIcon;
     public boolean isAddToFavouritesIconDisplayed(){
         return addToFavouritesIcon.isDisplayed();
@@ -216,7 +216,7 @@ public class HomePage extends Page {
         return getDomId(addToFavouritesIcon);
     }
 
-    @FindBy(id = "LI____227")
+    @FindBy(id = "LI____228")
     private WebElement compareIcon;
     public boolean isCompareIconDisplayed(){
         return compareIcon.isDisplayed();
@@ -226,7 +226,7 @@ public class HomePage extends Page {
         return getDomId(compareIcon);
     }
 
-    @FindBy(id = "LI____231")
+    @FindBy(id = "LI____232")
     private WebElement addToCartIcon;
     public boolean isAddToCartIconDisplayed(){
         return addToCartIcon.isDisplayed();
@@ -236,11 +236,26 @@ public class HomePage extends Page {
         return getDomId(addToCartIcon);
     }
 
+    //visible only in 500px
+    @FindBy(id = "LI____58")
+    private WebElement magnifyingGlass;
+    public boolean isMagnifyingGlassDisplayed(){
+        return magnifyingGlass.isDisplayed();
+    }
+
+    public String getMagnifyingGlassDomId(){
+        return getDomId(magnifyingGlass);
+    }
+
     public String getOldPriceDomId() {
         return getDomId(oldPrice);
     }
 
     public String getNewPriceDomId() {
         return getDomId(newPrice);
+    }
+
+    public boolean isMagnifyingGlassLocatedLeft() {
+        return magnifyingGlass.getRect().getX() <= 15;
     }
 }

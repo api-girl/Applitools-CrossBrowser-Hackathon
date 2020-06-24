@@ -21,6 +21,6 @@ public class Task2_ShoppingExperienceTest extends BaseTest {
         context.setAttribute("description", "Filter black shoes and verify 2 displayed results");
 
         assertTrue(hReporter(2, context, hp.countFilteredResults(elements.size())),
-                "The number of filtered results does not match expected.");
+                "The expected number of filtered results: 2 results.\nActual: " + elements.size()+"\n");
     }
 }

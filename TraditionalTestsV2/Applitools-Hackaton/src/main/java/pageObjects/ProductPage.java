@@ -58,7 +58,7 @@ public class ProductPage extends Page{
         return getDomId(oldPrice);
     }
 
-    @FindBy(id = "EM____82")
+    @FindBy(id = "EM__ratingcoun__82")
     private WebElement reviewSubtitle;
     public String getReviewSubtitleDomId(){
         return getDomId(reviewSubtitle);
@@ -91,7 +91,7 @@ public class ProductPage extends Page{
     }
 
     public boolean isProductImageDisplayed() {
-        return productImage.isDisplayed() && productImage.getAttribute("style").contains("img");
+        return productImage.getAttribute("style").contains("img");
     }
 
     public boolean isReviewSectionDisplayed(){
