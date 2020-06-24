@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5945fdd1-cec0-4391-9dcc-fb3640ea3cd1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/TraditionalTestV2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/main/java/pageObjects/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/main/java/pageObjects/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/main/java/pageObjects/ProductPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testClasses/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testClasses/Task1_CrossDeviceElementsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testClasses/Task2_ShoppingExperienceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testClasses/Task3_ProductDetailsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testUtils/BrowserFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/testng_suite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/Traditional-V1-TestResults.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/testng_suite_trial.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testUtils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
@@ -193,28 +177,28 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="1920" y="73" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592881210470" />
-    <state width="1877" height="319" key="GridCell.Tab.0.bottom" timestamp="1592887176368">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1323" height="415" key="GridCell.Tab.0.bottom" timestamp="1592961291820">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592848936887" />
+    <state width="1323" height="415" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592961291820" />
     <state width="1877" height="607" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
     <state width="1877" height="319" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592887176368" />
-    <state width="1877" height="319" key="GridCell.Tab.0.center" timestamp="1592887176368">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1323" height="415" key="GridCell.Tab.0.center" timestamp="1592961291820">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592848936887" />
+    <state width="1323" height="415" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592961291820" />
     <state width="1877" height="607" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
     <state width="1877" height="319" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592887176368" />
-    <state width="1877" height="319" key="GridCell.Tab.0.left" timestamp="1592887176368">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1323" height="415" key="GridCell.Tab.0.left" timestamp="1592961291820">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592848936887" />
+    <state width="1323" height="415" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592961291820" />
     <state width="1877" height="607" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
     <state width="1877" height="319" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592887176368" />
-    <state width="1877" height="319" key="GridCell.Tab.0.right" timestamp="1592887176368">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1323" height="415" key="GridCell.Tab.0.right" timestamp="1592961291820">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592848936887" />
+    <state width="1323" height="415" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592961291820" />
     <state width="1877" height="607" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
     <state width="1877" height="319" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592887176368" />
     <state width="1877" height="319" key="GridCell.Tab.1.bottom" timestamp="1592887176369">
