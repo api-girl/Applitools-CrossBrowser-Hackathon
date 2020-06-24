@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5945fdd1-cec0-4391-9dcc-fb3640ea3cd1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/Traditional-V1-TestResults.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/testng_suite_trial.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/Traditional-V1-TestResults.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
