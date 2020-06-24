@@ -2,16 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5945fdd1-cec0-4391-9dcc-fb3640ea3cd1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/TraditionalTestV2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/main/java/pageObjects/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/main/java/pageObjects/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/main/java/pageObjects/ProductPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testClasses/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testClasses/Task1_CrossDeviceElementsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testClasses/Task2_ShoppingExperienceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testClasses/Task3_ProductDetailsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testUtils/BrowserFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/testng_suite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/Traditional-V1-TestResults.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/Traditional-V1-TestResults.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/log4j.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/classes/classUtils/LoggerClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/classes/pageObjects/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/classes/pageObjects/Page.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/test-classes/testClasses/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/test-classes/testClasses/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/test-classes/testClasses/Task1_CrossDeviceElementsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/test-classes/testClasses/Task1_CrossDeviceElementsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,22 +51,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testClasses" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testUtils" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Nena\repos\CrossBrowserApplitoolsChallenge\TraditionalTestsV1\Applitools-Hackaton" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Nena\repos\CrossBrowserApplitoolsChallenge\TraditionalTestsV2\Applitools-Hackaton\src\test\java\testClasses" />
+      <recent name="C:\Users\Nena\repos\CrossBrowserApplitoolsChallenge\TraditionalTestsV2\Applitools-Hackaton\src\test\java\testUtils" />
       <recent name="C:\Users\Nena\repos\CrossBrowserApplitoolsChallenge\TraditionalTestsV2" />
+      <recent name="C:\Users\Nena\repos\CrossBrowserApplitoolsChallenge\TraditionalTestsV2\Applitools-Hackaton\src\test\java\testClasses" />
       <recent name="C:\Users\Nena\repos\CrossBrowserApplitoolsChallenge\TraditionalTestsV1\Applitools-Hackaton" />
       <recent name="C:\Users\Nena\repos\CrossBrowserApplitoolsChallenge\TraditionalTestsV1" />
-      <recent name="C:\Users\Nena\repos\CrossBrowserApplitoolsChallenge\ModernTestsV1" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV1/Applitools-Hackaton/testng_suite.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV2/Applitools-Hackaton/testng_suite.xml">
     <configuration name="C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV1/Applitools-Hackaton/testng_suite_trial.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TraditionalTestV1" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/testng_suite_trial.xml" />
@@ -79,6 +87,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV2/Applitools-Hackaton/testng_suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TraditionalTestV2" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/testng_suite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Task1_CrossDeviceElementsTest.testHomePageElements_areElementsDisplayedIn1200px" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TraditionalTestV1" />
       <extension name="coverage">
@@ -91,23 +109,6 @@
       <option name="MAIN_CLASS_NAME" value="testClasses.Task1_CrossDeviceElementsTest" />
       <option name="METHOD_NAME" value="testHomePageElements_areElementsDisplayedIn1200px" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task3_ProductDetailsTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TraditionalTestV1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testClasses.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testClasses" />
-      <option name="MAIN_CLASS_NAME" value="testClasses.Task3_ProductDetailsTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -134,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV2/Applitools-Hackaton/testng_suite.xml" />
         <item itemvalue="TestNG.C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV1/Applitools-Hackaton/testng_suite.xml" />
         <item itemvalue="TestNG.C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV1/Applitools-Hackaton/testng_suite_trial.xml" />
         <item itemvalue="TestNG.Task1_CrossDeviceElementsTest.testHomePageElements_areElementsDisplayedIn1200px" />
         <item itemvalue="TestNG.Task3_ProductDetailsTest.testAddToCartButton_isThereSpaceBetweenButtonAndQuantityDropdown_expectTrue" />
-        <item itemvalue="TestNG.Task3_ProductDetailsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -183,62 +184,71 @@
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1592282481905" />
     <state x="580" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592883387462" />
+    <state x="526" y="166" key="FileChooserDialogImpl" timestamp="1592957891578">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="526" y="166" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592957891578" />
+    <state x="2660" y="237" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592887432472" />
     <state x="1920" y="73" key="FileDocumentManager.FileCacheConflict" timestamp="1592881210472">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="1920" y="73" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592881210470" />
-    <state width="1877" height="862" key="GridCell.Tab.0.bottom" timestamp="1592885567160">
+    <state width="1877" height="319" key="GridCell.Tab.0.bottom" timestamp="1592887176368">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592848936887" />
     <state width="1877" height="607" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
-    <state width="1877" height="862" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592885567160" />
-    <state width="1877" height="862" key="GridCell.Tab.0.center" timestamp="1592885567160">
+    <state width="1877" height="319" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592887176368" />
+    <state width="1877" height="319" key="GridCell.Tab.0.center" timestamp="1592887176368">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="172" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592848936887" />
     <state width="1877" height="607" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
-    <state width="1877" height="862" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592885567160" />
-    <state width="1877" height="862" key="GridCell.Tab.0.left" timestamp="1592885567160">
+    <state width="1877" height="319" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592887176368" />
+    <state width="1877" height="319" key="GridCell.Tab.0.left" timestamp="1592887176368">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="172" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592848936887" />
     <state width="1877" height="607" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
-    <state width="1877" height="862" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592885567160" />
-    <state width="1877" height="862" key="GridCell.Tab.0.right" timestamp="1592885567160">
+    <state width="1877" height="319" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592887176368" />
+    <state width="1877" height="319" key="GridCell.Tab.0.right" timestamp="1592887176368">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="172" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592848936887" />
     <state width="1877" height="607" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
-    <state width="1877" height="862" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592885567160" />
-    <state width="1877" height="319" key="GridCell.Tab.1.bottom" timestamp="1592879192186">
+    <state width="1877" height="319" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592887176368" />
+    <state width="1877" height="319" key="GridCell.Tab.1.bottom" timestamp="1592887176369">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="304" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592847596574" />
     <state width="1877" height="371" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592870648288" />
-    <state width="1877" height="319" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592879192186" />
-    <state width="1877" height="319" key="GridCell.Tab.1.center" timestamp="1592879192185">
+    <state width="1877" height="319" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592887176369" />
+    <state width="1877" height="319" key="GridCell.Tab.1.center" timestamp="1592887176368">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="304" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1592847596574" />
     <state width="1877" height="371" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592870648288" />
-    <state width="1877" height="319" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592879192185" />
-    <state width="1877" height="319" key="GridCell.Tab.1.left" timestamp="1592879192185">
+    <state width="1877" height="319" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592887176368" />
+    <state width="1877" height="319" key="GridCell.Tab.1.left" timestamp="1592887176368">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="304" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1592847596574" />
     <state width="1877" height="371" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592870648288" />
-    <state width="1877" height="319" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592879192185" />
-    <state width="1877" height="319" key="GridCell.Tab.1.right" timestamp="1592879192185">
+    <state width="1877" height="319" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592887176368" />
+    <state width="1877" height="319" key="GridCell.Tab.1.right" timestamp="1592887176368">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1323" height="304" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592847596574" />
     <state width="1877" height="371" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592870648288" />
-    <state width="1877" height="319" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592879192185" />
-    <state x="242" y="6" key="SettingsEditor" timestamp="1592849981328">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="319" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592887176368" />
+    <state x="2545" y="224" width="799" height="591" key="NewModule_or_Project.wizard" timestamp="1592887446024">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="172" y="4" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592402275125" />
+    <state x="2545" y="224" width="799" height="591" key="NewModule_or_Project.wizard/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592887446024" />
+    <state x="172" y="4" key="SettingsEditor" timestamp="1592956835651">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="172" y="4" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1592956835651" />
     <state x="242" y="6" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592849981328" />
     <state x="2381" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592321611210" />
     <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1592845233375">
@@ -250,9 +260,10 @@
     </state>
     <state x="65" y="64" width="1236" height="600" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1592843777338" />
     <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592622912096" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592876694437">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="443" y="158" width="672" height="475" key="search.everywhere.popup" timestamp="1592956855094">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="443" y="158" width="672" height="475" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1592956855094" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592876694437" />
   </component>
   <component name="XDebuggerManager">
