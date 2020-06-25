@@ -1,27 +1,23 @@
 package testClasses;
 
-import org.testng.ITestContext;
+import com.applitools.eyes.RectangleSize;
+import com.applitools.eyes.fluent.Target;
 import org.testng.annotations.Test;
+import pageObjects.HomePage;
 import pageObjects.ProductPage;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.testng.Assert.*;
 
 public class Task3_ProductDetailsTest extends BaseTest {
+    HomePage hp;
     ProductPage pp;
-
-    /**
-     * Click on the first Black shoe to navigate to its details page. Check if everything looks good and accurate.
-     *
-     * Notes for Modern Approach:
-     *
-     */
 
     @Test
     public void testProductPage_verifyVisibilityOfElementsAcross3Viewports(){
-
+        eyes.open(driver, "Applifashion V1", "Task 3", new RectangleSize(800,600));
+        hp = new HomePage(driver);
+        pp = hp.clickOnAProduct();
+        eyes.check(Target.window().fully().withName("Product Details test"));
+        eyes.closeAsync();
     }
 
 }
