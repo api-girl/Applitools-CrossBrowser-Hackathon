@@ -91,3 +91,6 @@ Task: 3, Test Name: Product Titles displayed on Home and Product page must match
 Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
 Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM__ratingcoun__82, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
 Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 1, Test Name: Two Items In Cart Icon is displayed in laptop viewport, DOM Id: STRONG____50, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Add To Cart Icon is hidden in 1200 viewport, DOM Id: LI____232, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Compare Icon is hidden in laptop viewport, DOM Id: LI____228, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass

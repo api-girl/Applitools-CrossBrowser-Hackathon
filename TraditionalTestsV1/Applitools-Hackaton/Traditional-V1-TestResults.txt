@@ -91,3 +91,39 @@ Task: 3, Test Name: Product Titles displayed on Home and Product page must match
 Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
 Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM____82, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
 Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 1, Test Name: Two Items In Cart Icon is hidden in phone viewport, DOM Id: STRONG____50, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 1, Test Name: Add To Cart Icon is displayed in phone viewport, DOM Id: LI____231, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 1, Test Name: Two Items In Cart Icon is displayed in tablet viewport, DOM Id: STRONG____50, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Add To Cart Icon is displayed in tablet viewport, DOM Id: LI____231, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Compare Icon is displayed in tablet viewport, DOM Id: LI____227, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Filter Menu is unfolded by default only in laptop viewport, DOM Id: A__openfilter__70, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Filter Menu is unfolded by default only in laptop viewport, DOM Id: A____8, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: Filter Menu is unfolded by default only in laptop viewport, DOM Id: A__openfilter__70, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Filter Menu is unfolded by default only in laptop viewport, DOM Id: A____8, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: Filter Menu is unfolded by default only in laptop viewport, DOM Id: A__openfilter__70, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Logo is located on the left top side of the screen in laptop viewport, DOM Id: A____8, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Filter Menu is folded by default in tablet viewport., DOM Id: A__openfilter__70, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Filter Menu is unfolded by default only in laptop viewport, DOM Id: A__openfilter__70, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Logo is located on the left top side of the screen in laptop viewport, DOM Id: A____8, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Filter Menu is folded by default in tablet viewport., DOM Id: A__openfilter__70, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Logo is centered at the top of the page in tablet viewport., DOM Id: A____8, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Filter Menu is unfolded by default only in laptop viewport, DOM Id: A__openfilter__70, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Logo is located on the left top side of the screen in laptop viewport, DOM Id: A____8, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Filter Menu is unfolded by default only in laptop viewport, DOM Id: A__openfilter__70, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Logo is located on the left top side of the screen in laptop viewport, DOM Id: A____8, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Filter Menu is folded by default in tablet viewport., DOM Id: A__openfilter__70, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Logo is centered at the top of the page in tablet viewport., DOM Id: A____8, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Filter Menu is folded by default in phone viewport, DOM Id: A__openfilter__70, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 1, Test Name: Logo is centered at the top of the page in phone viewport, DOM Id: A____8, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 1, Test Name: Logo is located on the left top side of the screen in laptop viewport, DOM Id: A____8, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Logo is centered at the top of the page in tablet viewport., DOM Id: A____8, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Logo is centered at the top of the page in phone viewport, DOM Id: A____8, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 1, Test Name: Filter Menu is unfolded by default only in laptop viewport, DOM Id: DIV__innerbt__69, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Filter Menu is folded by default in tablet viewport., DOM Id: DIV__innerbt__69, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Filter Menu is folded by default in phone viewport, DOM Id: DIV__innerbt__69, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 1, Test Name: Filter Menu is unfolded by default only in laptop viewport, DOM Id: DIV__innerbt__69, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: Filter Menu is folded by default in tablet viewport., DOM Id: DIV__innerbt__69, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Filter Menu is folded by default in phone viewport, DOM Id: DIV__innerbt__69, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 1, Test Name: Filter Menu is unfolded by default only in laptop viewport, DOM Id: A__openfilter__70, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: Filter Menu is folded by default in tablet viewport., DOM Id: A__openfilter__70, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Filter Menu is folded by default in phone viewport, DOM Id: A__openfilter__70, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass

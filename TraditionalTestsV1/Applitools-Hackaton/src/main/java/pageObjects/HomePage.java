@@ -27,9 +27,15 @@ public class HomePage extends Page {
 
     @FindBy(id = "SPAN__oldprice__221")
     private WebElement oldPrice;
+    public String getOldPriceDomId() {
+        return getDomId(oldPrice);
+    }
 
     @FindBy(id = "SPAN__newprice__220")
     private WebElement newPrice;
+     public String getNewPriceDomId() {
+        return getDomId(newPrice);
+    }
 
     @FindBy(css = "a h3")
     private List<WebElement> productTitles;
@@ -98,6 +104,25 @@ public class HomePage extends Page {
         return productTitles.get(0).getText();
     }
 
+    //displayed in all three viewports
+    @FindBy(id="A____8")
+    private WebElement logo;
+    public String getLogoDomId(){
+        return getDomId(logo);
+    }
+
+    public boolean isLogoCorrectlyLocated(){
+        if(getScreenWidth() >= 1200){
+            return logo.getRect().getX() == 15;
+        } else if(getScreenWidth() >= 768){
+            return logo.getRect().getX() == 279;
+        }else if(getScreenWidth() >= 500){
+            return logo.getRect().getX() == 153;
+        }
+        System.out.println("Unexpected viewport");
+        return false;
+    }
+
     //only displayed in 1200px
     @FindBy(id = "UL____21")
     private WebElement navMenu;
@@ -108,6 +133,7 @@ public class HomePage extends Page {
     public String getNavMenuDomId(){
         return navMenu.getAttribute("id");
     }
+
 
     @FindBy(id = "A__wishlist__52")
     private WebElement wishlistIcon;
@@ -251,11 +277,4 @@ public class HomePage extends Page {
         return magnifyingGlass.getRect().getX() <= 15;
     }
 
-    public String getOldPriceDomId() {
-        return getDomId(oldPrice);
-    }
-
-    public String getNewPriceDomId() {
-        return getDomId(newPrice);
-    }
 }

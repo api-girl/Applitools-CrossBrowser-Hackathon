@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1b48dd2-1c8d-4e9f-8e54-37e31ef321f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applitools-Hackaton/src/main/java/pageObjects/EyesPom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applitools-Hackaton/src/main/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applitools-Hackaton/src/main/java/pageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applitools-Hackaton/src/main/java/pageObjects/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applitools-Hackaton/src/main/java/pageObjects/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applitools-Hackaton/src/main/java/pageObjects/ProductPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applitools-Hackaton/src/test/java/testClasses/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applitools-Hackaton/src/test/java/testClasses/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applitools-Hackaton/src/test/java/testClasses/Task1_CrossDeviceElementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applitools-Hackaton/src/test/java/testClasses/Task1_CrossDeviceElementsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applitools-Hackaton/src/test/java/testClasses/Task2_ShoppingExperienceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applitools-Hackaton/src/test/java/testClasses/Task2_ShoppingExperienceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applitools-Hackaton/src/test/java/testClasses/Task3_ProductDetailsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Applitools-Hackaton/src/test/java/testClasses/Task3_ProductDetailsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applitools-Hackaton/src/test/java/testUtils/BrowserFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applitools-Hackaton/testng_suite.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Applitools-Hackaton/testng_suite_trial.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Applitools-Hackaton/testng_suite_trial.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TraditionalTestsV2/Applitools-Hackaton/testng_suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TraditionalTestsV2/Applitools-Hackaton/testng_suite.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1dmii0GBc2BTG35QXvRNMyaQRZt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/ModernTestsV1/Applitools-Hackaton/testng_suite_trial.xml">
+    <configuration name="C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/ModernTestsV1/Applitools-Hackaton/testng_suite_trial.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ModernTestV1" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/Applitools-Hackaton/testng_suite_trial.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task1_CrossDeviceElementsTest.ultraFastTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ModernTestV1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testClasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testClasses" />
+      <option name="MAIN_CLASS_NAME" value="testClasses.Task1_CrossDeviceElementsTest" />
+      <option name="METHOD_NAME" value="ultraFastTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/ModernTestsV1/Applitools-Hackaton/testng_suite_trial.xml" />
+        <item itemvalue="TestNG.Task1_CrossDeviceElementsTest.ultraFastTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1b48dd2-1c8d-4e9f-8e54-37e31ef321f9" name="Default Changelist" comment="" />
+      <created>1593036792315</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593036792315</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="466" y="233" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593038444870">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="466" y="233" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1593038444870" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593057832230">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1593057832230" />
+    <state width="1323" height="415" key="GridCell.Tab.0.bottom" timestamp="1593054167311">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="415" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593054167311" />
+    <state width="1323" height="415" key="GridCell.Tab.0.center" timestamp="1593054167311">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="415" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593054167311" />
+    <state width="1323" height="415" key="GridCell.Tab.0.left" timestamp="1593054167311">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="415" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593054167311" />
+    <state width="1323" height="415" key="GridCell.Tab.0.right" timestamp="1593054167311">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="415" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593054167311" />
+  </component>
+</project>

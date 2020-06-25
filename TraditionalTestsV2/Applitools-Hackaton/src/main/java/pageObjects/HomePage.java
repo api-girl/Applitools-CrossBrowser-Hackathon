@@ -98,6 +98,25 @@ public class HomePage extends Page {
         return productTitles.get(0).getText();
     }
 
+    //displayed in all three viewports
+    @FindBy(id="A____8")
+    private WebElement logo;
+    public String getLogoDomId(){
+        return getDomId(logo);
+    }
+
+    public boolean isLogoCorrectlyLocated(){
+        if(getScreenWidth() >= 1200){
+            return logo.getRect().getX() == 15;
+        } else if(getScreenWidth() >= 768){
+            return logo.getRect().getX() == 279;
+        }else if(getScreenWidth() >= 500){
+            return logo.getRect().getX() == 153;
+        }
+        System.out.println("Unexpected viewport");
+        return false;
+    }
+
     //only displayed in 1200px
     @FindBy(id = "UL____21")
     private WebElement navMenu;
