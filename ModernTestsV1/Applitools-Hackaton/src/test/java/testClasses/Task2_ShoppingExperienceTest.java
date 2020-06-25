@@ -20,7 +20,7 @@ public class Task2_ShoppingExperienceTest extends BaseTest {
         eyes.open(driver, "Applifashion V1", "Task 2", new RectangleSize(800,600));
         hp = new HomePage(driver);
         hp.filterForBlackShoes();
-        eyes.checkRegion(By.id(hp.getProductGridDomId()));
+        eyes.checkRegion(By.id(hp.getProductGridDomId()), "Filter Results"); // confirm if it is checking the result grid TODO
 //        eyes.check(Target.window().fully().withName("Filter Results”"));
         eyes.closeAsync();
     }
