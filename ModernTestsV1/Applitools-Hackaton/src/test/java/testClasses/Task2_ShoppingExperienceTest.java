@@ -17,11 +17,17 @@ public class Task2_ShoppingExperienceTest extends BaseTest {
 
     @Test
     public void testFilterBlackShoes_expectTwoResults(){
-        eyes.open(driver, "Applifashion V1", "Task 2", new RectangleSize(800,600));
-        hp = new HomePage(driver);
-        hp.filterForBlackShoes();
-        eyes.checkRegion(By.id(hp.getProductGridDomId()), "Filter Results"); // confirm if it is checking the result grid TODO
-//        eyes.check(Target.window().fully().withName("Filter Results”"));
-        eyes.closeAsync();
+        try {
+            eyes.open(driver, "Applifashion V1", "Task 2");
+            hp = new HomePage(driver);
+            hp.filterForBlackShoes();
+            eyes.checkRegion(hp.getResultGridElement(), "Filter Results");// confirm if it is checking the result grid TODO
+            eyes.closeAsync();
+        }finally{
+            eyes.abortAsync();
+        }
+//        hp = new HomePage(driver);
+//        hp.filterForBlackShoes();
+//        eyesManager.validateRegion("Task 2", hp.getResultGridElement());
     }
 }

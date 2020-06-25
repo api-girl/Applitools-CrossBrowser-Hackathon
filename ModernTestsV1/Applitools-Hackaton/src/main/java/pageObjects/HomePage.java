@@ -32,8 +32,8 @@ public class HomePage extends Page {
         super(driver);
     }
 
-    public String getProductGridDomId(){
-        return getDomId(resultGrid);
+    public WebElement getResultGridElement(){
+        return resultGrid;
     }
 
     public void filterForBlackShoes() {

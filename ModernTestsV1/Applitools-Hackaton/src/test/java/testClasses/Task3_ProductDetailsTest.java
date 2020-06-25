@@ -13,11 +13,16 @@ public class Task3_ProductDetailsTest extends BaseTest {
 
     @Test
     public void testProductPage_verifyVisibilityOfElementsAcross3Viewports(){
-        eyes.open(driver, "Applifashion V1", "Task 3", new RectangleSize(800,600));
-        hp = new HomePage(driver);
-        pp = hp.clickOnAProduct();
-        eyes.check(Target.window().fully().withName("Product Details test"));
-        eyes.closeAsync();
+        try {
+            eyes.open(driver, "Applifashion V1", "Task 3");
+            hp = new HomePage(driver);
+            pp = hp.clickOnAProduct();
+            eyes.checkWindow("Product Details test");
+            eyes.closeAsync();
+        }finally {
+            eyes.abortAsync();
+        }
+       // eyesManager.validateWindow("Task 3", "Product Details test");
     }
 
 }
