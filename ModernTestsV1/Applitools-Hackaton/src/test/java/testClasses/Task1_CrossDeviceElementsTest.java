@@ -3,15 +3,18 @@ package testClasses;
 import com.applitools.eyes.fluent.Target;
 import org.testng.annotations.Test;
 
+import java.lang.reflect.InvocationTargetException;
+
 public class Task1_CrossDeviceElementsTest extends BaseTest{
 
-    public void testHomePage_verifyVisibilityOfElementsAcross3Viewports(){
+    public void testHomePage_verifyVisibilityOfElementsAcross3Viewports() throws InvocationTargetException {
 		try {
-			eyes.open(driver, "Applifashion V1", "Task 1");
-			eyes.checkWindow("Cross-Device Elements Test");
-			eyes.closeAsync();
+			eyesManager.validateWindow("Task 1", "Cross-Device Elements Test");
+//			eyes.open(driver, "Applifashion V1", "Task 1");
+//			eyes.checkWindow("Cross-Device Elements Test");
+//			eyes.closeAsync();
 		}finally {
-			eyes.abortAsync();
+			eyesManager.getEyes().abortAsync();
 		}
 	}
 

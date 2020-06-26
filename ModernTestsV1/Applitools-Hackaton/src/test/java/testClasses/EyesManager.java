@@ -7,7 +7,6 @@ import com.applitools.eyes.visualgrid.services.VisualGridRunner;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-
 public class EyesManager {
     private static final String EYES_API_KEY = System.getenv("EYES_API_KEY");
     private Eyes eyes;
@@ -28,16 +27,21 @@ public class EyesManager {
         eyes.setBatch(new BatchInfo(batchName));
     }
 
+    /**
+     *  issue 2: method check() throws
+     *  java.lang.IllegalArgumentException: checkSettings is must be a interface com.applitools.eyes.selenium.fluent.ISeleniumCheckTarget
+     *  when Target type parameter is passed to it
+     */
     public void validateWindow(String testName, String testStep){
-        eyes.open(driver, appName, testName);
-        eyes.check(Target.window().fully().withName(testStep));
-        eyes.closeAsync();
+            eyes.open(driver, appName, testName);
+            eyes.check(Target.window().fully().withName(testStep));
+            eyes.closeAsync();
     }
 
-    public void validateRegion(String testName, WebElement element){
+    //issue 1: method region() not accepting WebElement type as a parameter
+    public void validateRegion(String testName, WebElement element, String testStep){
         eyes.open(driver, appName, testName);
-        eyes.checkRegion(element);
-//        eyes.check(Target.region());
+        eyes.check(Target.region(element).withName(testStep));
         eyes.closeAsync();
     }
 

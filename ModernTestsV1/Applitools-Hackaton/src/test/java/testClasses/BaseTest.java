@@ -18,7 +18,7 @@ public class BaseTest {
     private static final String EYES_API_KEY = System.getenv("EYES_API_KEY");
     protected WebDriver driver;
     private static VisualGridRunner runner;
-	//protected static EyesManager eyesManager;
+	protected static EyesManager eyesManager;
     protected static Eyes eyes;
 
 
@@ -30,19 +30,18 @@ public class BaseTest {
         driver.get(url);
 
         runner = new VisualGridRunner(10);
-//        eyesManager = new EyesManager(driver, "AppliFashion V1", runner);
-//        eyesManager.setBatchName("UFG Hackathon");
+        eyesManager = new EyesManager(driver, "AppliFashion V1", runner);
+        eyesManager.setBatchName("UFG Hackathon");
 
-        eyes = new Eyes(runner);
         gridSetUp();
-//        return driver;
     }
 
     public static void gridSetUp() {
         Configuration config = new Configuration();
-        config.setApiKey(EYES_API_KEY);
 
         config.setBatch(new BatchInfo("UFG Hackathon"));
+        config.setAppName("AppliFashion V1");
+        config.setIsVisualGrid(true);
         config.setViewportSize(new RectangleSize(800,600))
                 .addBrowser(1200, 700, BrowserType.CHROME)
                 .addBrowser(768, 700, BrowserType.CHROME)
@@ -52,13 +51,13 @@ public class BaseTest {
                 .addBrowser(768, 700, BrowserType.EDGE_CHROMIUM)
                 .addDeviceEmulation(DeviceName.iPhone_X, ScreenOrientation.PORTRAIT);
 
-        eyes.setConfiguration(config);
+        eyesManager.getEyes().setConfiguration(config);
     }
 
     @AfterClass
     public void tearDown() {
         driver.quit();
-        eyes.abortIfNotClosed();
+        eyesManager.abort();
     }
 
     @AfterTest
