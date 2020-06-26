@@ -3,11 +3,8 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 public class HomePage extends Page {
     @FindBy(id = "LI____103")
@@ -44,10 +41,8 @@ public class HomePage extends Page {
         clickOnElement(filterButton);
     }
 
-
     public ProductPage clickOnAProduct(){
         clickOnElement(results.get(0));
         return new ProductPage(driver);
     }
-
 }

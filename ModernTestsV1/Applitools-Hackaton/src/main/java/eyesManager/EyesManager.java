@@ -1,6 +1,4 @@
-package testClasses;
-
-import com.applitools.eyes.BatchInfo;
+package eyesManager;
 
 import com.applitools.eyes.selenium.Eyes;
 import com.applitools.eyes.selenium.fluent.Target;
@@ -22,11 +20,6 @@ public class EyesManager {
         runner = new VisualGridRunner(10);
         eyes = new Eyes(runner);
         eyes.setApiKey(EYES_API_KEY);
-
-    }
-
-    public void setBatchName(String batchName){
-        eyes.setBatch(new BatchInfo(batchName));
     }
 
     public void validateWindow(String testName, String testStep){

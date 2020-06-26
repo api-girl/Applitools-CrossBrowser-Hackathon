@@ -1,12 +1,8 @@
 package testClasses;
 
-import com.applitools.eyes.RectangleSize;
-import com.applitools.eyes.fluent.Target;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.ProductPage;
-
-import java.lang.reflect.InvocationTargetException;
 
 
 public class Task3_ProductDetailsTest extends BaseTest {

@@ -5,26 +5,18 @@ import com.applitools.eyes.RectangleSize;
 import com.applitools.eyes.TestResultsSummary;
 import com.applitools.eyes.selenium.BrowserType;
 import com.applitools.eyes.selenium.Configuration;
-import com.applitools.eyes.selenium.Eyes;
 import com.applitools.eyes.visualgrid.model.DeviceName;
 import com.applitools.eyes.visualgrid.model.ScreenOrientation;
-import com.applitools.eyes.visualgrid.services.VisualGridRunner;
+import eyesManager.EyesManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 
 public class BaseTest {
     private static final String CHROME_DRIVER_PATH = System.getenv("chromedriver");
-    private static final String EYES_API_KEY = System.getenv("EYES_API_KEY");
     protected WebDriver driver;
-    private static VisualGridRunner runner;
 	protected static EyesManager eyesManager;
-    protected static Eyes eyes;
 
-    @BeforeSuite
-    public void nameBatch(){
-
-    }
 
 	@Parameters("url")
     @BeforeClass
@@ -34,15 +26,14 @@ public class BaseTest {
         driver.get(url);
 
         eyesManager = new EyesManager(driver, "AppliFashion V1");
-        eyesManager.setBatchName("UFG Hackathon");
-
         gridSetUp();
     }
 
-    public static void gridSetUp() {
+    public void gridSetUp() {
         Configuration config = new Configuration();
 
-        config.setIsVisualGrid(true);
+        config.setBatch(new BatchInfo("UFG Hackaton"));
+
         config.setViewportSize(new RectangleSize(800,600))
                 .addBrowser(1200, 700, BrowserType.CHROME)
                 .addBrowser(768, 700, BrowserType.CHROME)
@@ -53,7 +44,7 @@ public class BaseTest {
                 .addDeviceEmulation(DeviceName.iPhone_X, ScreenOrientation.PORTRAIT);
 
         eyesManager.getEyes().setConfiguration(config);
-    }
+	}
 
     @AfterClass
     public void tearDown() {
