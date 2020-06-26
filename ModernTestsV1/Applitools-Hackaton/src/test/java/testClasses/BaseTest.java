@@ -21,6 +21,10 @@ public class BaseTest {
 	protected static EyesManager eyesManager;
     protected static Eyes eyes;
 
+    @BeforeSuite
+    public void nameBatch(){
+
+    }
 
 	@Parameters("url")
     @BeforeClass
@@ -29,8 +33,7 @@ public class BaseTest {
         driver = new ChromeDriver();
         driver.get(url);
 
-        runner = new VisualGridRunner(10);
-        eyesManager = new EyesManager(driver, "AppliFashion V1", runner);
+        eyesManager = new EyesManager(driver, "AppliFashion V1");
         eyesManager.setBatchName("UFG Hackathon");
 
         gridSetUp();
@@ -39,8 +42,6 @@ public class BaseTest {
     public static void gridSetUp() {
         Configuration config = new Configuration();
 
-        config.setBatch(new BatchInfo("UFG Hackathon"));
-        config.setAppName("AppliFashion V1");
         config.setIsVisualGrid(true);
         config.setViewportSize(new RectangleSize(800,600))
                 .addBrowser(1200, 700, BrowserType.CHROME)
@@ -60,9 +61,9 @@ public class BaseTest {
         eyesManager.abort();
     }
 
-    @AfterTest
+    @AfterSuite
     public void summarizeTestResults(){
-        TestResultsSummary allTestResults = runner.getAllTestResults(false);
+        TestResultsSummary allTestResults = eyesManager.getRunner().getAllTestResults(false);
         System.out.println(allTestResults);
     }
 

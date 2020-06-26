@@ -14,16 +14,10 @@ public class Task3_ProductDetailsTest extends BaseTest {
     ProductPage pp;
 
     @Test
-    public void testProductPage_verifyVisibilityOfElementsAcross3Viewports() throws InvocationTargetException {
-//            eyes.open(driver, "Applifashion V1", "Task 3");
+    public void testProductPage_verifyVisibilityOfElementsAcross3Viewports(){
             hp = new HomePage(driver);
             pp = hp.clickOnAProduct();
             eyesManager.validateWindow("Task 3", "Product Details test");
-//            eyes.checkWindow("Product Details test");
-//            eyes.closeAsync();
-
-//            eyesManager.getEyes().abortAsync();
-
     }
 
 }
