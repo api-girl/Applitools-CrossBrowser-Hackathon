@@ -5,7 +5,7 @@
 ## How to run the project
 - The project was made for running locally, in Intellij Idea.
 - A correct testng_suite.xml file needs to be run for each approach: Traditional1, Traditional2, Modern1, Modern2. Each folder contains its own file.
-- Requirements: Java 14 as project SDK and Apache Maven 3.6.3
+- Requirements: Java 13 as project SDK and Apache Maven 3.6.3
 - Maven will import all the other dependencies.
 
 ### Environment variables
