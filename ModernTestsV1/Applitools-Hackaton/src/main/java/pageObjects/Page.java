@@ -1,7 +1,6 @@
 package pageObjects;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.Color;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -47,7 +46,4 @@ public class Page {
         ((JavascriptExecutor) driver).executeScript(script, element);
     }
 
-    public String getDomId(WebElement element){
-        return element.getAttribute("id");
-    }
 }
