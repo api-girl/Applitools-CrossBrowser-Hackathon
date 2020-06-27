@@ -3,7 +3,8 @@
 [Hackathon Instructions](https://applitools.com/cross-browser-testing-hackathon-v20-1-instructions/)
 
 ## How to run the project
-- The project was made for running locally
+- The project was made for running locally, in Intellij Idea.
+- The correct testng_suite.xml file needs to be run for each approach: Traditional1, Traditional2, Modern1, Modern2. Each folder contains its own file.
 - Requirements: Java 14 as project SDK and Apache Maven 3.6.3
 - Maven will import all the other dependencies.
 
