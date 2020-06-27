@@ -13,12 +13,12 @@ public class EyesManager {
     private WebDriver driver;
     private VisualGridRunner runner;
 
-    public EyesManager(WebDriver driver, String appName){
+    public EyesManager(WebDriver driver, Eyes eyes, VisualGridRunner runner, String appName){
         this.driver = driver;
         this.appName = appName;
+        this.eyes = eyes;
+        this.runner = runner;
 
-        runner = new VisualGridRunner(10);
-        eyes = new Eyes(runner);
         eyes.setApiKey(EYES_API_KEY);
     }
 
