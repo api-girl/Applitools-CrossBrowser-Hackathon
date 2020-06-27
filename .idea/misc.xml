@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/pom.xml" />
         <option value="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/pom.xml" />
+        <option value="$PROJECT_DIR$/ModernTestsV1/Applitools-Hackaton/pom.xml" />
+        <option value="$PROJECT_DIR$/ModernTestsV2/Applitools-Hackaton/pom.xml" />
       </list>
     </option>
   </component>

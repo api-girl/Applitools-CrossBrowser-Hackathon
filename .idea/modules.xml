@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CrossBrowserApplitoolsChallenge.iml" filepath="$PROJECT_DIR$/.idea/CrossBrowserApplitoolsChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ModernTestsV1/Applitools-Hackaton/ModernTestV1.iml" filepath="$PROJECT_DIR$/ModernTestsV1/Applitools-Hackaton/ModernTestV1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ModernTestsV2/Applitools-Hackaton/ModernTestV1 (1).iml" filepath="$PROJECT_DIR$/ModernTestsV2/Applitools-Hackaton/ModernTestV1 (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/ModernTestsV2/Applitools-Hackaton/ModernTestV2.iml" filepath="$PROJECT_DIR$/ModernTestsV2/Applitools-Hackaton/ModernTestV2.iml" />
       <module fileurl="file://$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/TraditionalTestV1.iml" filepath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/TraditionalTestV1.iml" />
       <module fileurl="file://$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/TraditionalTestV2.iml" filepath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/TraditionalTestV2.iml" />
     </modules>
