@@ -1,0 +1,230 @@
+Task: 1, Test Name: Two Items In Cart Icon is hidden in phone viewport, DOM Id: STRONG____50, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 1, Test Name: Add To Cart Icon is displayed in phone viewport, DOM Id: LI____232, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 1, Test Name: Compare Icon is displayed in phone viewport, DOM Id: LI____228, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 1, Test Name: Add To Favourites Icon is displayed in phone viewport, DOM Id: LI____224, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 1, Test Name: Filter Button Title is hidden in phone viewport, DOM Id: SPAN____209, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 1, Test Name: Footer - Contacts Menu is collapsed in phone viewport, DOM Id: collapse_3, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 1, Test Name: Footer - Keep In Touch Menu is collapsed in phone viewport, DOM Id: collapse_4, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 1, Test Name: Footer - Quick Links Menu is collapsed in phone viewport, DOM Id: collapse_1, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 1, Test Name: Funnel Icon is displayed in phone viewport, DOM Id: ti-filter, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 1, Test Name: Grid Icon is hidden in phone viewport, DOM Id: A____202, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 1, Test Name: List Icon is hidden in phone viewport, DOM Id: A____204, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 1, Test Name: Search Button - Magnifying Glass is displayed in phone viewport and located on the left side of the screen, DOM Id: LI____58, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 1, Test Name: Navigation menu is hidden in phone viewport, DOM Id: UL____21, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 1, Test Name: Search Field is hidden in phone viewport, DOM Id: DIV__customsear__41, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 1, Test Name: Wishlist Icon is hidden in phone viewport, DOM Id: A__wishlist__52, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 1, Test Name: Logo is centered at the top of the page in phone viewport, DOM Id: A____8, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 2, Test Name: Filter black shoes and verify 2 displayed results, DOM Id: [FIGURE____214, FIGURE____238, FIGURE____261], Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 3, Test Name: "Add to Cart" button is below Quantity dropdown. There is no additional margin between two elements., DOM Id: DIV__btnaddtoca__113, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: The actual margin between Navigation Icons is 20px, DOM Id: [LI____47, LI____51, LI____54, LI____58], Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: Old price value is the same on Home and Product Page., DOM Id: [SPAN__oldprice__222, old_price], Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: New price value is the same on Home and Product Page., DOM Id: [SPAN__newprice__221, new_price], Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 3, Test Name: New price font is blue on Home Page., DOM Id: SPAN__newprice__221, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: New price font is blue on Product Page., DOM Id: new_price, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: Old price font is gray on Home Page., DOM Id: SPAN__oldprice__222, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: Old price font decoration has value "line-through" on Home Page, DOM Id: SPAN__oldprice__222, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: Old price font is gray on Product Page., DOM Id: old_price, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 3, Test Name: Product Image is displayed, DOM Id: shoe_img, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: Product Title is displayed correctly, DOM Id: shoe_name, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: Product Titles displayed on Home and Product page must match., DOM Id: [H3____219, shoe_name], Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Pass
+Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM__ratingcoun__82, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Chrome, Viewport: 500 x 700, Device: phone, Status: Fail
+Task: 1, Test Name: Two Items In Cart Icon is displayed in tablet viewport, DOM Id: STRONG____50, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Add To Cart Icon is displayed in tablet viewport, DOM Id: LI____232, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Compare Icon is displayed in tablet viewport, DOM Id: LI____228, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Add To Favourites Icon is displayed in tablet viewport, DOM Id: LI____224, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Filter Button Title is displayed only in laptop viewport, DOM Id: SPAN____209, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Footer - Contacts Menu is displayed in tablet viewport, DOM Id: collapse_3, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Footer - Keep In Touch Menu is displayed in tablet viewport, DOM Id: collapse_4, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Footer - Quick Links Menu is displayed in tablet viewport, DOM Id: collapse_1, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Funnel Icon is displayed in tablet viewport, DOM Id: ti-filter, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Grid Icon is hidden in tablet viewport, DOM Id: A____202, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: List Icon is hidden in tablet viewport, DOM Id: A____204, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Search Button - Magnifying Glass is hidden in tablet viewport, DOM Id: LI____58, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Navigation menu is hidden in tablet viewport, DOM Id: UL____21, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Search Field is hidden in tablet viewport, DOM Id: DIV__customsear__41, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Wishlist Icon is hidden in tablet viewport, DOM Id: A__wishlist__52, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Logo is centered at the top of the page in tablet viewport., DOM Id: A____8, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 2, Test Name: Filter black shoes and verify 2 displayed results, DOM Id: [FIGURE____214, FIGURE____238, FIGURE____261], Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 3, Test Name: "Add to Cart" button is below Quantity dropdown. There is no additional margin between two elements., DOM Id: DIV__btnaddtoca__113, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 3, Test Name: The actual margin between Navigation Icons is 20px, DOM Id: [LI____47, LI____51, LI____54, LI____58], Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 3, Test Name: Old price value is the same on Home and Product Page., DOM Id: [SPAN__oldprice__222, old_price], Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: New price value is the same on Home and Product Page., DOM Id: [SPAN__newprice__221, new_price], Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 3, Test Name: New price font is blue on Home Page., DOM Id: SPAN__newprice__221, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: New price font is blue on Product Page., DOM Id: new_price, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Old price font is gray on Home Page., DOM Id: SPAN__oldprice__222, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Old price font decoration has value "line-through" on Home Page, DOM Id: SPAN__oldprice__222, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Old price font is gray on Product Page., DOM Id: old_price, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Old price font decoration has value "line-through" on Product Page, DOM Id: old_price, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Product Image is displayed, DOM Id: shoe_img, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Product Title is displayed correctly, DOM Id: shoe_name, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Product Titles displayed on Home and Product page must match., DOM Id: [H3____219, shoe_name], Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM__ratingcoun__82, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Chrome, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Two Items In Cart Icon is displayed in laptop viewport, DOM Id: STRONG____50, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Add To Cart Icon is hidden in 1200 viewport, DOM Id: LI____232, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Compare Icon is hidden in laptop viewport, DOM Id: LI____228, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Add To Favourites Icon is hidden in laptop viewport, DOM Id: LI____224, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Filter Button Title is hidden in laptop viewport, DOM Id: SPAN____209, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: Footer - Contacts Menu is displayed in laptop viewport, DOM Id: collapse_3, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Footer - Keep In Touch Menu is displayed in laptop viewport, DOM Id: collapse_4, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Footer - Quick Links Menu is displayed in laptop viewport, DOM Id: collapse_1, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Funnel Icon is hidden in laptop viewport, DOM Id: ti-filter, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: Grid Icon is displayed only in laptop viewport, DOM Id: A____202, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: List Icon is only displayed in laptop viewport, DOM Id: A____204, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Search Button - Magnifying Glass is hidden in laptop viewport, DOM Id: LI____58, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Navigation menu is displayed only in laptop viewport, DOM Id: UL____21, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Search Field is displayed in laptop viewport, DOM Id: DIV__customsear__41, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Wishlist Icon is displayed only in laptop viewport, DOM Id: A__wishlist__52, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Logo is located on the left top side of the screen in laptop viewport, DOM Id: A____8, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 2, Test Name: Filter black shoes and verify 2 displayed results, DOM Id: [FIGURE____214, FIGURE____238, FIGURE____261], Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 3, Test Name: "Add to Cart" button is below Quantity dropdown. There is no additional margin between two elements., DOM Id: DIV__btnaddtoca__113, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: The actual margin between Navigation Icons is 20px, DOM Id: [LI____47, LI____51, LI____54, LI____58], Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old price value is the same on Home and Product Page., DOM Id: [SPAN__oldprice__222, old_price], Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: New price value is the same on Home and Product Page., DOM Id: [SPAN__newprice__221, new_price], Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 3, Test Name: New price font is blue on Home Page., DOM Id: SPAN__newprice__221, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: New price font is blue on Product Page., DOM Id: new_price, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old price font is gray on Home Page., DOM Id: SPAN__oldprice__222, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old price font decoration has value "line-through" on Home Page, DOM Id: SPAN__oldprice__222, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old price font is gray on Product Page., DOM Id: old_price, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old price font decoration has value "line-through" on Product Page, DOM Id: old_price, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Image is displayed, DOM Id: shoe_img, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Title is displayed correctly, DOM Id: shoe_name, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Titles displayed on Home and Product page must match., DOM Id: [H3____219, shoe_name], Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM__ratingcoun__82, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Chrome, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: Two Items In Cart Icon is displayed in tablet viewport, DOM Id: STRONG____50, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Add To Cart Icon is displayed in tablet viewport, DOM Id: LI____232, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Compare Icon is displayed in tablet viewport, DOM Id: LI____228, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Add To Favourites Icon is displayed in tablet viewport, DOM Id: LI____224, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Filter Button Title is displayed only in laptop viewport, DOM Id: SPAN____209, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Footer - Contacts Menu is displayed in tablet viewport, DOM Id: collapse_3, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Footer - Keep In Touch Menu is displayed in tablet viewport, DOM Id: collapse_4, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Footer - Quick Links Menu is displayed in tablet viewport, DOM Id: collapse_1, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Funnel Icon is displayed in tablet viewport, DOM Id: ti-filter, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Grid Icon is hidden in tablet viewport, DOM Id: A____202, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: List Icon is hidden in tablet viewport, DOM Id: A____204, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Search Button - Magnifying Glass is hidden in tablet viewport, DOM Id: LI____58, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Navigation menu is hidden in tablet viewport, DOM Id: UL____21, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Search Field is hidden in tablet viewport, DOM Id: DIV__customsear__41, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 1, Test Name: Wishlist Icon is hidden in tablet viewport, DOM Id: A__wishlist__52, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Logo is centered at the top of the page in tablet viewport., DOM Id: A____8, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 2, Test Name: Filter black shoes and verify 2 displayed results, DOM Id: [FIGURE____214, FIGURE____238, FIGURE____261], Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 3, Test Name: "Add to Cart" button is below Quantity dropdown. There is no additional margin between two elements., DOM Id: DIV__btnaddtoca__113, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 3, Test Name: The actual margin between Navigation Icons is 20px, DOM Id: [LI____47, LI____51, LI____54, LI____58], Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 3, Test Name: Old price value is the same on Home and Product Page., DOM Id: [SPAN__oldprice__222, old_price], Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: New price value is the same on Home and Product Page., DOM Id: [SPAN__newprice__221, new_price], Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 3, Test Name: New price font is blue on Home Page., DOM Id: SPAN__newprice__221, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: New price font is blue on Product Page., DOM Id: new_price, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Old price font is gray on Home Page., DOM Id: SPAN__oldprice__222, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Old price font decoration has value "line-through" on Home Page, DOM Id: SPAN__oldprice__222, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Old price font is gray on Product Page., DOM Id: old_price, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Old price font decoration has value "line-through" on Product Page, DOM Id: old_price, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Product Image is displayed, DOM Id: shoe_img, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Product Title is displayed correctly, DOM Id: shoe_name, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Product Titles displayed on Home and Product page must match., DOM Id: [H3____219, shoe_name], Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Pass
+Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM__ratingcoun__82, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Edge, Viewport: 768 x 700, Device: tablet, Status: Fail
+Task: 1, Test Name: Two Items In Cart Icon is displayed in laptop viewport, DOM Id: STRONG____50, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Add To Cart Icon is hidden in 1200 viewport, DOM Id: LI____232, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Compare Icon is hidden in laptop viewport, DOM Id: LI____228, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Add To Favourites Icon is hidden in laptop viewport, DOM Id: LI____224, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Filter Button Title is hidden in laptop viewport, DOM Id: SPAN____209, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: Footer - Contacts Menu is displayed in laptop viewport, DOM Id: collapse_3, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Footer - Keep In Touch Menu is displayed in laptop viewport, DOM Id: collapse_4, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Footer - Quick Links Menu is displayed in laptop viewport, DOM Id: collapse_1, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Funnel Icon is hidden in laptop viewport, DOM Id: ti-filter, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: Grid Icon is displayed only in laptop viewport, DOM Id: A____202, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: List Icon is only displayed in laptop viewport, DOM Id: A____204, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Search Button - Magnifying Glass is hidden in laptop viewport, DOM Id: LI____58, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Navigation menu is displayed only in laptop viewport, DOM Id: UL____21, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Search Field is displayed in laptop viewport, DOM Id: DIV__customsear__41, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Wishlist Icon is displayed only in laptop viewport, DOM Id: A__wishlist__52, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Logo is located on the left top side of the screen in laptop viewport, DOM Id: A____8, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 2, Test Name: Filter black shoes and verify 2 displayed results, DOM Id: [FIGURE____214, FIGURE____238, FIGURE____261], Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 3, Test Name: "Add to Cart" button is below Quantity dropdown. There is no additional margin between two elements., DOM Id: DIV__btnaddtoca__113, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: The actual margin between Navigation Icons is 20px, DOM Id: [LI____47, LI____51, LI____54, LI____58], Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old price value is the same on Home and Product Page., DOM Id: [SPAN__oldprice__222, old_price], Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: New price value is the same on Home and Product Page., DOM Id: [SPAN__newprice__221, new_price], Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 3, Test Name: New price font is blue on Home Page., DOM Id: SPAN__newprice__221, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: New price font is blue on Product Page., DOM Id: new_price, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old price font is gray on Home Page., DOM Id: SPAN__oldprice__222, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old price font decoration has value "line-through" on Home Page, DOM Id: SPAN__oldprice__222, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old price font is gray on Product Page., DOM Id: old_price, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old price font decoration has value "line-through" on Product Page, DOM Id: old_price, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Image is displayed, DOM Id: shoe_img, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Title is displayed correctly, DOM Id: shoe_name, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Titles displayed on Home and Product page must match., DOM Id: [H3____219, shoe_name], Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM__ratingcoun__82, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Edge, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: Two Items In Cart Icon is displayed in tablet viewport, DOM Id: STRONG____50, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 1, Test Name: Add To Cart Icon is displayed in tablet viewport, DOM Id: LI____232, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Fail
+Task: 1, Test Name: Compare Icon is displayed in tablet viewport, DOM Id: LI____228, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Fail
+Task: 1, Test Name: Add To Favourites Icon is displayed in tablet viewport, DOM Id: LI____224, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Fail
+Task: 1, Test Name: Filter Button Title is displayed only in laptop viewport, DOM Id: SPAN____209, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 1, Test Name: Footer - Contacts Menu is displayed in tablet viewport, DOM Id: collapse_3, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 1, Test Name: Footer - Keep In Touch Menu is displayed in tablet viewport, DOM Id: collapse_4, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 1, Test Name: Footer - Quick Links Menu is displayed in tablet viewport, DOM Id: collapse_1, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 1, Test Name: Funnel Icon is displayed in tablet viewport, DOM Id: ti-filter, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 1, Test Name: Grid Icon is hidden in tablet viewport, DOM Id: A____202, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Fail
+Task: 1, Test Name: List Icon is hidden in tablet viewport, DOM Id: A____204, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Fail
+Task: 1, Test Name: Search Button - Magnifying Glass is hidden in tablet viewport, DOM Id: LI____58, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 1, Test Name: Navigation menu is hidden in tablet viewport, DOM Id: UL____21, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 1, Test Name: Search Field is hidden in tablet viewport, DOM Id: DIV__customsear__41, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 1, Test Name: Wishlist Icon is hidden in tablet viewport, DOM Id: A__wishlist__52, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Fail
+Task: 1, Test Name: Logo is centered at the top of the page in tablet viewport., DOM Id: A____8, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 2, Test Name: Filter black shoes and verify 2 displayed results, DOM Id: [FIGURE____214, FIGURE____238, FIGURE____261], Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Fail
+Task: 3, Test Name: "Add to Cart" button is below Quantity dropdown. There is no additional margin between two elements., DOM Id: DIV__btnaddtoca__113, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Fail
+Task: 3, Test Name: The actual margin between Navigation Icons is 20px, DOM Id: [LI____47, LI____51, LI____54, LI____58], Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Fail
+Task: 3, Test Name: Old price value is the same on Home and Product Page., DOM Id: [SPAN__oldprice__222, old_price], Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: New price value is the same on Home and Product Page., DOM Id: [SPAN__newprice__221, new_price], Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Fail
+Task: 3, Test Name: New price font is blue on Home Page., DOM Id: SPAN__newprice__221, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: New price font is blue on Product Page., DOM Id: new_price, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: Old price font is gray on Home Page., DOM Id: SPAN__oldprice__222, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: Old price font decoration has value "line-through" on Home Page, DOM Id: SPAN__oldprice__222, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: Old price font is gray on Product Page., DOM Id: old_price, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: Old price font decoration has value "line-through" on Product Page, DOM Id: old_price, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: Product Image is displayed, DOM Id: shoe_img, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Fail
+Task: 3, Test Name: Product Title is displayed correctly, DOM Id: shoe_name, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: Product Titles displayed on Home and Product page must match., DOM Id: [H3____219, shoe_name], Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Pass
+Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM__ratingcoun__82, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Fail
+Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Firefox, Viewport: 768 x 700, Device: null, Status: Fail
+Task: 1, Test Name: Two Items In Cart Icon is displayed in laptop viewport, DOM Id: STRONG____50, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Add To Cart Icon is hidden in 1200 viewport, DOM Id: LI____232, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Compare Icon is hidden in laptop viewport, DOM Id: LI____228, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Add To Favourites Icon is hidden in laptop viewport, DOM Id: LI____224, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Filter Button Title is hidden in laptop viewport, DOM Id: SPAN____209, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: Footer - Contacts Menu is displayed in laptop viewport, DOM Id: collapse_3, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Footer - Keep In Touch Menu is displayed in laptop viewport, DOM Id: collapse_4, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Footer - Quick Links Menu is displayed in laptop viewport, DOM Id: collapse_1, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Funnel Icon is hidden in laptop viewport, DOM Id: ti-filter, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 1, Test Name: Grid Icon is displayed only in laptop viewport, DOM Id: A____202, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: List Icon is only displayed in laptop viewport, DOM Id: A____204, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Search Button - Magnifying Glass is hidden in laptop viewport, DOM Id: LI____58, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Navigation menu is displayed only in laptop viewport, DOM Id: UL____21, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Search Field is displayed in laptop viewport, DOM Id: DIV__customsear__41, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Wishlist Icon is displayed only in laptop viewport, DOM Id: A__wishlist__52, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 1, Test Name: Logo is located on the left top side of the screen in laptop viewport, DOM Id: A____8, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 2, Test Name: Filter black shoes and verify 2 displayed results, DOM Id: [FIGURE____214, FIGURE____238, FIGURE____261], Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 3, Test Name: "Add to Cart" button is below Quantity dropdown. There is no additional margin between two elements., DOM Id: DIV__btnaddtoca__113, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: The actual margin between Navigation Icons is 20px, DOM Id: [LI____47, LI____51, LI____54, LI____58], Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old price value is the same on Home and Product Page., DOM Id: [SPAN__oldprice__222, old_price], Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: New price value is the same on Home and Product Page., DOM Id: [SPAN__newprice__221, new_price], Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 3, Test Name: New price font is blue on Home Page., DOM Id: SPAN__newprice__221, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: New price font is blue on Product Page., DOM Id: new_price, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old price font is gray on Home Page., DOM Id: SPAN__oldprice__222, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old price font decoration has value "line-through" on Home Page, DOM Id: SPAN__oldprice__222, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old price font is gray on Product Page., DOM Id: old_price, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Old price font decoration has value "line-through" on Product Page, DOM Id: old_price, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Image is displayed, DOM Id: shoe_img, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Fail
+Task: 3, Test Name: Product Title is displayed correctly, DOM Id: shoe_name, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Product Titles displayed on Home and Product page must match., DOM Id: [H3____219, shoe_name], Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Review Section is displayed correctly, DOM Id: DIV__prodinfove__75, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: The number of reviews does not overlap with stars., DOM Id: EM__ratingcoun__82, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Pass
+Task: 3, Test Name: Size dropdown's default value is Small(S), DOM Id: DIV__customsele__92, Browser: Firefox, Viewport: 1200 x 700, Device: laptop, Status: Fail

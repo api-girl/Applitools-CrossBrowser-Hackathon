@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Arrays;
 import java.util.stream.Collectors;
 
 public class ProductPage extends Page{
@@ -114,35 +113,24 @@ public class ProductPage extends Page{
         return a && b;
     }
 
-    public List<String> getPricesFromProductPage(){
-        return Arrays.asList(getPrice(oldPrice), getPrice(newPrice));
+    public String getOldPriceValue(){
+        return getPrice(oldPrice);
     }
 
-    public List<String> getPricesColoursFromProductPage(){
-        List<String> rgbColours = List.of(oldPrice.getCssValue("color"), newPrice.getCssValue("color"));
-
-        return rgbColours.
-                stream().
-                map(this::convertColourToHex).
-                collect(Collectors.toList());
+    public String getNewPriceValue(){
+        return getPrice(newPrice);
     }
 
-    public boolean doBothPricesColoursMatchExpectedOnProductPage(List<String> expected){
-        return expected.equals(getPricesColoursFromProductPage());
+    public String getOldPriceColour(){
+        return convertColourToHex(oldPrice.getCssValue("color"));
     }
 
-    public boolean doPricesStyleMatchOnBothPages(List<String> actualHP){
-        return actualHP.equals(getPricesStyleFromProductPage());
+    public String getNewPriceColour(){
+        return convertColourToHex(oldPrice.getCssValue("color"));
     }
 
-    public String getTextDecorationFromPage(){
+    public String getOldPriceTextDecoration(){
         return oldPrice.getCssValue("text-decoration");
-    }
-
-    public List<String> getPricesStyleFromProductPage(){
-        List<String> styles = new ArrayList<String>(getPricesColoursFromProductPage());
-        styles.add(getTextDecorationFromPage());
-        return styles;
     }
 
     public boolean isThereExpectedSpaceBetweenNavIcons() {
@@ -151,14 +139,10 @@ public class ProductPage extends Page{
             results.add(doesElementMarginEqualTo(icon, "left", 20));
         }
         return results.containsAll(List.of(true, true, true));
-
     }
 
     public boolean doProductTitlesMatch(String homePageTitle) {
         return homePageTitle.equals(getProductTitleFromProductPage());
     }
 
-    public boolean areTheSamePricesDisplayedOnBothPages(List<String> actualHp) {
-        return actualHp.equals(getPricesFromProductPage());
-    }
 }

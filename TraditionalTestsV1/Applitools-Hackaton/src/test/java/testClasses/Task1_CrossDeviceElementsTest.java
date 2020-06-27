@@ -106,36 +106,18 @@ public class Task1_CrossDeviceElementsTest extends BaseTest{
     }
 
     @Test
-    public void testHomePageElements_isMagnifyingGlassIconDisplayedAcrossThreeViewports(ITestContext context) {
+    public void testHomePageElements_isMagnifyingGlassCorrectlyDisplayedAcrossThreeViewports(ITestContext context) {
         int width = hp.getScreenWidth();
         context.setAttribute("domId", hp.getMagnifyingGlassDomId());
         if (width >= 1200) {
             context.setAttribute("description", "Search Button - Magnifying Glass is hidden in laptop viewport");
-            assertTrue(hReporter(1, context, !hp.isMagnifyingGlassDisplayed()), context.getAttribute("description").toString());
+            assertTrue(hReporter(1, context, !hp.isMagnifyingGlassCorrectlyDisplayed()), context.getAttribute("description").toString());
         }else if (width >= 768) {
             context.setAttribute("description", "Search Button - Magnifying Glass is hidden in tablet viewport");
-            assertTrue(hReporter(1, context, !hp.isMagnifyingGlassDisplayed()), context.getAttribute("description").toString());
-        }else if (width >= 500) {
-            context.setAttribute("description", "Search Button - Magnifying Glass is displayed in phone viewport");
-            assertTrue(hReporter(1, context, hp.isMagnifyingGlassDisplayed()), context.getAttribute("description").toString());
-        }else {
-            log.info("Unexpected viewport.");
-        }
-    }
-
-    @Test
-    public void testHomePageElements_isMagnifyingGlassLocatedLeftAcrossThreeViewports(ITestContext context) {
-        int width = hp.getScreenWidth();
-        context.setAttribute("domId", hp.getMagnifyingGlassDomId());
-        if (width >= 1200) {
-            context.setAttribute("description", "Search Button - Magnifying Glass is hidden in laptop viewport");
-            assertTrue(hReporter(1, context, hp.isMagnifyingGlassLocatedLeft()), context.getAttribute("description").toString());
-        }else if (width >= 768) {
-            context.setAttribute("description", "Search Button - Magnifying Glass is hidden in tablet viewport");
-            assertTrue(hReporter(1, context, hp.isMagnifyingGlassLocatedLeft()), context.getAttribute("description").toString());
+            assertTrue(hReporter(1, context, !hp.isMagnifyingGlassCorrectlyDisplayed()), context.getAttribute("description").toString());
         }else if (width >= 500) {
             context.setAttribute("description", "Search Button - Magnifying Glass is displayed in phone viewport and located on the left side of the screen");
-            assertTrue(hReporter(1, context, hp.isMagnifyingGlassLocatedLeft()), context.getAttribute("description").toString());
+            assertTrue(hReporter(1, context, hp.isMagnifyingGlassCorrectlyDisplayed()), context.getAttribute("description").toString());
         }else {
             log.info("Unexpected viewport.");
         }

@@ -25,7 +25,7 @@ public class Task3_ProductDetailsTest extends BaseTest {
         pp = hp.clickOnAProduct();
         context.setAttribute("domId", pp.getReviewSectionDomId());
         context.setAttribute("description", "Review Section is displayed correctly");
-        assertTrue(hReporter(3, context, pp.isReviewSectionDisplayed()),context.getAttribute("description").toString());
+        assertTrue(hReporter(3, context, pp.isReviewSectionDisplayed()), context.getAttribute("description").toString());
 
         context.setAttribute("domId", pp.getReviewSubtitleDomId());
         context.setAttribute("description", "The number of reviews does not overlap with stars.");
@@ -43,7 +43,7 @@ public class Task3_ProductDetailsTest extends BaseTest {
 
     @Test
     public void testProductTitle_verifyIfTitlesOnHomeAndProductPageMatch_expectMatching(ITestContext context) {
-        var titleHomePage = hp.getProductTitleFromHomePage();
+        var titleHomePage = hp.getProductTitle();
         List<String> titleDomIds = new ArrayList<String>();
         titleDomIds.add(hp.getProductTitleHpDomId());
 
@@ -64,65 +64,54 @@ public class Task3_ProductDetailsTest extends BaseTest {
     }
 
     @Test
-    public void testPrices_verifyBothPricesStyle_expectBlueAndGrayColour(ITestContext context) {
-        List<String> expectedStyles = List.of("#999999", "#004dda");
-        var actualStyleHp = hp.doBothPricesColoursMatchExpectedOnHomePage(expectedStyles);
-        var pricesDomIdsHp = List.of(hp.getOldPriceDomId(), hp.getNewPriceDomId());
+    public void testPrices_isTheOldPriceStyleCorrect(ITestContext context){
+        context.setAttribute("domId", hp.getOldPriceDomId());
+        context.setAttribute("description", "Old price font is gray on Home Page.");
+        var actualStyleH = List.of(hp.getOldPriceColour(), hp.getOldPriceTextDecoration());
+        assertTrue(hReporter(3, context, actualStyleH.get(0).equals("#999999")), context.getAttribute("description").toString());
+
+        context.setAttribute("description", "Old price font decoration has value \"line-through\" on Home Page");
+        assertTrue(hReporter(3, context, actualStyleH.get(1).contains("line-through")), context.getAttribute("description").toString());
+
         pp = hp.clickOnAProduct();
+        context.setAttribute("domId", pp.getOldPriceDomId());
+        context.setAttribute("description", "Old price font is gray on Product Page.");
+        var actualStyleP = List.of(pp.getOldPriceColour(), pp.getOldPriceTextDecoration());
+        assertTrue(hReporter(3, context, actualStyleP.get(0).equals("#999999")), context.getAttribute("description").toString());
 
-        var pricesDomIdsPp = List.of(pp.getOldPriceDomId(), pp.getNewPriceDomId());
-
-        context.setAttribute("description", "On Home Page, old price is gray and new price is blue");
-        context.setAttribute("domId", pricesDomIdsHp);
-        assertTrue(hReporter(3, context, actualStyleHp), context.getAttribute("description").toString());
-
-        context.setAttribute("description", "On Product Page, old price is gray and new price is blue");
-        context.setAttribute("domId", pricesDomIdsPp);
-        assertTrue(hReporter(3, context, pp.doBothPricesColoursMatchExpectedOnProductPage(expectedStyles)), context.getAttribute("description").toString());
+        context.setAttribute("description", "Old price font decoration has value \"line-through\" on Product Page");
+        assertTrue(hReporter(3, context, actualStyleP.get(1).contains("line-through")), context.getAttribute("description").toString());
     }
 
     @Test
-    public void testPrices_verifyOldPriceStyle_expectLineThroughOnAnyPage(ITestContext context){
-        var actualHpTextDecorationOldPrice = hp.getTextDecorationFromPage();
-        var priceDomIdsHp = hp.getOldPriceDomId();
+    public void testPrices_isTheNewPriceFontColourCorrect(ITestContext context){
+        context.setAttribute("domId", hp.getNewPriceDomId());
+        context.setAttribute("description", "New price font is blue on Home Page.");
+        var actualColour = hp.getNewPriceColour();
+        assertTrue(hReporter(3, context, actualColour.equals("#004dda")), context.getAttribute("description").toString());
+
         pp = hp.clickOnAProduct();
-        var actualPpTextDecorationOldPrice = pp.getTextDecorationFromPage();
-        var priceDomIdsPp = pp.getOldPriceDomId();
-
-        context.setAttribute("description", "On Home Page, old price is always crossed");
-        context.setAttribute("domId", priceDomIdsHp);
-        assertTrue(hReporter(3, context, actualHpTextDecorationOldPrice.contains("line-through")),
-                context.getAttribute("description").toString());
-
-        context.setAttribute("description", "On Product Page, old price is always crossed");
-        context.setAttribute("domId", priceDomIdsPp);
-        assertTrue(hReporter(3, context, actualPpTextDecorationOldPrice.contains("line-through")),
-                context.getAttribute("description").toString());
+        context.setAttribute("domId", pp.getNewPriceDomId());
+        context.setAttribute("description", "New price font is blue on Product Page.");
+        var actualColourP = pp.getNewPriceColour();
+        assertTrue(hReporter(3, context, actualColour.equals("#004dda")), context.getAttribute("description").toString());
     }
 
     @Test
-    public void testPrices_verifyPricesStylesOnHomeAndProductPage_expectMatching(ITestContext context) {
-        var hpPricesStyles = hp.getPricesStyleFromHomePage();
-        var pricesDomIds = new ArrayList<String>(List.of(hp.getOldPriceDomId(), hp.getNewPriceDomId()));
+    public void testPrices_areTheSameValuesShownOnHomeAndProductPage(ITestContext context){
+        var oldHpId = hp.getOldPriceDomId();
+        var newHpId = hp.getNewPriceDomId();
+        var priceValuesHp = List.of(hp.getOldPriceValue(), hp.getNewPriceValue());
         pp = hp.clickOnAProduct();
-        pricesDomIds.addAll(List.of(pp.getOldPriceDomId(), pp.getNewPriceDomId()));
+        var priceValuesPp = List.of(pp.getOldPriceValue(), pp.getNewPriceValue());
 
-        context.setAttribute("description", "Prices styles are the same on Home and Product page");
-        context.setAttribute("domId", pricesDomIds);
-        assertTrue(hReporter(3, context, pp.doPricesStyleMatchOnBothPages(hpPricesStyles)),
-                "Prices colours match on Product and Home Page.");
-    }
+        context.setAttribute("domId", List.of(oldHpId, pp.getOldPriceDomId())); //TODO
+        context.setAttribute("description", "Old price value is the same on Home and Product Page.");
+        assertTrue(hReporter(3, context, priceValuesHp.get(0).equals(priceValuesPp.get(0))), context.getAttribute("description").toString());
 
-    @Test
-    public void testPrices_verifyIfPricesMatchOnHomeAndProductPages_expectMatching(ITestContext context) {
-        var hpActualPrices = hp.getPricesValuesFromHomePage();
-        var pricesDomIds = new ArrayList<>((List.of(hp.getOldPriceDomId(), hp.getNewPriceDomId())));
-        pp = hp.clickOnAProduct();
-        pricesDomIds.addAll(List.of(pp.getOldPriceDomId(), pp.getNewPriceDomId()));
-
-        context.setAttribute("description", "Old and new prices displayed on the Home and Product pages are the same. Also, they are displayed with 2 decimals");
-        context.setAttribute("domId", pricesDomIds);
-        assertTrue(hReporter(3, context, pp.areTheSamePricesDisplayedOnBothPages(hpActualPrices)), context.getAttribute("description").toString());
+        context.setAttribute("domId", List.of(newHpId, pp.getNewPriceDomId()));
+        context.setAttribute("description", "New price value is the same on Home and Product Page.");
+        assertTrue(hReporter(3, context, priceValuesHp.get(1).equals(priceValuesPp.get(1))), context.getAttribute("description").toString());
     }
 
     @Test

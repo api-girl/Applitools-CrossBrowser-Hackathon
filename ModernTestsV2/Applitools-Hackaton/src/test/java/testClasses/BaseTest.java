@@ -35,7 +35,7 @@ public class BaseTest {
         driver = new ChromeDriver();
         driver.get(url);
 
-      eyesManager = new EyesManager(driver, eyes, runner,"AppliFashion V1");
+      eyesManager = new EyesManager(driver, eyes, runner,"AppliFashion V2");
     }
 
     public void gridSetUp() {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="TraditionalTest_V2" verbose="1" parallel="methods" thread-count="1">
+<suite name="Traditional_V2" verbose="1" parallel="methods" thread-count="1">
 
     <parameter name="url" value="https://demo.applitools.com/gridHackathonV2.html"/>
 
