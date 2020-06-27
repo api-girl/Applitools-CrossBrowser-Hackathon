@@ -21,9 +21,8 @@ public class BaseTest {
     protected static Eyes eyes;
     protected static VisualGridRunner runner;
 
-
     @BeforeSuite
-    public void tryinOut() {
+    public void setEyesWithRunner() {
         runner = new VisualGridRunner(10);
         eyes = new Eyes(runner);
         gridSetUp();
@@ -36,7 +35,7 @@ public class BaseTest {
         driver = new ChromeDriver();
         driver.get(url);
 
-        eyesManager = new EyesManager(driver, eyes, runner,"AppliFashion V1");
+      eyesManager = new EyesManager(driver, eyes, runner,"AppliFashion V1");
     }
 
     public void gridSetUp() {
@@ -59,11 +58,10 @@ public class BaseTest {
     @AfterClass
     public void tearDown() {
         driver.quit();
-
     }
 
     @AfterSuite
-    public void summarizeTestResults() {
+    public void summarizeTestResultsAndCloseEyes() {
         eyesManager.abort();
         TestResultsSummary allTestResults = eyesManager.getRunner().getAllTestResults(false);
         System.out.println(allTestResults);
