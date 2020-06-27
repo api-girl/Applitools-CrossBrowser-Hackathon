@@ -2,14 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5945fdd1-cec0-4391-9dcc-fb3640ea3cd1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Traditional-V1-TestResults.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Traditional-V2-TestResults.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/trial.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/Traditional-V1-TestResults.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/Traditional-V1-TestResults.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModernTestsV2/Applitools-Hackaton/src/test/java/testClasses/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModernTestsV2/Applitools-Hackaton/src/test/java/testClasses/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModernTestsV2/Applitools-Hackaton/testng_suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ModernTestsV2/Applitools-Hackaton/testng_suite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/Traditional-V1-TestResults.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/main/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/main/java/pageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/main/java/pageObjects/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/main/java/pageObjects/ProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/test/java/testClasses/Task1_CrossDeviceElementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/test/java/testClasses/Task1_CrossDeviceElementsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/test-classes/testClasses/Task2_ShoppingExperienceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/test-classes/testClasses/Task2_ShoppingExperienceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/test/java/testClasses/Task3_ProductDetailsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/test/java/testClasses/Task3_ProductDetailsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/classes/pageObjects/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/classes/pageObjects/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/test-classes/testClasses/Task1_CrossDeviceElementsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/test-classes/testClasses/Task1_CrossDeviceElementsTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/test-classes/testClasses/Task3_ProductDetailsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/target/test-classes/testClasses/Task3_ProductDetailsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/testng_suite_trial.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/testng_suite_trial.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/Traditional-V2-TestResults.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/Traditional-V2-TestResults.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/testng_suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/testng_suite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/testng_suite_trial.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/Traditional-V2-TestResults.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/main/java/pageObjects/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/main/java/pageObjects/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/main/java/pageObjects/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/main/java/pageObjects/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testClasses/Task1_CrossDeviceElementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testClasses/Task1_CrossDeviceElementsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testClasses/Task3_ProductDetailsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testClasses/Task3_ProductDetailsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/testng_suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/testng_suite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/testng_suite_trial.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,21 +60,22 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Nena\repos\CrossBrowserApplitoolsChallenge\TraditionalTestsV1\Applitools-Hackaton" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Nena\repos\Applitools-CrossBrowser-Hackaton\ModernTestsV2" />
       <recent name="C:\Users\Nena\repos\Applitools-CrossBrowser-Hackaton\TraditionalTestsV1\Applitools-Hackaton" />
+      <recent name="C:\Users\Nena\repos\Applitools-CrossBrowser-Hackaton\ModernTestsV2" />
       <recent name="C:\Users\Nena\repos\CrossBrowserApplitoolsChallenge\TraditionalTestsV2\Applitools-Hackaton\src\test\java\testUtils" />
       <recent name="C:\Users\Nena\repos\CrossBrowserApplitoolsChallenge\TraditionalTestsV2" />
       <recent name="C:\Users\Nena\repos\CrossBrowserApplitoolsChallenge\TraditionalTestsV2\Applitools-Hackaton\src\test\java\testClasses" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nena\repos\Applitools-CrossBrowser-Hackaton" />
+      <recent name="C:\Users\Nena\repos\CrossBrowserApplitoolsChallenge\TraditionalTestsV1\Applitools-Hackaton" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/ModernTestsV2/Applitools-Hackaton/testng_suite.xml (1)">
-    <configuration name="C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/ModernTestsV2/Applitools-Hackaton/testng_suite.xml (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ModernTestV2" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/ModernTestsV2/Applitools-Hackaton/testng_suite.xml" />
+  <component name="RunManager" selected="TestNG.C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/TraditionalTestsV2/Applitools-Hackaton/testng_suite.xml">
+    <configuration name="C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/TraditionalTestsV1/Applitools-Hackaton/testng_suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TraditionalTestV1" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/testng_suite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -67,9 +83,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/ModernTestsV2/Applitools-Hackaton/testng_suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ModernTestV1 (1)" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/ModernTestsV2/Applitools-Hackaton/testng_suite.xml" />
+    <configuration name="C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/TraditionalTestsV1/Applitools-Hackaton/trial.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TraditionalTestV1" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/trial.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -77,9 +93,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/TraditionalTestsV2/Applitools-Hackaton/testng_suite_trial.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/TraditionalTestsV2/Applitools-Hackaton/testng_suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TraditionalTestV2" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/testng_suite_trial.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/testng_suite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -97,10 +113,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV1/Applitools-Hackaton/testng_suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Task3_ProductDetailsTest.testPrices_isTheOldPriceStyleCorrect" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TraditionalTestV1" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/testng_suite.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testClasses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testClasses" />
+      <option name="MAIN_CLASS_NAME" value="testClasses.Task3_ProductDetailsTest" />
+      <option name="METHOD_NAME" value="testPrices_isTheOldPriceStyleCorrect" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -109,11 +133,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/ModernTestsV2/Applitools-Hackaton/testng_suite.xml (1)" />
-        <item itemvalue="TestNG.C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/ModernTestsV2/Applitools-Hackaton/testng_suite.xml" />
+        <item itemvalue="TestNG.C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/TraditionalTestsV2/Applitools-Hackaton/testng_suite.xml" />
+        <item itemvalue="TestNG.C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/TraditionalTestsV1/Applitools-Hackaton/testng_suite.xml" />
+        <item itemvalue="TestNG.C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/TraditionalTestsV1/Applitools-Hackaton/trial.xml" />
         <item itemvalue="TestNG.C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV1/Applitools-Hackaton/testng_suite_trial.xml" />
-        <item itemvalue="TestNG.C:/Users/Nena/repos/Applitools-CrossBrowser-Hackaton/TraditionalTestsV2/Applitools-Hackaton/testng_suite_trial.xml" />
-        <item itemvalue="TestNG.C:/Users/Nena/repos/CrossBrowserApplitoolsChallenge/TraditionalTestsV1/Applitools-Hackaton/testng_suite.xml" />
+        <item itemvalue="TestNG.Task3_ProductDetailsTest.testPrices_isTheOldPriceStyleCorrect" />
       </list>
     </recent_temporary>
   </component>
@@ -167,58 +191,58 @@
     </state>
     <state x="526" y="166" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1592957891578" />
     <state x="2660" y="237" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592887432472" />
-    <state x="1920" y="73" key="FileDocumentManager.FileCacheConflict" timestamp="1592881210472">
+    <state x="1920" y="73" key="FileDocumentManager.FileCacheConflict" timestamp="1593233351721">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="1920" y="73" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1592881210470" />
-    <state width="1877" height="384" key="GridCell.Tab.0.bottom" timestamp="1593029006435">
+    <state x="1920" y="73" key="FileDocumentManager.FileCacheConflict/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593233351721" />
+    <state width="1877" height="882" key="GridCell.Tab.0.bottom" timestamp="1593282027776">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="661" height="497" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592964707057" />
-    <state width="1877" height="607" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
-    <state width="1877" height="384" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593029006435" />
-    <state width="1877" height="384" key="GridCell.Tab.0.center" timestamp="1593029006435">
+    <state width="1323" height="247" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593227024121" />
+    <state width="1877" height="650" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593232217207" />
+    <state width="1877" height="882" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593282027776" />
+    <state width="1877" height="882" key="GridCell.Tab.0.center" timestamp="1593282027776">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="661" height="497" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592964707057" />
-    <state width="1877" height="607" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
-    <state width="1877" height="384" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593029006435" />
-    <state width="1877" height="384" key="GridCell.Tab.0.left" timestamp="1593029006435">
+    <state width="1323" height="247" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593227024121" />
+    <state width="1877" height="650" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593232217207" />
+    <state width="1877" height="882" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593282027776" />
+    <state width="1877" height="882" key="GridCell.Tab.0.left" timestamp="1593282027776">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="661" height="497" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592964707057" />
-    <state width="1877" height="607" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
-    <state width="1877" height="384" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593029006435" />
-    <state width="1877" height="384" key="GridCell.Tab.0.right" timestamp="1593029006435">
+    <state width="1323" height="247" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593227024121" />
+    <state width="1877" height="650" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593232217207" />
+    <state width="1877" height="882" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593282027776" />
+    <state width="1877" height="882" key="GridCell.Tab.0.right" timestamp="1593282027776">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="661" height="497" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592964707057" />
-    <state width="1877" height="607" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592872774084" />
-    <state width="1877" height="384" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593029006435" />
-    <state width="1877" height="384" key="GridCell.Tab.1.bottom" timestamp="1593029016468">
+    <state width="1323" height="247" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593227024121" />
+    <state width="1877" height="650" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1593232217207" />
+    <state width="1877" height="882" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593282027776" />
+    <state width="1877" height="382" key="GridCell.Tab.1.bottom" timestamp="1593277600390">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1323" height="304" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592847596574" />
+    <state width="1323" height="247" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593227024121" />
     <state width="1877" height="371" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592870648288" />
-    <state width="1877" height="384" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593029016468" />
-    <state width="1877" height="384" key="GridCell.Tab.1.center" timestamp="1593029016467">
+    <state width="1877" height="382" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593277600390" />
+    <state width="1877" height="382" key="GridCell.Tab.1.center" timestamp="1593277600390">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1323" height="304" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1592847596574" />
+    <state width="1323" height="247" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1593227024121" />
     <state width="1877" height="371" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592870648288" />
-    <state width="1877" height="384" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593029016467" />
-    <state width="1877" height="384" key="GridCell.Tab.1.left" timestamp="1593029016467">
+    <state width="1877" height="382" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593277600390" />
+    <state width="1877" height="382" key="GridCell.Tab.1.left" timestamp="1593277600375">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1323" height="304" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1592847596574" />
+    <state width="1323" height="247" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1593227024121" />
     <state width="1877" height="371" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592870648288" />
-    <state width="1877" height="384" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593029016467" />
-    <state width="1877" height="384" key="GridCell.Tab.1.right" timestamp="1593029016468">
+    <state width="1877" height="382" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593277600375" />
+    <state width="1877" height="382" key="GridCell.Tab.1.right" timestamp="1593277600390">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1323" height="304" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1592847596574" />
+    <state width="1323" height="247" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1593227024121" />
     <state width="1877" height="371" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1592870648288" />
-    <state width="1877" height="384" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593029016468" />
+    <state width="1877" height="382" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1593277600390" />
     <state x="2545" y="224" width="799" height="591" key="NewModule_or_Project.wizard" timestamp="1592887446024">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -248,30 +272,31 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/main/java/pageObjects/ProductPage.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testClasses/Task1_CrossDeviceElementsTest.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/main/java/pageObjects/HomePage.java</url>
-          <line>232</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/test/java/testClasses/Task1_CrossDeviceElementsTest.java</url>
           <line>61</line>
           <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/test/java/testClasses/Task3_ProductDetailsTest.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/TraditionalTestsV2/Applitools-Hackaton/src/test/java/testClasses/Task3_ProductDetailsTest.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/TraditionalTestsV1/Applitools-Hackaton/src/main/java/pageObjects/HomePage.java</url>
+          <line>217</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo typeName="java.lang.String" fieldName="value" />
+        <PinnedItemInfo typeName="org.testng.internal.Attributes" fieldName="m_attributes" />
       </pinned-members>
     </pin-to-top-manager>
   </component>
