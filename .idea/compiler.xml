@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ModernTestV1 (1)" />
         <module name="ModernTestV2" />
         <module name="ModernTestV1" />
         <module name="TraditionalTestV2" />
@@ -14,11 +13,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ModernTestV1" target="14" />
-      <module name="ModernTestV1 (1)" target="14" />
-      <module name="ModernTestV2" target="14" />
-      <module name="TraditionalTestV1" target="14" />
-      <module name="TraditionalTestV2" target="14" />
+      <module name="ModernTestV1" target="13" />
+      <module name="ModernTestV2" target="13" />
+      <module name="TraditionalTestV1" target="13" />
+      <module name="TraditionalTestV2" target="13" />
     </bytecodeTargetLevel>
   </component>
 </project>
