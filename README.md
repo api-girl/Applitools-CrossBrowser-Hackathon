@@ -24,4 +24,4 @@
 
 
 
-Any questions? Let me know! My name is Nevena Cukucan, nevena@baetz.com
+Any questions? Let me know! My name is Nevena Cukucan, nevena@baetz.ca
