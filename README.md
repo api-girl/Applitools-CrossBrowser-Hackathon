@@ -1,4 +1,4 @@
-# Applitools_Hackaton
+# Applitools_Hackathon
 
 [Hackathon Instructions](https://applitools.com/cross-browser-testing-hackathon-v20-1-instructions/)
 
