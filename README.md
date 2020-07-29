@@ -19,9 +19,3 @@
 2. ModernTestsV2: enter the folder C:\Users\Nena\repos\Applitools-CrossBrowser-Hackaton\ModernTestsV2\Applitools-Hackaton and run the command "mvn clean test"
 3. TraditionalTestsV1: enter the folder C:\Users\Nena\repos\Applitools-CrossBrowser-Hackaton\TraditionalTestsV1\Applitools-Hackaton and run the command "mvn clean test"
 4. TraditionalTestsV2: enter the folder C:\Users\Nena\repos\Applitools-CrossBrowser-Hackaton\TraditionalTestsV2\Applitools-Hackaton and run the command "mvn clean test"
-
-
-
-
-
-Any questions? Let me know! My name is Nevena Cukucan, nevena@baetz.ca
