@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class EyesManager {
-    private static final String EYES_API_KEY = System.getenv("EYES_API_KEY");
+    private static final String EYES_API_KEY = System.getenv("EYES_API_KEY_HACKATHON");
     private Eyes eyes;
     private String appName;
     private WebDriver driver;
