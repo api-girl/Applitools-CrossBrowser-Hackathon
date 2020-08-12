@@ -9,7 +9,6 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.release>13</maven.compiler.release>
         <selenium.chromedriver.version>3.141.59</selenium.chromedriver.version>
         <selenium.support.version>3.141.59</selenium.support.version>
         <testng.version>6.10</testng.version>
